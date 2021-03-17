@@ -1,3 +1,7 @@
+## [0.1.1-nullsafety.6]
+ * Update minor
+Generated all stubs
+
 ## [0.0.1-nullsafety.4]
  * Adding contact services
 

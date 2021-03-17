@@ -2,7 +2,6 @@
 
 import 'dart:async';
 
-import 'package:meta/meta.dart';
 import 'package:logging/logging.dart';
 import 'package:sunny_dart/json.dart';
 import 'package:sunny_dart/sunny_dart.dart';
