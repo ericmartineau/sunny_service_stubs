@@ -3,6 +3,8 @@ import 'package:sunny_dart/json.dart';
 import 'package:dartxx/dartxx.dart';
 import 'package:sunny_sdk_core/mverse.dart';
 
+import 'contact/contactable.dart';
+
 abstract class IFlowThread implements Entity {}
 
 abstract class IFlowGraph implements Entity {}
@@ -15,7 +17,34 @@ abstract class IFactlowFrame implements Entity {}
 
 abstract class IUserProfile implements Entity {}
 
-abstract class IContact implements Entity {}
+abstract class IContactIdentity implements Entity {
+  String? get sourceType;
+}
+
+abstract class IContactAddress {
+  String? get region;
+  String? get postalCode;
+  String? get locality;
+  String? get streetLineOne;
+  String? get streetLineTwo;
+  String? get streetLineThree;
+}
+
+abstract class IGroup implements Entity {}
+
+abstract class IContact implements Entity {
+  String? get id;
+  List<Contactable>? get contactables;
+
+  List<IContactIdentity>? get identities;
+
+  bool? get isFavorite;
+
+  String? get companyName;
+  String? get firstName;
+  String? get lastName;
+  String? get fullName;
+}
 
 abstract class IFactSchemaTemplate {
   String? get label;
