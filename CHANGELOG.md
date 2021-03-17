@@ -1,3 +1,7 @@
+## [0.1.1-nullsafety.8]
+ * Ignor eswagger
+Stubs without setters
+
 ## [0.1.1-nullsafety.6]
  * Update minor
 Generated all stubs
