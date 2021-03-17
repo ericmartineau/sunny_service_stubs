@@ -58,7 +58,7 @@ packages:
     source: hosted
     version: "1.15.0"
   collection_diff:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: collection_diff
       url: "https://pub.dartlang.org"
@@ -170,7 +170,7 @@ packages:
     source: hosted
     version: "0.4.5-nullsafety.2"
   flutter:
-    dependency: transitive
+    dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
