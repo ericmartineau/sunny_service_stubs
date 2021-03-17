@@ -13,39 +13,39 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFlowThread implements MEntity {
   /// Property getter and setter for parent: 
   IFlowThread? get parent;
-  set parent(IFlowThread? parent);
+  
 
   /// Property getter and setter for graphId: 
   String? get graphId;
-  set graphId(String? graphId);
+  
 
   /// Property getter and setter for started: 
   DateTime? get started;
-  set started(DateTime? started);
+  
 
   /// Property getter and setter for completed: 
   DateTime? get completed;
-  set completed(DateTime? completed);
+  
 
   /// Property getter and setter for status: 
   IThreadStatus? get status;
-  set status(IThreadStatus? status);
+  
 
   /// Property getter and setter for isActive: 
   bool? get isActive;
-  set isActive(bool? isActive);
+  
 
   /// Property getter and setter for subjects: 
   Map<String, MEntity>? get subjects;
-  set subjects(Map<String, MEntity>? subjects);
+  
 
   /// Property getter and setter for state: 
   MModel? get state;
-  set state(MModel? state);
+  
 
   /// Property getter and setter for frames: 
   List<IFlowFrame>? get frames;
-  set frames(List<IFlowFrame>? frames);
+  
 
   @override
   String toString();

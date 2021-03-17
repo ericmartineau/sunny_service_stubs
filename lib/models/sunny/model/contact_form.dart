@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactForm implements MModel {
   /// Property getter and setter for token: 
   String? get token;
-  set token(String? token);
+  
 
   /// Property getter and setter for userId: 
   String? get userId;
-  set userId(String? userId);
+  
 
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for context: 
   dynamic? get context;
-  set context(dynamic? context);
+  
 
   @override
   String toString();

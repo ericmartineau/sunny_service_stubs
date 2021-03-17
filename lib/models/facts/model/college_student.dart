@@ -15,23 +15,23 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ICollegeStudent implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for university: 
   ICollege? get university;
-  set university(ICollege? university);
+  
 
   /// Property getter and setter for focus: 
   String? get focus;
-  set focus(String? focus);
+  
 
   /// Property getter and setter for startDate: 
   FlexiDate? get startDate;
-  set startDate(FlexiDate? startDate);
+  
 
   /// Property getter and setter for endDate: 
   FlexiDate? get endDate;
-  set endDate(FlexiDate? endDate);
+  
 
   @override
   String toString();

@@ -10,11 +10,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IWaitPrior implements MModel {
   /// Property getter and setter for amount: 
   int? get amount;
-  set amount(int? amount);
+  
 
   /// Property getter and setter for timeUnit: 
   TimeUnit? get timeUnit;
-  set timeUnit(TimeUnit? timeUnit);
+  
 
   @override
   String toString();

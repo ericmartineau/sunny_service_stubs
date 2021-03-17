@@ -11,7 +11,7 @@ import '../model/flow_vertex.dart';
 abstract class IEntryVertex implements IFlowVertex {
   /// Property getter and setter for start: 
   String? get start;
-  set start(String? start);
+  
 
   @override
   String toString();

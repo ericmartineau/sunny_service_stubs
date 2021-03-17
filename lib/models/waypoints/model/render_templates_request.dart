@@ -11,27 +11,27 @@ import 'package:timezone/timezone.dart';
 abstract class IRenderTemplatesRequest implements MModel {
   /// Property getter and setter for lenient: 
   bool? get lenient;
-  set lenient(bool? lenient);
+  
 
   /// Property getter and setter for templates: 
   List<String>? get templates;
-  set templates(List<String>? templates);
+  
 
   /// Property getter and setter for location: 
   ILocale? get location;
-  set location(ILocale? location);
+  
 
   /// Property getter and setter for timeZone: 
   Location? get timeZone;
-  set timeZone(Location? timeZone);
+  
 
   /// Property getter and setter for flowThreadId: 
   String? get flowThreadId;
-  set flowThreadId(String? flowThreadId);
+  
 
   /// Property getter and setter for extraScope: 
   Map<String, dynamic>? get extraScope;
-  set extraScope(Map<String, dynamic>? extraScope);
+  
 
   @override
   String toString();

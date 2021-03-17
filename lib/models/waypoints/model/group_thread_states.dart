@@ -10,11 +10,11 @@ import '../model/group_thread_state.dart';
 abstract class IGroupThreadStates implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IGroupThreadState>? get data;
-  set data(List<IGroupThreadState>? data);
+  
 
   @override
   String toString();

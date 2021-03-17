@@ -10,11 +10,11 @@ import '../model/account_content_template.dart';
 abstract class IAccountContentTemplateList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IAccountContentTemplate>? get data;
-  set data(List<IAccountContentTemplate>? data);
+  
 
   @override
   String toString();

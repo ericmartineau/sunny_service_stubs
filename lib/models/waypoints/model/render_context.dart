@@ -10,11 +10,11 @@ import '../../m_entity/model/m_schema_definition.dart';
 abstract class IRenderContext implements MModel {
   /// Property getter and setter for properties: 
   Map<String, IMSchemaDefinition>? get properties;
-  set properties(Map<String, IMSchemaDefinition>? properties);
+  
 
   /// Property getter and setter for adhocProperties: 
   Map<String, String>? get adhocProperties;
-  set adhocProperties(Map<String, String>? adhocProperties);
+  
 
   @override
   String toString();

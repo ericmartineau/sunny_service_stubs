@@ -11,15 +11,15 @@ import '../model/social_type.dart';
 abstract class ISocialMediaContent implements IInteractionContent {
   /// Property getter and setter for platform: 
   String? get platform;
-  set platform(String? platform);
+  
 
   /// Property getter and setter for messageBody: 
   String? get messageBody;
-  set messageBody(String? messageBody);
+  
 
   /// Property getter and setter for socialType: 
   ISocialType? get socialType;
-  set socialType(ISocialType? socialType);
+  
 
   @override
   String toString();

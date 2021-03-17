@@ -10,11 +10,11 @@ import '../model/book_club_member.dart';
 abstract class IBookClubMemberList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IBookClubMember>? get data;
-  set data(List<IBookClubMember>? data);
+  
 
   @override
   String toString();

@@ -10,11 +10,11 @@ import '../model/family.dart';
 abstract class IFamilyList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IFamily>? get data;
-  set data(List<IFamily>? data);
+  
 
   @override
   String toString();

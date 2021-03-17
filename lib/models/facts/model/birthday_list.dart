@@ -10,11 +10,11 @@ import '../model/birthday.dart';
 abstract class IBirthdayList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IBirthday>? get data;
-  set data(List<IBirthday>? data);
+  
 
   @override
   String toString();

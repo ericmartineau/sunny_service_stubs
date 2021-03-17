@@ -10,15 +10,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IConfigureGroupFlowRequest implements MModel {
   /// Property getter and setter for flowThreadId: 
   RecordKey? get flowThreadId;
-  set flowThreadId(RecordKey? flowThreadId);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   @override
   String toString();

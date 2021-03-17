@@ -11,7 +11,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IEmbeddedProperty implements IMSchemaProperty {
   /// Property getter and setter for embedRef: 
   MSchemaRef? get embedRef;
-  set embedRef(MSchemaRef? embedRef);
+  
 
   @override
   String toString();

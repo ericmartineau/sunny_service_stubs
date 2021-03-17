@@ -11,11 +11,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IEntityEvent implements IAccountEvent {
   /// Property getter and setter for entityType: 
   MSchemaRef? get entityType;
-  set entityType(MSchemaRef? entityType);
+  
 
   /// Property getter and setter for recordKey: 
   RecordKey? get recordKey;
-  set recordKey(RecordKey? recordKey);
+  
 
   @override
   String toString();

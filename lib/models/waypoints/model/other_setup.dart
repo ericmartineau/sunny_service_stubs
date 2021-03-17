@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IOtherSetup implements MModel {
   /// Property getter and setter for ignored: 
   String? get ignored;
-  set ignored(String? ignored);
+  
 
   @override
   String toString();

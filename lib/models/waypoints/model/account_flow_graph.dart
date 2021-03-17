@@ -20,7 +20,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IAccountFlowGraph implements IFlowGraph {
   /// Property getter and setter for isTemplate: 
   bool? get isTemplate;
-  set isTemplate(bool? isTemplate);
+  
 
   @override
   String toString();

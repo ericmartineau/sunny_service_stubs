@@ -10,11 +10,11 @@ import '../model/m_schema_property.dart';
 abstract class IMSchemaDefinition implements MModel {
   /// Property getter and setter for schemaURI: 
   Uri? get schemaURI;
-  set schemaURI(Uri? schemaURI);
+  
 
   /// Property getter and setter for properties: 
   List<IMSchemaProperty>? get properties;
-  set properties(List<IMSchemaProperty>? properties);
+  
 
   @override
   String toString();

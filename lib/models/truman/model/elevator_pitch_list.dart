@@ -10,11 +10,11 @@ import '../model/elevator_pitch.dart';
 abstract class IElevatorPitchList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IElevatorPitch>? get data;
-  set data(List<IElevatorPitch>? data);
+  
 
   @override
   String toString();

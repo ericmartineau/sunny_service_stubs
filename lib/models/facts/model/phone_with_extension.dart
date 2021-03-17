@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IPhoneWithExtension implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for number: 
   String? get number;
-  set number(String? number);
+  
 
   /// Property getter and setter for extension: 
   String? get extension;
-  set extension(String? extension);
+  
 
   @override
   String toString();

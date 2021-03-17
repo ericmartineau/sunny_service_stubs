@@ -10,15 +10,15 @@ import '../model/send_response_item.dart';
 abstract class ISendResponse implements MModel {
   /// Property getter and setter for success: 
   int? get success;
-  set success(int? success);
+  
 
   /// Property getter and setter for failures: 
   int? get failures;
-  set failures(int? failures);
+  
 
   /// Property getter and setter for responses: 
   List<ISendResponseItem>? get responses;
-  set responses(List<ISendResponseItem>? responses);
+  
 
   @override
   String toString();

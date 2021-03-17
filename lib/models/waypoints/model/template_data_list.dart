@@ -10,11 +10,11 @@ import '../model/template_data.dart';
 abstract class ITemplateDataList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ITemplateData>? get data;
-  set data(List<ITemplateData>? data);
+  
 
   @override
   String toString();

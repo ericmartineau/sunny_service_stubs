@@ -12,19 +12,19 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IYoutubeContent implements IContent {
   /// Property getter and setter for videoId: 
   String? get videoId;
-  set videoId(String? videoId);
+  
 
   /// Property getter and setter for autoplay: 
   bool? get autoplay;
-  set autoplay(bool? autoplay);
+  
 
   /// Property getter and setter for showControls: 
   bool? get showControls;
-  set showControls(bool? showControls);
+  
 
   /// Property getter and setter for showVideoProgressIndicator: 
   bool? get showVideoProgressIndicator;
-  set showVideoProgressIndicator(bool? showVideoProgressIndicator);
+  
 
   @override
   String toString();

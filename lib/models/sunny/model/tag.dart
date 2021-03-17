@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ITag implements MModel {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for value: 
   String? get value;
-  set value(String? value);
+  
 
   @override
   String toString();

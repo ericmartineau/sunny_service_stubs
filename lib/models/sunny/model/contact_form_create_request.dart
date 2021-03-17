@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactFormCreateRequest implements MModel {
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for context: 
   dynamic? get context;
-  set context(dynamic? context);
+  
 
   @override
   String toString();

@@ -13,11 +13,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IBirthday implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for birthday: 
   FlexiDate? get birthday;
-  set birthday(FlexiDate? birthday);
+  
 
   @override
   String toString();

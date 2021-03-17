@@ -14,15 +14,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IHometown implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for location1: 
   IPhysicalLocation? get location1;
-  set location1(IPhysicalLocation? location1);
+  
 
   /// Property getter and setter for location2: 
   IPhysicalLocation? get location2;
-  set location2(IPhysicalLocation? location2);
+  
 
   @override
   String toString();

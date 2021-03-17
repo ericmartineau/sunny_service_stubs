@@ -10,11 +10,11 @@ import '../model/sunny_interaction.dart';
 abstract class ISunnyInteractionList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ISunnyInteraction>? get data;
-  set data(List<ISunnyInteraction>? data);
+  
 
   @override
   String toString();

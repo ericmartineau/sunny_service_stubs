@@ -10,23 +10,23 @@ import '../model/contact.dart';
 abstract class IGroupInvitationPreview implements MModel {
   /// Property getter and setter for groupName: 
   String? get groupName;
-  set groupName(String? groupName);
+  
 
   /// Property getter and setter for context: 
   dynamic? get context;
-  set context(dynamic? context);
+  
 
   /// Property getter and setter for inviterContacts: 
   List<IContact>? get inviterContacts;
-  set inviterContacts(List<IContact>? inviterContacts);
+  
 
   /// Property getter and setter for inviteeContacts: 
   List<IContact>? get inviteeContacts;
-  set inviteeContacts(List<IContact>? inviteeContacts);
+  
 
   /// Property getter and setter for matches: 
   List<dynamic>? get matches;
-  set matches(List<dynamic>? matches);
+  
 
   @override
   String toString();

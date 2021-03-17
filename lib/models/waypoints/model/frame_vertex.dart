@@ -11,11 +11,11 @@ import '../model/flow_vertex.dart';
 abstract class IFrameVertex implements IFlowVertex {
   /// Property getter and setter for from: 
   String? get from;
-  set from(String? from);
+  
 
   /// Property getter and setter for to: 
   String? get to;
-  set to(String? to);
+  
 
   @override
   String toString();

@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactEmail implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for email: 
   String? get email;
-  set email(String? email);
+  
 
   /// Property getter and setter for sortOrder: 
   int? get sortOrder;
-  set sortOrder(int? sortOrder);
+  
 
   @override
   String toString();

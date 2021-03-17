@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ISingleValue implements MModel {
   /// Property getter and setter for value: 
   dynamic? get value;
-  set value(dynamic? value);
+  
 
   @override
   String toString();

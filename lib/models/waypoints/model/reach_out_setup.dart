@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IReachOutSetup implements MModel {
   /// Property getter and setter for reachOutReason: 
   String? get reachOutReason;
-  set reachOutReason(String? reachOutReason);
+  
 
   /// Property getter and setter for reachOutResponse: 
   String? get reachOutResponse;
-  set reachOutResponse(String? reachOutResponse);
+  
 
   /// Property getter and setter for reachOutSuggestedType: 
   String? get reachOutSuggestedType;
-  set reachOutSuggestedType(String? reachOutSuggestedType);
+  
 
   /// Property getter and setter for templateSet: 
   String? get templateSet;
-  set templateSet(String? templateSet);
+  
 
   @override
   String toString();

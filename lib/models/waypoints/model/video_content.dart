@@ -12,35 +12,35 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IVideoContent implements IContent {
   /// Property getter and setter for videoCaption: 
   String? get videoCaption;
-  set videoCaption(String? videoCaption);
+  
 
   /// Property getter and setter for videoDescription: 
   String? get videoDescription;
-  set videoDescription(String? videoDescription);
+  
 
   /// Property getter and setter for videoUrl: 
   String? get videoUrl;
-  set videoUrl(String? videoUrl);
+  
 
   /// Property getter and setter for videoThumbnailUrl: 
   String? get videoThumbnailUrl;
-  set videoThumbnailUrl(String? videoThumbnailUrl);
+  
 
   /// Property getter and setter for aspectRatio: 
   num? get aspectRatio;
-  set aspectRatio(num? aspectRatio);
+  
 
   /// Property getter and setter for videoLength: 
   TimeSpan? get videoLength;
-  set videoLength(TimeSpan? videoLength);
+  
 
   /// Property getter and setter for autoplay: 
   bool? get autoplay;
-  set autoplay(bool? autoplay);
+  
 
   /// Property getter and setter for showControls: 
   bool? get showControls;
-  set showControls(bool? showControls);
+  
 
   @override
   String toString();

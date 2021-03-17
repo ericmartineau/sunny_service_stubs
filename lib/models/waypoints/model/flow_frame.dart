@@ -13,59 +13,59 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFlowFrame implements MEntity {
   /// Property getter and setter for thread: 
   IFlowThreadForFlowFrame? get thread;
-  set thread(IFlowThreadForFlowFrame? thread);
+  
 
   /// Property getter and setter for task: 
   IAssistedTask? get task;
-  set task(IAssistedTask? task);
+  
 
   /// Property getter and setter for started: 
   DateTime? get started;
-  set started(DateTime? started);
+  
 
   /// Property getter and setter for nodeId: 
   String? get nodeId;
-  set nodeId(String? nodeId);
+  
 
   /// Property getter and setter for taskOperationRef: 
   MOperationRef? get taskOperationRef;
-  set taskOperationRef(MOperationRef? taskOperationRef);
+  
 
   /// Property getter and setter for isAssisted: 
   bool? get isAssisted;
-  set isAssisted(bool? isAssisted);
+  
 
   /// Property getter and setter for skippable: 
   bool? get skippable;
-  set skippable(bool? skippable);
+  
 
   /// Property getter and setter for completed: 
   DateTime? get completed;
-  set completed(DateTime? completed);
+  
 
   /// Property getter and setter for due: 
   DateTime? get due;
-  set due(DateTime? due);
+  
 
   /// Property getter and setter for status: 
   IFrameStatus? get status;
-  set status(IFrameStatus? status);
+  
 
   /// Property getter and setter for isActive: 
   bool? get isActive;
-  set isActive(bool? isActive);
+  
 
   /// Property getter and setter for state: 
   MModel? get state;
-  set state(MModel? state);
+  
 
   /// Property getter and setter for result: 
   MModel? get result;
-  set result(MModel? result);
+  
 
   /// Property getter and setter for logs: 
   List<String>? get logs;
-  set logs(List<String>? logs);
+  
 
   @override
   String toString();

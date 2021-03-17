@@ -15,79 +15,79 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFactMetaDate implements MModel {
   /// Property getter and setter for path: 
   JsonPath? get path;
-  set path(JsonPath? path);
+  
 
   /// Property getter and setter for verb: 
   String? get verb;
-  set verb(String? verb);
+  
 
   /// Property getter and setter for label: 
   String? get label;
-  set label(String? label);
+  
 
   /// Property getter and setter for factRef: 
   MSchemaRef? get factRef;
-  set factRef(MSchemaRef? factRef);
+  
 
   /// Property getter and setter for isFlexible: 
   bool? get isFlexible;
-  set isFlexible(bool? isFlexible);
+  
 
   /// Property getter and setter for remindableInfo: 
   IRemindableInfo? get remindableInfo;
-  set remindableInfo(IRemindableInfo? remindableInfo);
+  
 
   /// Property getter and setter for agent: 
   IFactAgent? get agent;
-  set agent(IFactAgent? agent);
+  
 
   /// Property getter and setter for timeSensitivity: 
   ITimeSensitivity? get timeSensitivity;
-  set timeSensitivity(ITimeSensitivity? timeSensitivity);
+  
 
   /// Property getter and setter for followUpLabel: 
   String? get followUpLabel;
-  set followUpLabel(String? followUpLabel);
+  
 
   /// Property getter and setter for priority: 
   int? get priority;
-  set priority(int? priority);
+  
 
   /// Property getter and setter for isHistorical: 
   bool? get isHistorical;
-  set isHistorical(bool? isHistorical);
+  
 
   /// Property getter and setter for isFuture: 
   bool? get isFuture;
-  set isFuture(bool? isFuture);
+  
 
   /// Property getter and setter for isStart: 
   bool? get isStart;
-  set isStart(bool? isStart);
+  
 
   /// Property getter and setter for isEnd: 
   bool? get isEnd;
-  set isEnd(bool? isEnd);
+  
 
   /// Property getter and setter for isExpiration: 
   bool? get isExpiration;
-  set isExpiration(bool? isExpiration);
+  
 
   /// Property getter and setter for isTimestamp: 
   bool? get isTimestamp;
-  set isTimestamp(bool? isTimestamp);
+  
 
   /// Property getter and setter for hasTime: 
   bool? get hasTime;
-  set hasTime(bool? hasTime);
+  
 
   /// Property getter and setter for recurs: 
   IFactRecurrence? get recurs;
-  set recurs(IFactRecurrence? recurs);
+  
 
   /// Property getter and setter for dateTokens: 
   List<String>? get dateTokens;
-  set dateTokens(List<String>? dateTokens);
+  
 
   @override
   String toString();

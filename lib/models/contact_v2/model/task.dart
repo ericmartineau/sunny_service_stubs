@@ -9,23 +9,23 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ITask implements MEntity {
   /// Property getter and setter for contact: 
   String? get contact;
-  set contact(String? contact);
+  
 
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for dueDate: 
   DateTime? get dueDate;
-  set dueDate(DateTime? dueDate);
+  
 
   /// Property getter and setter for completeDate: 
   DateTime? get completeDate;
-  set completeDate(DateTime? completeDate);
+  
 
   @override
   String toString();

@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ITemplateRenderResult implements MModel {
   /// Property getter and setter for rendered: 
   String? get rendered;
-  set rendered(String? rendered);
+  
 
   /// Property getter and setter for parseError: 
   String? get parseError;
-  set parseError(String? parseError);
+  
 
   /// Property getter and setter for renderError: 
   String? get renderError;
-  set renderError(String? renderError);
+  
 
   /// Property getter and setter for logs: 
   List<String>? get logs;
-  set logs(List<String>? logs);
+  
 
   @override
   String toString();

@@ -10,11 +10,11 @@ import '../model/sunny_bundle.dart';
 abstract class ISunnyBundles implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ISunnyBundle>? get data;
-  set data(List<ISunnyBundle>? data);
+  
 
   @override
   String toString();

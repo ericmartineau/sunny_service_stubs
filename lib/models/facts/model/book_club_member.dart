@@ -15,11 +15,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IBookClubMember implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for bookClub: 
   IBookClub? get bookClub;
-  set bookClub(IBookClub? bookClub);
+  
 
   @override
   String toString();

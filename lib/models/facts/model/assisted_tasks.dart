@@ -10,11 +10,11 @@ import '../model/assisted_task.dart';
 abstract class IAssistedTasks implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IAssistedTask>? get data;
-  set data(List<IAssistedTask>? data);
+  
 
   @override
   String toString();

@@ -11,7 +11,7 @@ import '../model/task_due_config.dart';
 abstract class IExpressionDueConfig implements ITaskDueConfig {
   /// Property getter and setter for expression: 
   IExpression? get expression;
-  set expression(IExpression? expression);
+  
 
   @override
   String toString();

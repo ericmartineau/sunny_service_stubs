@@ -10,15 +10,15 @@ import '../model/web_meeting_provider.dart';
 abstract class IWebInfo implements MModel {
   /// Property getter and setter for provider: 
   IWebMeetingProvider? get provider;
-  set provider(IWebMeetingProvider? provider);
+  
 
   /// Property getter and setter for meetingLink: 
   String? get meetingLink;
-  set meetingLink(String? meetingLink);
+  
 
   /// Property getter and setter for joinInstructions: 
   String? get joinInstructions;
-  set joinInstructions(String? joinInstructions);
+  
 
   @override
   String toString();

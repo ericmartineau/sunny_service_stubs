@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IRemindableInfo implements MModel {
   /// Property getter and setter for remindMeLabel: 
   String? get remindMeLabel;
-  set remindMeLabel(String? remindMeLabel);
+  
 
   @override
   String toString();

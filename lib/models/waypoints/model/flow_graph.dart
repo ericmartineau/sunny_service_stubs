@@ -20,115 +20,115 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFlowGraph implements MEntity {
   /// Property getter and setter for repeatMode: 
   IFlowRepeatMode? get repeatMode;
-  set repeatMode(IFlowRepeatMode? repeatMode);
+  
 
   /// Property getter and setter for flowType: 
   MSchemaRef? get flowType;
-  set flowType(MSchemaRef? flowType);
+  
 
   /// Property getter and setter for isModelRequired: 
   bool? get isModelRequired;
-  set isModelRequired(bool? isModelRequired);
+  
 
   /// Property getter and setter for icon: 
   IIconInfo? get icon;
-  set icon(IIconInfo? icon);
+  
 
   /// Property getter and setter for graphId: 
   String? get graphId;
-  set graphId(String? graphId);
+  
 
   /// Property getter and setter for category: 
   String? get category;
-  set category(String? category);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for marketingDescription: 
   String? get marketingDescription;
-  set marketingDescription(String? marketingDescription);
+  
 
   /// Property getter and setter for info: 
   MModel? get info;
-  set info(MModel? info);
+  
 
   /// Property getter and setter for infoVideo: 
   Uri? get infoVideo;
-  set infoVideo(Uri? infoVideo);
+  
 
   /// Property getter and setter for displayMode: 
   IDisplayMode? get displayMode;
-  set displayMode(IDisplayMode? displayMode);
+  
 
   /// Property getter and setter for config: 
   Map<String, IExpression>? get config;
-  set config(Map<String, IExpression>? config);
+  
 
   /// Property getter and setter for subjectTypes: 
   Map<String, MSchemaRef>? get subjectTypes;
-  set subjectTypes(Map<String, MSchemaRef>? subjectTypes);
+  
 
   /// Property getter and setter for isUnlisted: 
   bool? get isUnlisted;
-  set isUnlisted(bool? isUnlisted);
+  
 
   /// Property getter and setter for isTopLevel: 
   bool? get isTopLevel;
-  set isTopLevel(bool? isTopLevel);
+  
 
   /// Property getter and setter for canBeToggled: 
   bool? get canBeToggled;
-  set canBeToggled(bool? canBeToggled);
+  
 
   /// Property getter and setter for offByDefault: 
   bool? get offByDefault;
-  set offByDefault(bool? offByDefault);
+  
 
   /// Property getter and setter for pinned: 
   bool? get pinned;
-  set pinned(bool? pinned);
+  
 
   /// Property getter and setter for marketingInfo: 
   List<IContent>? get marketingInfo;
-  set marketingInfo(List<IContent>? marketingInfo);
+  
 
   /// Property getter and setter for help: 
   List<IContent>? get help;
-  set help(List<IContent>? help);
+  
 
   /// Property getter and setter for availableResources: 
   List<IContent>? get availableResources;
-  set availableResources(List<IContent>? availableResources);
+  
 
   /// Property getter and setter for nodes: 
   List<IFlowNode>? get nodes;
-  set nodes(List<IFlowNode>? nodes);
+  
 
   /// Property getter and setter for vertexes: 
   List<IFlowVertex>? get vertexes;
-  set vertexes(List<IFlowVertex>? vertexes);
+  
 
   /// Property getter and setter for starts: 
   List<IStart>? get starts;
-  set starts(List<IStart>? starts);
+  
 
   /// Property getter and setter for stops: 
   List<ICompletion>? get stops;
-  set stops(List<ICompletion>? stops);
+  
 
   /// Property getter and setter for parentFlow: 
   IFlowGraph? get parentFlow;
-  set parentFlow(IFlowGraph? parentFlow);
+  
 
   /// Property getter and setter for childFlows: 
   List<IFlowGraph>? get childFlows;
-  set childFlows(List<IFlowGraph>? childFlows);
+  
 
   @override
   String toString();

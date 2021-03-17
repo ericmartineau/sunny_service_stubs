@@ -10,11 +10,11 @@ import '../model/relive_it_contact.dart';
 abstract class IReliveItContactList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IReliveItContact>? get data;
-  set data(List<IReliveItContact>? data);
+  
 
   @override
   String toString();

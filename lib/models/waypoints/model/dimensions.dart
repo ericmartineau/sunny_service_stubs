@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IDimensions implements MModel {
   /// Property getter and setter for height: 
   num? get height;
-  set height(num? height);
+  
 
   /// Property getter and setter for width: 
   num? get width;
-  set width(num? width);
+  
 
   @override
   String toString();

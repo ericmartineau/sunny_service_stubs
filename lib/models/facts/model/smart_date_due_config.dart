@@ -10,19 +10,19 @@ import '../model/task_due_config.dart';
 abstract class ISmartDateDueConfig implements ITaskDueConfig {
   /// Property getter and setter for originalQuery: 
   String? get originalQuery;
-  set originalQuery(String? originalQuery);
+  
 
   /// Property getter and setter for interpolatedQuery: 
   String? get interpolatedQuery;
-  set interpolatedQuery(String? interpolatedQuery);
+  
 
   /// Property getter and setter for matchedTerm: 
   String? get matchedTerm;
-  set matchedTerm(String? matchedTerm);
+  
 
   /// Property getter and setter for hasTime: 
   bool? get hasTime;
-  set hasTime(bool? hasTime);
+  
 
   @override
   String toString();

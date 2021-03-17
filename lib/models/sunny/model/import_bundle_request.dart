@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IImportBundleRequest implements MModel {
   /// Property getter and setter for groupIds: 
   List<String>? get groupIds;
-  set groupIds(List<String>? groupIds);
+  
 
   /// Property getter and setter for contactIds: 
   List<String>? get contactIds;
-  set contactIds(List<String>? contactIds);
+  
 
   @override
   String toString();

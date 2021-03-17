@@ -12,23 +12,23 @@ import '../model/sunny_bundle.dart';
 abstract class ISunnyPublisher implements MEntity {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for icon: 
   IIconInfo? get icon;
-  set icon(IIconInfo? icon);
+  
 
   /// Property getter and setter for colorPalette: 
   IColorPalette? get colorPalette;
-  set colorPalette(IColorPalette? colorPalette);
+  
 
   /// Property getter and setter for publishedBundles: 
   List<ISunnyBundle>? get publishedBundles;
-  set publishedBundles(List<ISunnyBundle>? publishedBundles);
+  
 
   @override
   String toString();

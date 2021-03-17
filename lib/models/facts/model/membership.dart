@@ -12,7 +12,7 @@ import '../model/task_fact_for_m_model.dart';
 abstract class IMembership implements IFact {
   /// Property getter and setter for isActive: 
   bool? get isActive;
-  set isActive(bool? isActive);
+  
 
   @override
   String toString();

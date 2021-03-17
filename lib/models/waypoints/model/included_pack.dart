@@ -10,11 +10,11 @@ import '../model/flow_graph.dart';
 abstract class IIncludedPack implements MModel {
   /// Property getter and setter for pack: 
   IFlowGraph? get pack;
-  set pack(IFlowGraph? pack);
+  
 
   /// Property getter and setter for installedByDefault: 
   bool? get installedByDefault;
-  set installedByDefault(bool? installedByDefault);
+  
 
   @override
   String toString();

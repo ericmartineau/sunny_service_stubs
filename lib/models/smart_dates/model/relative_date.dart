@@ -11,27 +11,27 @@ import '../model/seek_direction.dart';
 abstract class IRelativeDate implements MModel {
   /// Property getter and setter for seek: 
   ISeekDirection? get seek;
-  set seek(ISeekDirection? seek);
+  
 
   /// Property getter and setter for seekUnit: 
   String? get seekUnit;
-  set seekUnit(String? seekUnit);
+  
 
   /// Property getter and setter for amount: 
   num? get amount;
-  set amount(num? amount);
+  
 
   /// Property getter and setter for timeUnit: 
   String? get timeUnit;
-  set timeUnit(String? timeUnit);
+  
 
   /// Property getter and setter for eventName: 
   String? get eventName;
-  set eventName(String? eventName);
+  
 
   /// Property getter and setter for relativeDate: 
   IRelativeDate? get relativeDate;
-  set relativeDate(IRelativeDate? relativeDate);
+  
 
   @override
   String toString();

@@ -10,19 +10,19 @@ import '../model/icon_type.dart';
 abstract class IIconInfo implements MModel {
   /// Property getter and setter for type: 
   IIconType? get type;
-  set type(IIconType? type);
+  
 
   /// Property getter and setter for icon: 
   String? get icon;
-  set icon(String? icon);
+  
 
   /// Property getter and setter for background: 
   String? get background;
-  set background(String? background);
+  
 
   /// Property getter and setter for circular: 
   bool? get circular;
-  set circular(bool? circular);
+  
 
   @override
   String toString();

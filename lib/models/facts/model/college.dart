@@ -14,15 +14,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ICollege implements IOrganization {
   /// Property getter and setter for shortName: 
   String? get shortName;
-  set shortName(String? shortName);
+  
 
   /// Property getter and setter for mascot: 
   String? get mascot;
-  set mascot(String? mascot);
+  
 
   /// Property getter and setter for address: 
   IPhysicalLocation? get address;
-  set address(IPhysicalLocation? address);
+  
 
   @override
   String toString();

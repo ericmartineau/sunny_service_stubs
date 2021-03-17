@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ICompletion implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for query: 
   dynamic? get query;
-  set query(dynamic? query);
+  
 
   @override
   String toString();

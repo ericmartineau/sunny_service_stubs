@@ -12,27 +12,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ICollectDataFlowInfo implements MModel {
   /// Property getter and setter for userFactRef: 
   MSchemaRef? get userFactRef;
-  set userFactRef(MSchemaRef? userFactRef);
+  
 
   /// Property getter and setter for missingFactTitle: 
   String? get missingFactTitle;
-  set missingFactTitle(String? missingFactTitle);
+  
 
   /// Property getter and setter for flowStarts: 
   List<IStartFlowSet>? get flowStarts;
-  set flowStarts(List<IStartFlowSet>? flowStarts);
+  
 
   /// Property getter and setter for missingFactSubtitle: 
   String? get missingFactSubtitle;
-  set missingFactSubtitle(String? missingFactSubtitle);
+  
 
   /// Property getter and setter for missingFactIcon: 
   IIconInfo? get missingFactIcon;
-  set missingFactIcon(IIconInfo? missingFactIcon);
+  
 
   /// Property getter and setter for listFactRef: 
   MSchemaRef? get listFactRef;
-  set listFactRef(MSchemaRef? listFactRef);
+  
 
   @override
   String toString();

@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactNote implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for date: 
   DateTime? get date;
-  set date(DateTime? date);
+  
 
   /// Property getter and setter for content: 
   String? get content;
-  set content(String? content);
+  
 
   @override
   String toString();

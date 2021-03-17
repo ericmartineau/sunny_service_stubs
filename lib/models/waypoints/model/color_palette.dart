@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IColorPalette implements MModel {
   /// Property getter and setter for primaryColor: 
   String? get primaryColor;
-  set primaryColor(String? primaryColor);
+  
 
   @override
   String toString();

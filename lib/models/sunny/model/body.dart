@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IBody implements MModel {
   /// Property getter and setter for groupId: 
   String? get groupId;
-  set groupId(String? groupId);
+  
 
   @override
   String toString();

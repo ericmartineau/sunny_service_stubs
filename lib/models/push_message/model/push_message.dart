@@ -12,27 +12,27 @@ import '../model/push_message_type.dart';
 abstract class IPushMessage implements MModel {
   /// Property getter and setter for recipient: 
   String? get recipient;
-  set recipient(String? recipient);
+  
 
   /// Property getter and setter for isUserId: 
   bool? get isUserId;
-  set isUserId(bool? isUserId);
+  
 
   /// Property getter and setter for isNativePush: 
   bool? get isNativePush;
-  set isNativePush(bool? isNativePush);
+  
 
   /// Property getter and setter for notification: 
   INotification? get notification;
-  set notification(INotification? notification);
+  
 
   /// Property getter and setter for body: 
   IMessageBody? get body;
-  set body(IMessageBody? body);
+  
 
   /// Property getter and setter for type: 
   IPushMessageType? get type;
-  set type(IPushMessageType? type);
+  
 
   @override
   String toString();

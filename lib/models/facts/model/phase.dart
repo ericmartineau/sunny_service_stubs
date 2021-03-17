@@ -12,39 +12,39 @@ import '../../waypoints/model/video_content.dart';
 abstract class IPhase implements MEntity {
   /// Property getter and setter for startDate: 
   FlexiDate? get startDate;
-  set startDate(FlexiDate? startDate);
+  
 
   /// Property getter and setter for endDate: 
   FlexiDate? get endDate;
-  set endDate(FlexiDate? endDate);
+  
 
   /// Property getter and setter for phaseKey: 
   String? get phaseKey;
-  set phaseKey(String? phaseKey);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for mainPhoto: 
   IImageContent? get mainPhoto;
-  set mainPhoto(IImageContent? mainPhoto);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for videos: 
   List<IVideoContent>? get videos;
-  set videos(List<IVideoContent>? videos);
+  
 
   /// Property getter and setter for location: 
   IPhysicalLocation? get location;
-  set location(IPhysicalLocation? location);
+  
 
   @override
   String toString();

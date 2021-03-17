@@ -10,7 +10,7 @@ import '../model/m_schema_property.dart';
 abstract class IStringSelectProperty implements IMSchemaProperty {
   /// Property getter and setter for options: 
   List<String>? get options;
-  set options(List<String>? options);
+  
 
   @override
   String toString();

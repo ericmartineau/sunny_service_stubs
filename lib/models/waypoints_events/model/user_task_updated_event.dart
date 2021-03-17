@@ -13,35 +13,35 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IUserTaskUpdatedEvent implements IEntityUpdatedEvent {
   /// Property getter and setter for threadId: 
   RecordKey? get threadId;
-  set threadId(RecordKey? threadId);
+  
 
   /// Property getter and setter for frameId: 
   RecordKey? get frameId;
-  set frameId(RecordKey? frameId);
+  
 
   /// Property getter and setter for nodeId: 
   String? get nodeId;
-  set nodeId(String? nodeId);
+  
 
   /// Property getter and setter for graphId: 
   String? get graphId;
-  set graphId(String? graphId);
+  
 
   /// Property getter and setter for taskTitle: 
   String? get taskTitle;
-  set taskTitle(String? taskTitle);
+  
 
   /// Property getter and setter for status: 
   String? get status;
-  set status(String? status);
+  
 
   /// Property getter and setter for taskDescription: 
   String? get taskDescription;
-  set taskDescription(String? taskDescription);
+  
 
   /// Property getter and setter for contactId: 
   RecordKey? get contactId;
-  set contactId(RecordKey? contactId);
+  
 
   @override
   String toString();

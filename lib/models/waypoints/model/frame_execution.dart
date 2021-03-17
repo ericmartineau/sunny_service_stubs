@@ -12,19 +12,19 @@ import '../model/flow_thread.dart';
 abstract class IFrameExecution implements MModel {
   /// Property getter and setter for result: 
   IExecutionStatus? get result;
-  set result(IExecutionStatus? result);
+  
 
   /// Property getter and setter for message: 
   String? get message;
-  set message(String? message);
+  
 
   /// Property getter and setter for thread: 
   IFlowThread? get thread;
-  set thread(IFlowThread? thread);
+  
 
   /// Property getter and setter for frame: 
   IFlowFrame? get frame;
-  set frame(IFlowFrame? frame);
+  
 
   @override
   String toString();

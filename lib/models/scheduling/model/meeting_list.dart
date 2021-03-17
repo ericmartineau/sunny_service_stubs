@@ -10,11 +10,11 @@ import '../model/meeting.dart';
 abstract class IMeetingList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IMeeting>? get data;
-  set data(List<IMeeting>? data);
+  
 
   @override
   String toString();

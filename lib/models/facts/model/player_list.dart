@@ -10,11 +10,11 @@ import '../model/player.dart';
 abstract class IPlayerList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IPlayer>? get data;
-  set data(List<IPlayer>? data);
+  
 
   @override
   String toString();

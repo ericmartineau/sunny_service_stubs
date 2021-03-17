@@ -10,11 +10,11 @@ import '../model/expression.dart';
 abstract class IFlowVertex implements MModel {
   /// Property getter and setter for vertexId: 
   String? get vertexId;
-  set vertexId(String? vertexId);
+  
 
   /// Property getter and setter for conditions: 
   List<IExpression>? get conditions;
-  set conditions(List<IExpression>? conditions);
+  
 
   @override
   String toString();

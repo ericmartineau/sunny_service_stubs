@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactSocialProfile implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for handle: 
   String? get handle;
-  set handle(String? handle);
+  
 
   /// Property getter and setter for sortOrder: 
   int? get sortOrder;
-  set sortOrder(int? sortOrder);
+  
 
   @override
   String toString();

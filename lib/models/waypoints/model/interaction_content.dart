@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IInteractionContent implements MModel {
   /// Property getter and setter for interactionType: 
   String? get interactionType;
-  set interactionType(String? interactionType);
+  
 
   /// Property getter and setter for sourceHandle: 
   String? get sourceHandle;
-  set sourceHandle(String? sourceHandle);
+  
 
   /// Property getter and setter for targetHandle: 
   String? get targetHandle;
-  set targetHandle(String? targetHandle);
+  
 
   @override
   String toString();

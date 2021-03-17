@@ -11,15 +11,15 @@ import '../model/task_fact_for_m_model.dart';
 abstract class IFact implements MEntity {
   /// Property getter and setter for creator: 
   IReliveItContact? get creator;
-  set creator(IReliveItContact? creator);
+  
 
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   /// Property getter and setter for assistedTask: 
   ITaskFactForMModel? get assistedTask;
-  set assistedTask(ITaskFactForMModel? assistedTask);
+  
 
   @override
   String toString();

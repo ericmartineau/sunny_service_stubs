@@ -9,39 +9,39 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class INotificationData implements MModel {
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   /// Property getter and setter for dateSent: 
   DateTime? get dateSent;
-  set dateSent(DateTime? dateSent);
+  
 
   /// Property getter and setter for dateSeen: 
   DateTime? get dateSeen;
-  set dateSeen(DateTime? dateSeen);
+  
 
   /// Property getter and setter for dateSnoozed: 
   DateTime? get dateSnoozed;
-  set dateSnoozed(DateTime? dateSnoozed);
+  
 
   /// Property getter and setter for dateSnoozedTo: 
   DateTime? get dateSnoozedTo;
-  set dateSnoozedTo(DateTime? dateSnoozedTo);
+  
 
   /// Property getter and setter for dateCompleted: 
   DateTime? get dateCompleted;
-  set dateCompleted(DateTime? dateCompleted);
+  
 
   /// Property getter and setter for text: 
   String? get text;
-  set text(String? text);
+  
 
   /// Property getter and setter for context: 
   dynamic? get context;
-  set context(dynamic? context);
+  
 
   @override
   String toString();

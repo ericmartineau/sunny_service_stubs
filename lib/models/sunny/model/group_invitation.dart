@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IGroupInvitation implements MModel {
   /// Property getter and setter for token: 
   String? get token;
-  set token(String? token);
+  
 
   /// Property getter and setter for context: 
   dynamic? get context;
-  set context(dynamic? context);
+  
 
   @override
   String toString();

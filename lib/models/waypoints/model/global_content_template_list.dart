@@ -10,11 +10,11 @@ import '../model/global_content_template.dart';
 abstract class IGlobalContentTemplateList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IGlobalContentTemplate>? get data;
-  set data(List<IGlobalContentTemplate>? data);
+  
 
   @override
   String toString();

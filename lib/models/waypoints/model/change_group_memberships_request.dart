@@ -10,15 +10,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IChangeGroupMembershipsRequest implements MModel {
   /// Property getter and setter for flowThreadId: 
   RecordKey? get flowThreadId;
-  set flowThreadId(RecordKey? flowThreadId);
+  
 
   /// Property getter and setter for removes: 
   List<String>? get removes;
-  set removes(List<String>? removes);
+  
 
   /// Property getter and setter for adds: 
   List<String>? get adds;
-  set adds(List<String>? adds);
+  
 
   @override
   String toString();

@@ -10,11 +10,11 @@ import '../model/meeting_flow_thread.dart';
 abstract class IMeetingFlowThreadList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IMeetingFlowThread>? get data;
-  set data(List<IMeetingFlowThread>? data);
+  
 
   @override
   String toString();

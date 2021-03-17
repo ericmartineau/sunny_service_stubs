@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ISyncOptions implements MModel {
   /// Property getter and setter for createNewContacts: 
   bool? get createNewContacts;
-  set createNewContacts(bool? createNewContacts);
+  
 
   /// Property getter and setter for sendPushNotification: 
   bool? get sendPushNotification;
-  set sendPushNotification(bool? sendPushNotification);
+  
 
   @override
   String toString();

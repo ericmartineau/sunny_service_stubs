@@ -14,7 +14,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IAttendeeFlowThread implements IFlowThread {
   /// Property getter and setter for attendee: 
   IAttendee? get attendee;
-  set attendee(IAttendee? attendee);
+  
 
   @override
   String toString();

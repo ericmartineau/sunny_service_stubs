@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IResetPasswordResponse implements MModel {
   /// Property getter and setter for success: 
   bool? get success;
-  set success(bool? success);
+  
 
   @override
   String toString();

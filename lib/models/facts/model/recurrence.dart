@@ -10,11 +10,11 @@ import '../model/recurring_time_span.dart';
 abstract class IRecurrence implements MModel {
   /// Property getter and setter for timeUnit: 
   IRecurringTimeSpan? get timeUnit;
-  set timeUnit(IRecurringTimeSpan? timeUnit);
+  
 
   /// Property getter and setter for iterations: 
   int? get iterations;
-  set iterations(int? iterations);
+  
 
   @override
   String toString();

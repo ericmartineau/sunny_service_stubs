@@ -12,29 +12,29 @@ import '../model/flow_thread.dart';
 abstract class IPackSummary implements MModel {
   /// Property getter and setter for flowThread: 
   IFlowThread? get flowThread;
-  set flowThread(IFlowThread? flowThread);
+  
 
   /// Property getter and setter for childThreads: 
   Map<String, int>? get childThreads;
-  set childThreads(Map<String, int>? childThreads);
+  
 
   /// Property getter and setter for activeFlows: A list of child flows that are currently active.
   /// A list of child flows that are currently active.
   List<String>? get activeFlows;
-  set activeFlows(List<String>? activeFlows);
+  
 
   /// Property getter and setter for displayThreads: A list of threads that should be flattened out in the main display (as opposed to being nested within the parent thread or hidden)
   /// A list of threads that should be flattened out in the main display (as opposed to being nested within the parent thread or hidden)
   List<IFlowThread>? get displayThreads;
-  set displayThreads(List<IFlowThread>? displayThreads);
+  
 
   /// Property getter and setter for activeFrames: 
   List<IFlowFrame>? get activeFrames;
-  set activeFrames(List<IFlowFrame>? activeFrames);
+  
 
   /// Property getter and setter for flowActions: 
   List<IFlowAction>? get flowActions;
-  set flowActions(List<IFlowAction>? flowActions);
+  
 
   @override
   String toString();

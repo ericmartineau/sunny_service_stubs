@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IAccountInfo implements MModel {
   /// Property getter and setter for id: 
   String? get id;
-  set id(String? id);
+  
 
   /// Property getter and setter for username: 
   String? get username;
-  set username(String? username);
+  
 
   /// Property getter and setter for timeZone: 
   String? get timeZone;
-  set timeZone(String? timeZone);
+  
 
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   @override
   String toString();

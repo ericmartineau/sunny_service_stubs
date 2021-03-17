@@ -10,11 +10,11 @@ import '../model/congregant.dart';
 abstract class ICongregantList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ICongregant>? get data;
-  set data(List<ICongregant>? data);
+  
 
   @override
   String toString();

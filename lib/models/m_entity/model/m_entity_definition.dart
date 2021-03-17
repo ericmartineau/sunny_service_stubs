@@ -12,11 +12,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMEntityDefinition implements IMSchemaDefinition {
   /// Property getter and setter for schemaRef: 
   MSchemaRef? get schemaRef;
-  set schemaRef(MSchemaRef? schemaRef);
+  
 
   /// Property getter and setter for parentRef: 
   MSchemaRef? get parentRef;
-  set parentRef(MSchemaRef? parentRef);
+  
 
   @override
   String toString();

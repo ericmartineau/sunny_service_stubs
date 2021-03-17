@@ -16,27 +16,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IEmployee implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for company: 
   IEmployer? get company;
-  set company(IEmployer? company);
+  
 
   /// Property getter and setter for position: 
   String? get position;
-  set position(String? position);
+  
 
   /// Property getter and setter for workPhone: 
   IPhoneWithExtension? get workPhone;
-  set workPhone(IPhoneWithExtension? workPhone);
+  
 
   /// Property getter and setter for startDate: 
   FlexiDate? get startDate;
-  set startDate(FlexiDate? startDate);
+  
 
   /// Property getter and setter for endDate: 
   FlexiDate? get endDate;
-  set endDate(FlexiDate? endDate);
+  
 
   @override
   String toString();

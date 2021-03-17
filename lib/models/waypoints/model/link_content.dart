@@ -12,35 +12,35 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ILinkContent implements IContent {
   /// Property getter and setter for isCard: 
   bool? get isCard;
-  set isCard(bool? isCard);
+  
 
   /// Property getter and setter for linkUrl: 
   Uri? get linkUrl;
-  set linkUrl(Uri? linkUrl);
+  
 
   /// Property getter and setter for iconUrl: 
   Uri? get iconUrl;
-  set iconUrl(Uri? iconUrl);
+  
 
   /// Property getter and setter for imageUrl: 
   Uri? get imageUrl;
-  set imageUrl(Uri? imageUrl);
+  
 
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for snippetText: 
   String? get snippetText;
-  set snippetText(String? snippetText);
+  
 
   /// Property getter and setter for actionVerb: 
   String? get actionVerb;
-  set actionVerb(String? actionVerb);
+  
 
   @override
   String toString();

@@ -11,15 +11,15 @@ import '../model/client_info.dart';
 abstract class ILoginResponse implements IAccountInfo {
   /// Property getter and setter for clientInfo: 
   IClientInfo? get clientInfo;
-  set clientInfo(IClientInfo? clientInfo);
+  
 
   /// Property getter and setter for token: 
   String? get token;
-  set token(String? token);
+  
 
   /// Property getter and setter for refreshToken: 
   String? get refreshToken;
-  set refreshToken(String? refreshToken);
+  
 
   @override
   String toString();

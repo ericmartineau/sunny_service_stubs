@@ -11,35 +11,35 @@ import '../model/smart_date.dart';
 abstract class ISmartDate implements MModel {
   /// Property getter and setter for parseStart: 
   int? get parseStart;
-  set parseStart(int? parseStart);
+  
 
   /// Property getter and setter for parseEnd: 
   int? get parseEnd;
-  set parseEnd(int? parseEnd);
+  
 
   /// Property getter and setter for relativeDate: 
   IRelativeDate? get relativeDate;
-  set relativeDate(IRelativeDate? relativeDate);
+  
 
   /// Property getter and setter for isDateInferred: 
   bool? get isDateInferred;
-  set isDateInferred(bool? isDateInferred);
+  
 
   /// Property getter and setter for isTimeInferred: 
   bool? get isTimeInferred;
-  set isTimeInferred(bool? isTimeInferred);
+  
 
   /// Property getter and setter for isRecurring: 
   bool? get isRecurring;
-  set isRecurring(bool? isRecurring);
+  
 
   /// Property getter and setter for recursUntil: 
   ISmartDate? get recursUntil;
-  set recursUntil(ISmartDate? recursUntil);
+  
 
   /// Property getter and setter for dates: 
   List<DateTime>? get dates;
-  set dates(List<DateTime>? dates);
+  
 
   @override
   String toString();

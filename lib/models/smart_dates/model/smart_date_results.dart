@@ -10,7 +10,7 @@ import '../model/smart_date.dart';
 abstract class ISmartDateResults implements MModel {
   /// Property getter and setter for results: 
   List<ISmartDate>? get results;
-  set results(List<ISmartDate>? results);
+  
 
   @override
   String toString();

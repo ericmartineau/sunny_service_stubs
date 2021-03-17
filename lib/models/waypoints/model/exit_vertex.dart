@@ -11,11 +11,11 @@ import '../model/flow_vertex.dart';
 abstract class IExitVertex implements IFlowVertex {
   /// Property getter and setter for from: 
   String? get from;
-  set from(String? from);
+  
 
   /// Property getter and setter for toFlow: 
   String? get toFlow;
-  set toFlow(String? toFlow);
+  
 
   @override
   String toString();

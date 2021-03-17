@@ -11,7 +11,7 @@ import '../model/message_body.dart';
 abstract class IPushEventsBody implements IMessageBody {
   /// Property getter and setter for events: 
   List<IAccountEvent>? get events;
-  set events(List<IAccountEvent>? events);
+  
 
   @override
   String toString();

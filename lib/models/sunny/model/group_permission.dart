@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IGroupPermission implements MModel {
   /// Property getter and setter for userId: 
   String? get userId;
-  set userId(String? userId);
+  
 
   /// Property getter and setter for permission: 
   String? get permission;
-  set permission(String? permission);
+  
 
   @override
   String toString();

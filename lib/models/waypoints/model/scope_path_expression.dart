@@ -11,7 +11,7 @@ import 'package:sunny_dart/json.dart';
 abstract class IScopePathExpression implements IExpression {
   /// Property getter and setter for scopePath: 
   JsonPath? get scopePath;
-  set scopePath(JsonPath? scopePath);
+  
 
   @override
   String toString();

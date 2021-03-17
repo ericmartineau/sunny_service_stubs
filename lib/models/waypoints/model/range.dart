@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IRange implements MModel {
   /// Property getter and setter for start: 
   num? get start;
-  set start(num? start);
+  
 
   /// Property getter and setter for end: 
   num? get end;
-  set end(num? end);
+  
 
   @override
   String toString();

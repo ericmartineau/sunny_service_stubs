@@ -17,15 +17,15 @@ import '../model/important_date.dart';
 abstract class IContactIdentity implements IContactInfo {
   /// Property getter and setter for id: 
   String? get id;
-  set id(String? id);
+  
 
   /// Property getter and setter for sourceType: 
   String? get sourceType;
-  set sourceType(String? sourceType);
+  
 
   /// Property getter and setter for sourceIdentifier: 
   String? get sourceIdentifier;
-  set sourceIdentifier(String? sourceIdentifier);
+  
 
   @override
   String toString();

@@ -10,15 +10,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IStartThreadRequest implements MModel {
   /// Property getter and setter for flowGraphId: 
   String? get flowGraphId;
-  set flowGraphId(String? flowGraphId);
+  
 
   /// Property getter and setter for subjects: 
   Map<String, MEntity>? get subjects;
-  set subjects(Map<String, MEntity>? subjects);
+  
 
   /// Property getter and setter for state: 
   MModel? get state;
-  set state(MModel? state);
+  
 
   @override
   String toString();

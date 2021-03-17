@@ -12,7 +12,7 @@ import '../model/tag.dart';
 abstract class IGroup implements IGroupData {
   /// Property getter and setter for id: 
   String? get id;
-  set id(String? id);
+  
 
   @override
   String toString();

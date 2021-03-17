@@ -13,15 +13,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IRandomGiphyContent implements IContent {
   /// Property getter and setter for category: 
   IContentCategory? get category;
-  set category(IContentCategory? category);
+  
 
   /// Property getter and setter for caption: 
   String? get caption;
-  set caption(String? caption);
+  
 
   /// Property getter and setter for text: 
   String? get text;
-  set text(String? text);
+  
 
   @override
   String toString();

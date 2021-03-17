@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IRefreshTokenRequest implements MModel {
   /// Property getter and setter for refreshToken: 
   String? get refreshToken;
-  set refreshToken(String? refreshToken);
+  
 
   @override
   String toString();

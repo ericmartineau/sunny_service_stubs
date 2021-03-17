@@ -10,11 +10,11 @@ import '../model/employer.dart';
 abstract class IEmployerList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IEmployer>? get data;
-  set data(List<IEmployer>? data);
+  
 
   @override
   String toString();

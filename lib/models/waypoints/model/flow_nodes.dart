@@ -10,11 +10,11 @@ import '../model/flow_node.dart';
 abstract class IFlowNodes implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IFlowNode>? get data;
-  set data(List<IFlowNode>? data);
+  
 
   @override
   String toString();

@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactLastInteraction implements MModel {
   /// Property getter and setter for date: 
   DateTime? get date;
-  set date(DateTime? date);
+  
 
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   @override
   String toString();

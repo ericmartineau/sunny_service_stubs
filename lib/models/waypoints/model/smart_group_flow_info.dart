@@ -11,23 +11,23 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ISmartGroupFlowInfo implements MModel {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for memberLabel: 
   String? get memberLabel;
-  set memberLabel(String? memberLabel);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for groupFact: 
   MSchemaRef? get groupFact;
-  set groupFact(MSchemaRef? groupFact);
+  
 
   /// Property getter and setter for filters: 
   List<ISmartGroupFilter>? get filters;
-  set filters(List<ISmartGroupFilter>? filters);
+  
 
   @override
   String toString();

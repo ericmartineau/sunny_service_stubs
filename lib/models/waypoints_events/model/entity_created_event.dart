@@ -12,7 +12,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IEntityCreatedEvent implements IEntityEvent {
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   @override
   String toString();

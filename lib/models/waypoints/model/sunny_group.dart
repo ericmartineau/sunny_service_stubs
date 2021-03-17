@@ -9,27 +9,27 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ISunnyGroup implements MEntity {
   /// Property getter and setter for identifier: 
   String? get identifier;
-  set identifier(String? identifier);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for starred: 
   bool? get starred;
-  set starred(bool? starred);
+  
 
   /// Property getter and setter for contactCount: 
   int? get contactCount;
-  set contactCount(int? contactCount);
+  
 
   /// Property getter and setter for contacts: 
   List<String>? get contacts;
-  set contacts(List<String>? contacts);
+  
 
   @override
   String toString();

@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IAuditable implements MModel {
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   /// Property getter and setter for dateUpdated: 
   DateTime? get dateUpdated;
-  set dateUpdated(DateTime? dateUpdated);
+  
 
   @override
   String toString();

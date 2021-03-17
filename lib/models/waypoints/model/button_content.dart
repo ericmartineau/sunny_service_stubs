@@ -12,19 +12,19 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IButtonContent implements IContent {
   /// Property getter and setter for isLight: 
   bool? get isLight;
-  set isLight(bool? isLight);
+  
 
   /// Property getter and setter for buttonLabel: 
   String? get buttonLabel;
-  set buttonLabel(String? buttonLabel);
+  
 
   /// Property getter and setter for buttonSubTitle: 
   String? get buttonSubTitle;
-  set buttonSubTitle(String? buttonSubTitle);
+  
 
   /// Property getter and setter for linkUrl: 
   Uri? get linkUrl;
-  set linkUrl(Uri? linkUrl);
+  
 
   @override
   String toString();

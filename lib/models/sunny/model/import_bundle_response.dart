@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IImportBundleResponse implements MModel {
   /// Property getter and setter for token: 
   String? get token;
-  set token(String? token);
+  
 
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   @override
   String toString();

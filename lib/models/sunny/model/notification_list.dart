@@ -10,19 +10,19 @@ import '../model/notification.dart';
 abstract class INotificationList implements MModel {
   /// Property getter and setter for total: 
   int? get total;
-  set total(int? total);
+  
 
   /// Property getter and setter for offset: 
   int? get offset;
-  set offset(int? offset);
+  
 
   /// Property getter and setter for max: 
   int? get max;
-  set max(int? max);
+  
 
   /// Property getter and setter for data: 
   List<INotification>? get data;
-  set data(List<INotification>? data);
+  
 
   @override
   String toString();

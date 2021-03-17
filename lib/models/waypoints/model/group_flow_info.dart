@@ -11,39 +11,39 @@ import '../model/start_flow_set.dart';
 abstract class IGroupFlowInfo implements MModel {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for memberLabel: 
   String? get memberLabel;
-  set memberLabel(String? memberLabel);
+  
 
   /// Property getter and setter for identifier: 
   String? get identifier;
-  set identifier(String? identifier);
+  
 
   /// Property getter and setter for iconInfo: 
   IIconInfo? get iconInfo;
-  set iconInfo(IIconInfo? iconInfo);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for onConfigured: 
   List<String>? get onConfigured;
-  set onConfigured(List<String>? onConfigured);
+  
 
   /// Property getter and setter for onMemberAdded: 
   List<String>? get onMemberAdded;
-  set onMemberAdded(List<String>? onMemberAdded);
+  
 
   /// Property getter and setter for flowStarts: 
   List<IStartFlowSet>? get flowStarts;
-  set flowStarts(List<IStartFlowSet>? flowStarts);
+  
 
   /// Property getter and setter for removeIfAddedTo: 
   List<String>? get removeIfAddedTo;
-  set removeIfAddedTo(List<String>? removeIfAddedTo);
+  
 
   @override
   String toString();

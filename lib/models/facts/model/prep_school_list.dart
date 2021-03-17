@@ -10,11 +10,11 @@ import '../model/prep_school.dart';
 abstract class IPrepSchoolList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IPrepSchool>? get data;
-  set data(List<IPrepSchool>? data);
+  
 
   @override
   String toString();

@@ -10,27 +10,27 @@ import '../model/prioritized_member.dart';
 abstract class IGroupFlow implements MModel {
   /// Property getter and setter for groupId: 
   String? get groupId;
-  set groupId(String? groupId);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for hasMembers: 
   bool? get hasMembers;
-  set hasMembers(bool? hasMembers);
+  
 
   /// Property getter and setter for prioritized: 
   List<IPrioritizedMember>? get prioritized;
-  set prioritized(List<IPrioritizedMember>? prioritized);
+  
 
   /// Property getter and setter for lastPrioritizeDate: 
   DateTime? get lastPrioritizeDate;
-  set lastPrioritizeDate(DateTime? lastPrioritizeDate);
+  
 
   @override
   String toString();

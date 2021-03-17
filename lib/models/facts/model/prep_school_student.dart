@@ -15,15 +15,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPrepSchoolStudent implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for school: 
   IPrepSchool? get school;
-  set school(IPrepSchool? school);
+  
 
   /// Property getter and setter for graduatingClass: 
   String? get graduatingClass;
-  set graduatingClass(String? graduatingClass);
+  
 
   @override
   String toString();

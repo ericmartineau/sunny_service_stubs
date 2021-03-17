@@ -12,7 +12,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IRandomContent implements IContent {
   /// Property getter and setter for contentPool: 
   List<IContent>? get contentPool;
-  set contentPool(List<IContent>? contentPool);
+  
 
   @override
   String toString();

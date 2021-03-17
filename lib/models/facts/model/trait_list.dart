@@ -10,11 +10,11 @@ import '../model/trait.dart';
 abstract class ITraitList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ITrait>? get data;
-  set data(List<ITrait>? data);
+  
 
   @override
   String toString();

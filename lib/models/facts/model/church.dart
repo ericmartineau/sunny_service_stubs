@@ -14,15 +14,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IChurch implements IOrganization {
   /// Property getter and setter for religion: 
   String? get religion;
-  set religion(String? religion);
+  
 
   /// Property getter and setter for address: 
   IPhysicalLocation? get address;
-  set address(IPhysicalLocation? address);
+  
 
   /// Property getter and setter for leader: 
   MKey? get leader;
-  set leader(MKey? leader);
+  
 
   @override
   String toString();

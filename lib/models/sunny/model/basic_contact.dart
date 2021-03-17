@@ -10,35 +10,35 @@ import '../model/auditable.dart';
 abstract class IBasicContact implements IAuditable {
   /// Property getter and setter for fullName: 
   String? get fullName;
-  set fullName(String? fullName);
+  
 
   /// Property getter and setter for firstName: 
   String? get firstName;
-  set firstName(String? firstName);
+  
 
   /// Property getter and setter for lastName: 
   String? get lastName;
-  set lastName(String? lastName);
+  
 
   /// Property getter and setter for companyName: 
   String? get companyName;
-  set companyName(String? companyName);
+  
 
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for email: 
   String? get email;
-  set email(String? email);
+  
 
   /// Property getter and setter for timeZone: 
   String? get timeZone;
-  set timeZone(String? timeZone);
+  
 
   /// Property getter and setter for locale: 
   String? get locale;
-  set locale(String? locale);
+  
 
   @override
   String toString();

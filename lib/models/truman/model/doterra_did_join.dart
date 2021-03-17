@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IDoterraDidJoin implements MModel {
   /// Property getter and setter for joined: 
   bool? get joined;
-  set joined(bool? joined);
+  
 
   @override
   String toString();

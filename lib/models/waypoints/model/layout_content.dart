@@ -13,15 +13,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ILayoutContent implements IContent {
   /// Property getter and setter for children: 
   List<IContent>? get children;
-  set children(List<IContent>? children);
+  
 
   /// Property getter and setter for axis: 
   IContentAxis? get axis;
-  set axis(IContentAxis? axis);
+  
 
   /// Property getter and setter for spacing: 
   int? get spacing;
-  set spacing(int? spacing);
+  
 
   @override
   String toString();

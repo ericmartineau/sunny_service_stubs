@@ -11,19 +11,19 @@ import '../model/attendee_status.dart';
 abstract class IAttendee implements MEntity {
   /// Property getter and setter for attendeeId: 
   String? get attendeeId;
-  set attendeeId(String? attendeeId);
+  
 
   /// Property getter and setter for status: 
   IAttendeeStatus? get status;
-  set status(IAttendeeStatus? status);
+  
 
   /// Property getter and setter for flags: 
   Map<String, bool>? get flags;
-  set flags(Map<String, bool>? flags);
+  
 
   /// Property getter and setter for attendMethod: 
   IAttendMethod? get attendMethod;
-  set attendMethod(IAttendMethod? attendMethod);
+  
 
   @override
   String toString();

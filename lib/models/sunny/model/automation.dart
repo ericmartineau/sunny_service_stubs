@@ -9,27 +9,27 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IAutomation implements MModel {
   /// Property getter and setter for groups: 
   List<String>? get groups;
-  set groups(List<String>? groups);
+  
 
   /// Property getter and setter for contacts: 
   List<String>? get contacts;
-  set contacts(List<String>? contacts);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for context: 
   dynamic? get context;
-  set context(dynamic? context);
+  
 
   @override
   String toString();

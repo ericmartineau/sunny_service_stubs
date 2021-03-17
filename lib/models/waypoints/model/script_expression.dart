@@ -11,15 +11,15 @@ import '../model/script_language.dart';
 abstract class IScriptExpression implements IExpression {
   /// Property getter and setter for script: 
   String? get script;
-  set script(String? script);
+  
 
   /// Property getter and setter for language: 
   IScriptLanguage? get language;
-  set language(IScriptLanguage? language);
+  
 
   /// Property getter and setter for args: 
   Map<String, IExpression>? get args;
-  set args(Map<String, IExpression>? args);
+  
 
   @override
   String toString();

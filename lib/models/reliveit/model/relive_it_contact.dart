@@ -12,7 +12,7 @@ import 'package:timezone/timezone.dart';
 abstract class IReliveItContact implements IContact {
   /// Property getter and setter for fullName: 
   String? get fullName;
-  set fullName(String? fullName);
+  
 
   @override
   String toString();

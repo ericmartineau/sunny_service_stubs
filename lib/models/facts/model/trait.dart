@@ -13,23 +13,23 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITrait implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for traitType: 
   String? get traitType;
-  set traitType(String? traitType);
+  
 
   /// Property getter and setter for traitTitle: 
   String? get traitTitle;
-  set traitTitle(String? traitTitle);
+  
 
   /// Property getter and setter for traitDescription: 
   String? get traitDescription;
-  set traitDescription(String? traitDescription);
+  
 
   /// Property getter and setter for emotes: 
   List<String>? get emotes;
-  set emotes(List<String>? emotes);
+  
 
   @override
   String toString();

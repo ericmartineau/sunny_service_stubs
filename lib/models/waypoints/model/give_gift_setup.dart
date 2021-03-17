@@ -10,15 +10,15 @@ import '../model/range.dart';
 abstract class IGiveGiftSetup implements MModel {
   /// Property getter and setter for giftReason: 
   String? get giftReason;
-  set giftReason(String? giftReason);
+  
 
   /// Property getter and setter for priceRange: 
   IRange? get priceRange;
-  set priceRange(IRange? priceRange);
+  
 
   /// Property getter and setter for giftIdeas: 
   String? get giftIdeas;
-  set giftIdeas(String? giftIdeas);
+  
 
   @override
   String toString();

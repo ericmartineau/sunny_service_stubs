@@ -9,7 +9,6 @@ import '../model/lookup_result.dart';
 abstract class ILookupResults implements MModel {
   /// Property getter and setter for data:
   List<ILookupResult>? get data;
-  set data(List<ILookupResult>? data);
 
   @override
   String toString();

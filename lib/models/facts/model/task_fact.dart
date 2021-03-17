@@ -15,71 +15,71 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITaskFact implements IFact {
   /// Property getter and setter for displayDate: 
   DateTime? get displayDate;
-  set displayDate(DateTime? displayDate);
+  
 
   /// Property getter and setter for dueDate: 
   DateTime? get dueDate;
-  set dueDate(DateTime? dueDate);
+  
 
   /// Property getter and setter for completionDate: 
   DateTime? get completionDate;
-  set completionDate(DateTime? completionDate);
+  
 
   /// Property getter and setter for taskTitle: 
   String? get taskTitle;
-  set taskTitle(String? taskTitle);
+  
 
   /// Property getter and setter for taskDescription: 
   String? get taskDescription;
-  set taskDescription(String? taskDescription);
+  
 
   /// Property getter and setter for timeSensitivity: 
   ITimeSensitivity? get timeSensitivity;
-  set timeSensitivity(ITimeSensitivity? timeSensitivity);
+  
 
   /// Property getter and setter for isCancelled: 
   bool? get isCancelled;
-  set isCancelled(bool? isCancelled);
+  
 
   /// Property getter and setter for dueConfig: 
   ITaskDueConfig? get dueConfig;
-  set dueConfig(ITaskDueConfig? dueConfig);
+  
 
   /// Property getter and setter for displayOffset: 
   TimeSpan? get displayOffset;
-  set displayOffset(TimeSpan? displayOffset);
+  
 
   /// Property getter and setter for isAlert: 
   bool? get isAlert;
-  set isAlert(bool? isAlert);
+  
 
   /// Property getter and setter for isSkippable: 
   bool? get isSkippable;
-  set isSkippable(bool? isSkippable);
+  
 
   /// Property getter and setter for state: 
   MModel? get state;
-  set state(MModel? state);
+  
 
   /// Property getter and setter for result: 
   MModel? get result;
-  set result(MModel? result);
+  
 
   /// Property getter and setter for operationRef: 
   MOperationRef? get operationRef;
-  set operationRef(MOperationRef? operationRef);
+  
 
   /// Property getter and setter for isUnread: 
   bool? get isUnread;
-  set isUnread(bool? isUnread);
+  
 
   /// Property getter and setter for isNotified: 
   bool? get isNotified;
-  set isNotified(bool? isNotified);
+  
 
   /// Property getter and setter for setup: 
   MModel? get setup;
-  set setup(MModel? setup);
+  
 
   @override
   String toString();

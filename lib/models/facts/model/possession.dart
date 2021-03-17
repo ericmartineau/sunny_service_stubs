@@ -15,43 +15,43 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPossession implements IFact {
   /// Property getter and setter for contactKeys: 
   List<MKey>? get contactKeys;
-  set contactKeys(List<MKey>? contactKeys);
+  
 
   /// Property getter and setter for ownedStartDate: 
   FlexiDate? get ownedStartDate;
-  set ownedStartDate(FlexiDate? ownedStartDate);
+  
 
   /// Property getter and setter for ownedEndDate: 
   FlexiDate? get ownedEndDate;
-  set ownedEndDate(FlexiDate? ownedEndDate);
+  
 
   /// Property getter and setter for itemName: 
   String? get itemName;
-  set itemName(String? itemName);
+  
 
   /// Property getter and setter for itemType: 
   String? get itemType;
-  set itemType(String? itemType);
+  
 
   /// Property getter and setter for manufacturer: 
   String? get manufacturer;
-  set manufacturer(String? manufacturer);
+  
 
   /// Property getter and setter for modelNumber: 
   String? get modelNumber;
-  set modelNumber(String? modelNumber);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for videos: 
   List<IVideoContent>? get videos;
-  set videos(List<IVideoContent>? videos);
+  
 
   /// Property getter and setter for details: 
   String? get details;
-  set details(String? details);
+  
 
   @override
   String toString();

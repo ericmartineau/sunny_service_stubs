@@ -10,7 +10,7 @@ import '../model/m_schema_property.dart';
 abstract class IListProperty implements IMSchemaProperty {
   /// Property getter and setter for allItems: 
   IMSchemaProperty? get allItems;
-  set allItems(IMSchemaProperty? allItems);
+  
 
   @override
   String toString();

@@ -13,27 +13,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IGift implements IFact {
   /// Property getter and setter for occasion: 
   String? get occasion;
-  set occasion(String? occasion);
+  
 
   /// Property getter and setter for gift: 
   String? get gift;
-  set gift(String? gift);
+  
 
   /// Property getter and setter for notes: 
   String? get notes;
-  set notes(String? notes);
+  
 
   /// Property getter and setter for giftDate: 
   DateTime? get giftDate;
-  set giftDate(DateTime? giftDate);
+  
 
   /// Property getter and setter for gifteeKeys: 
   List<MKey>? get gifteeKeys;
-  set gifteeKeys(List<MKey>? gifteeKeys);
+  
 
   /// Property getter and setter for recipientKey: 
   MKey? get recipientKey;
-  set recipientKey(MKey? recipientKey);
+  
 
   @override
   String toString();

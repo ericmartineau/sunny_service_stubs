@@ -13,11 +13,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITheWhy implements IFact {
   /// Property getter and setter for theWhy: 
   String? get theWhy;
-  set theWhy(String? theWhy);
+  
 
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   @override
   String toString();

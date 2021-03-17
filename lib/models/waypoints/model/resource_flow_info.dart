@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IResourceFlowInfo implements MModel {
   /// Property getter and setter for resourceName: 
   String? get resourceName;
-  set resourceName(String? resourceName);
+  
 
   @override
   String toString();

@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ISendResponseItem implements MModel {
   /// Property getter and setter for messageId: 
   String? get messageId;
-  set messageId(String? messageId);
+  
 
   /// Property getter and setter for successful: 
   bool? get successful;
-  set successful(bool? successful);
+  
 
   /// Property getter and setter for error: 
   String? get error;
-  set error(String? error);
+  
 
   @override
   String toString();

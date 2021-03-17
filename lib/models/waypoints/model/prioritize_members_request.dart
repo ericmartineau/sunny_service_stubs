@@ -11,11 +11,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPrioritizeMembersRequest implements MModel {
   /// Property getter and setter for flowThreadId: 
   RecordKey? get flowThreadId;
-  set flowThreadId(RecordKey? flowThreadId);
+  
 
   /// Property getter and setter for members: 
   List<IPrioritizedMember>? get members;
-  set members(List<IPrioritizedMember>? members);
+  
 
   @override
   String toString();

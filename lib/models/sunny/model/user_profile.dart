@@ -9,27 +9,27 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IUserProfile implements MModel {
   /// Property getter and setter for id: 
   String? get id;
-  set id(String? id);
+  
 
   /// Property getter and setter for username: 
   String? get username;
-  set username(String? username);
+  
 
   /// Property getter and setter for email: 
   String? get email;
-  set email(String? email);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for photo: 
   String? get photo;
-  set photo(String? photo);
+  
 
   @override
   String toString();

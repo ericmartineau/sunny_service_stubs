@@ -10,19 +10,19 @@ import '../model/fact_tense.dart';
 abstract class IFactSchemaTemplate implements MModel {
   /// Property getter and setter for tense: 
   IFactTense? get tense;
-  set tense(IFactTense? tense);
+  
 
   /// Property getter and setter for label: 
   String? get label;
-  set label(String? label);
+  
 
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for template: 
   String? get template;
-  set template(String? template);
+  
 
   @override
   String toString();

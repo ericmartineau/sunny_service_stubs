@@ -10,11 +10,11 @@ import '../model/membership.dart';
 abstract class IMembershipList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IMembership>? get data;
-  set data(List<IMembership>? data);
+  
 
   @override
   String toString();

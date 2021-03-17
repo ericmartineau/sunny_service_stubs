@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IResetPasswordRequest implements MModel {
   /// Property getter and setter for username: 
   String? get username;
-  set username(String? username);
+  
 
   @override
   String toString();

@@ -10,11 +10,11 @@ import '../model/flow_query.dart';
 abstract class IStart implements MModel {
   /// Property getter and setter for targetNode: 
   String? get targetNode;
-  set targetNode(String? targetNode);
+  
 
   /// Property getter and setter for startQuery: 
   IFlowQuery? get startQuery;
-  set startQuery(IFlowQuery? startQuery);
+  
 
   @override
   String toString();

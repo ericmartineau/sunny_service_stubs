@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ITrumanNewMember implements MModel {
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   @override
   String toString();

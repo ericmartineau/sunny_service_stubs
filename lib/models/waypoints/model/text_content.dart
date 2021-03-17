@@ -14,23 +14,23 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITextContent implements IContent {
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for text: 
   String? get text;
-  set text(String? text);
+  
 
   /// Property getter and setter for mode: 
   ITextMode? get mode;
-  set mode(ITextMode? mode);
+  
 
   /// Property getter and setter for isCard: 
   bool? get isCard;
-  set isCard(bool? isCard);
+  
 
   /// Property getter and setter for contentType: 
   IContentType? get contentType;
-  set contentType(IContentType? contentType);
+  
 
   @override
   String toString();

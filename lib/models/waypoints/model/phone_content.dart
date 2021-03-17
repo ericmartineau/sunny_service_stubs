@@ -11,11 +11,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPhoneContent implements IInteractionContent {
   /// Property getter and setter for duration: 
   int? get duration;
-  set duration(int? duration);
+  
 
   /// Property getter and setter for timeUnit: 
   TimeUnit? get timeUnit;
-  set timeUnit(TimeUnit? timeUnit);
+  
 
   @override
   String toString();

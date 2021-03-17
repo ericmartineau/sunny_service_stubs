@@ -13,15 +13,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITrumanHealthInfo implements IFact {
   /// Property getter and setter for healthInterests: 
   List<String>? get healthInterests;
-  set healthInterests(List<String>? healthInterests);
+  
 
   /// Property getter and setter for favoriteOils: 
   List<String>? get favoriteOils;
-  set favoriteOils(List<String>? favoriteOils);
+  
 
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   @override
   String toString();

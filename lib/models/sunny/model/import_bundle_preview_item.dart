@@ -10,15 +10,15 @@ import '../model/contact.dart';
 abstract class IImportBundlePreviewItem implements MModel {
   /// Property getter and setter for identifier: 
   String? get identifier;
-  set identifier(String? identifier);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for contacts: 
   List<IContact>? get contacts;
-  set contacts(List<IContact>? contacts);
+  
 
   @override
   String toString();

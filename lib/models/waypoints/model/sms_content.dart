@@ -10,7 +10,7 @@ import '../model/interaction_content.dart';
 abstract class ISmsContent implements IInteractionContent {
   /// Property getter and setter for messageBody: 
   String? get messageBody;
-  set messageBody(String? messageBody);
+  
 
   @override
   String toString();

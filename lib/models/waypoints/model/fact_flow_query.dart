@@ -13,15 +13,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFactFlowQuery implements IFlowQuery {
   /// Property getter and setter for factRef: 
   MSchemaRef? get factRef;
-  set factRef(MSchemaRef? factRef);
+  
 
   /// Property getter and setter for factPath: 
   JsonPath? get factPath;
-  set factPath(JsonPath? factPath);
+  
 
   /// Property getter and setter for factExpression: 
   IExpression? get factExpression;
-  set factExpression(IExpression? factExpression);
+  
 
   @override
   String toString();

@@ -11,11 +11,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IRefProperty implements IMSchemaProperty {
   /// Property getter and setter for theRef: 
   MSchemaRef? get theRef;
-  set theRef(MSchemaRef? theRef);
+  
 
   /// Property getter and setter for mkeyOnly: 
   bool? get mkeyOnly;
-  set mkeyOnly(bool? mkeyOnly);
+  
 
   @override
   String toString();

@@ -12,39 +12,39 @@ import 'package:timezone/timezone.dart';
 abstract class IContactInfo implements MModel {
   /// Property getter and setter for contactType: 
   MSchemaRef? get contactType;
-  set contactType(MSchemaRef? contactType);
+  
 
   /// Property getter and setter for contactKey: 
   RecordKey? get contactKey;
-  set contactKey(RecordKey? contactKey);
+  
 
   /// Property getter and setter for givenName: 
   String? get givenName;
-  set givenName(String? givenName);
+  
 
   /// Property getter and setter for familyName: 
   String? get familyName;
-  set familyName(String? familyName);
+  
 
   /// Property getter and setter for email: 
   String? get email;
-  set email(String? email);
+  
 
   /// Property getter and setter for phone: 
   String? get phone;
-  set phone(String? phone);
+  
 
   /// Property getter and setter for timeZone: 
   Location? get timeZone;
-  set timeZone(Location? timeZone);
+  
 
   /// Property getter and setter for photoUrl: 
   Uri? get photoUrl;
-  set photoUrl(Uri? photoUrl);
+  
 
   /// Property getter and setter for address: 
   IPhysicalLocation? get address;
-  set address(IPhysicalLocation? address);
+  
 
   @override
   String toString();

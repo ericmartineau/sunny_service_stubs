@@ -13,15 +13,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITeam implements IOrganization {
   /// Property getter and setter for sport: 
   String? get sport;
-  set sport(String? sport);
+  
 
   /// Property getter and setter for isInactive: 
   bool? get isInactive;
-  set isInactive(bool? isInactive);
+  
 
   /// Property getter and setter for coach: 
   MKey? get coach;
-  set coach(MKey? coach);
+  
 
   @override
   String toString();

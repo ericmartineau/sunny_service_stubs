@@ -10,7 +10,7 @@ import '../model/m_schema_definition.dart';
 abstract class IMSchemaDefinitionList implements MModel {
   /// Property getter and setter for data: 
   List<IMSchemaDefinition>? get data;
-  set data(List<IMSchemaDefinition>? data);
+  
 
   @override
   String toString();

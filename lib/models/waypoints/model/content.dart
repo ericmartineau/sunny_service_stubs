@@ -11,35 +11,35 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IContent implements MModel {
   /// Property getter and setter for dismissible: 
   bool? get dismissible;
-  set dismissible(bool? dismissible);
+  
 
   /// Property getter and setter for repeatsFor: 
   int? get repeatsFor;
-  set repeatsFor(int? repeatsFor);
+  
 
   /// Property getter and setter for showEvery: 
   int? get showEvery;
-  set showEvery(int? showEvery);
+  
 
   /// Property getter and setter for delivery: 
   IContentDelivery? get delivery;
-  set delivery(IContentDelivery? delivery);
+  
 
   /// Property getter and setter for durationUnit: 
   TimeUnit? get durationUnit;
-  set durationUnit(TimeUnit? durationUnit);
+  
 
   /// Property getter and setter for durationAmount: 
   int? get durationAmount;
-  set durationAmount(int? durationAmount);
+  
 
   /// Property getter and setter for delayUnit: 
   TimeUnit? get delayUnit;
-  set delayUnit(TimeUnit? delayUnit);
+  
 
   /// Property getter and setter for delayAmount: 
   int? get delayAmount;
-  set delayAmount(int? delayAmount);
+  
 
   @override
   String toString();

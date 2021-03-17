@@ -10,11 +10,11 @@ import '../model/doterra_member_info.dart';
 abstract class IDoterraMemberInfoList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IDoterraMemberInfo>? get data;
-  set data(List<IDoterraMemberInfo>? data);
+  
 
   @override
   String toString();

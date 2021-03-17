@@ -13,27 +13,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPayment implements IFact {
   /// Property getter and setter for amount: 
   double? get amount;
-  set amount(double? amount);
+  
 
   /// Property getter and setter for reason: 
   String? get reason;
-  set reason(String? reason);
+  
 
   /// Property getter and setter for notes: 
   String? get notes;
-  set notes(String? notes);
+  
 
   /// Property getter and setter for paymentDate: 
   DateTime? get paymentDate;
-  set paymentDate(DateTime? paymentDate);
+  
 
   /// Property getter and setter for payee: 
   MKey? get payee;
-  set payee(MKey? payee);
+  
 
   /// Property getter and setter for payor: 
   MKey? get payor;
-  set payor(MKey? payor);
+  
 
   @override
   String toString();

@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IInterest implements MModel {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   @override
   String toString();

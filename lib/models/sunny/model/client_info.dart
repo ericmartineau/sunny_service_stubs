@@ -9,39 +9,39 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IClientInfo implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for dateInstalled: 
   DateTime? get dateInstalled;
-  set dateInstalled(DateTime? dateInstalled);
+  
 
   /// Property getter and setter for dateUpdated: 
   DateTime? get dateUpdated;
-  set dateUpdated(DateTime? dateUpdated);
+  
 
   /// Property getter and setter for timeZone: 
   String? get timeZone;
-  set timeZone(String? timeZone);
+  
 
   /// Property getter and setter for locale: 
   String? get locale;
-  set locale(String? locale);
+  
 
   /// Property getter and setter for installationIdentifier: 
   String? get installationIdentifier;
-  set installationIdentifier(String? installationIdentifier);
+  
 
   /// Property getter and setter for appIdentifier: 
   String? get appIdentifier;
-  set appIdentifier(String? appIdentifier);
+  
 
   /// Property getter and setter for appVersion: 
   String? get appVersion;
-  set appVersion(String? appVersion);
+  
 
   /// Property getter and setter for deviceToken: 
   String? get deviceToken;
-  set deviceToken(String? deviceToken);
+  
 
   @override
   String toString();

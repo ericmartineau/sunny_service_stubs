@@ -10,16 +10,16 @@ import '../model/reach_out_content.dart';
 abstract class IReachOutData implements MModel {
   /// Property getter and setter for groupIdentifier: 
   String? get groupIdentifier;
-  set groupIdentifier(String? groupIdentifier);
+  
 
   /// Property getter and setter for contactId: Optionally, a reach-out can identify the contact rather than having the user choose
   /// Optionally, a reach-out can identify the contact rather than having the user choose
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for content: 
   IReachOutContent? get content;
-  set content(IReachOutContent? content);
+  
 
   @override
   String toString();

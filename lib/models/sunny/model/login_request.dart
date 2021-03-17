@@ -10,27 +10,27 @@ import '../model/client_info.dart';
 abstract class ILoginRequest implements MModel {
   /// Property getter and setter for username: 
   String? get username;
-  set username(String? username);
+  
 
   /// Property getter and setter for password: 
   String? get password;
-  set password(String? password);
+  
 
   /// Property getter and setter for facebookAccessToken: 
   String? get facebookAccessToken;
-  set facebookAccessToken(String? facebookAccessToken);
+  
 
   /// Property getter and setter for locale: 
   String? get locale;
-  set locale(String? locale);
+  
 
   /// Property getter and setter for timeZone: 
   String? get timeZone;
-  set timeZone(String? timeZone);
+  
 
   /// Property getter and setter for clientInfo: 
   IClientInfo? get clientInfo;
-  set clientInfo(IClientInfo? clientInfo);
+  
 
   @override
   String toString();

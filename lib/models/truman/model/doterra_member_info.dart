@@ -14,15 +14,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IDoterraMemberInfo implements IFact {
   /// Property getter and setter for dateEnrolled: 
   FlexiDate? get dateEnrolled;
-  set dateEnrolled(FlexiDate? dateEnrolled);
+  
 
   /// Property getter and setter for level: 
   IMemberLevel? get level;
-  set level(IMemberLevel? level);
+  
 
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   @override
   String toString();

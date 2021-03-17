@@ -15,27 +15,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IImageContent implements IContent {
   /// Property getter and setter for imageUrl: 
   String? get imageUrl;
-  set imageUrl(String? imageUrl);
+  
 
   /// Property getter and setter for caption: 
   String? get caption;
-  set caption(String? caption);
+  
 
   /// Property getter and setter for location: 
   IPhysicalLocation? get location;
-  set location(IPhysicalLocation? location);
+  
 
   /// Property getter and setter for orientation: 
   IOrientation? get orientation;
-  set orientation(IOrientation? orientation);
+  
 
   /// Property getter and setter for dimensions: 
   IDimensions? get dimensions;
-  set dimensions(IDimensions? dimensions);
+  
 
   /// Property getter and setter for originalUrl: 
   String? get originalUrl;
-  set originalUrl(String? originalUrl);
+  
 
   @override
   String toString();

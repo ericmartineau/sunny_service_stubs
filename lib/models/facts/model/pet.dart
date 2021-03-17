@@ -14,27 +14,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPet implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for birthday: 
   FlexiDate? get birthday;
-  set birthday(FlexiDate? birthday);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for petType: 
   String? get petType;
-  set petType(String? petType);
+  
 
   /// Property getter and setter for info: 
   String? get info;
-  set info(String? info);
+  
 
   @override
   String toString();

@@ -10,15 +10,15 @@ import 'package:timezone/timezone.dart';
 abstract class IParseSmartDateRequest implements MModel {
   /// Property getter and setter for input: 
   String? get input;
-  set input(String? input);
+  
 
   /// Property getter and setter for offset: 
   int? get offset;
-  set offset(int? offset);
+  
 
   /// Property getter and setter for timeZone: 
   Location? get timeZone;
-  set timeZone(Location? timeZone);
+  
 
   @override
   String toString();

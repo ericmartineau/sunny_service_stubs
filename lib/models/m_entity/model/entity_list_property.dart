@@ -11,11 +11,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IEntityListProperty implements IMSchemaProperty {
   /// Property getter and setter for allItemsRef: 
   MSchemaRef? get allItemsRef;
-  set allItemsRef(MSchemaRef? allItemsRef);
+  
 
   /// Property getter and setter for mkeyOnly: 
   bool? get mkeyOnly;
-  set mkeyOnly(bool? mkeyOnly);
+  
 
   @override
   String toString();

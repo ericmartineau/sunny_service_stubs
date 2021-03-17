@@ -10,55 +10,55 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPhysicalLocation implements MModel {
   /// Property getter and setter for googlePlaceId: 
   String? get googlePlaceId;
-  set googlePlaceId(String? googlePlaceId);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for geo: 
   GeoLocation? get geo;
-  set geo(GeoLocation? geo);
+  
 
   /// Property getter and setter for streetLineOne: 
   String? get streetLineOne;
-  set streetLineOne(String? streetLineOne);
+  
 
   /// Property getter and setter for streetLineTwo: 
   String? get streetLineTwo;
-  set streetLineTwo(String? streetLineTwo);
+  
 
   /// Property getter and setter for streetLineThree: 
   String? get streetLineThree;
-  set streetLineThree(String? streetLineThree);
+  
 
   /// Property getter and setter for locality: 
   String? get locality;
-  set locality(String? locality);
+  
 
   /// Property getter and setter for region: 
   String? get region;
-  set region(String? region);
+  
 
   /// Property getter and setter for postalCode: 
   String? get postalCode;
-  set postalCode(String? postalCode);
+  
 
   /// Property getter and setter for countryCode: 
   String? get countryCode;
-  set countryCode(String? countryCode);
+  
 
   /// Property getter and setter for shippable: 
   bool? get shippable;
-  set shippable(bool? shippable);
+  
 
   /// Property getter and setter for sortOrder: 
   int? get sortOrder;
-  set sortOrder(int? sortOrder);
+  
 
   @override
   String toString();

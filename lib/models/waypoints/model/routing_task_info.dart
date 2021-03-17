@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IRoutingTaskInfo implements MModel {
   /// Property getter and setter for possibleOutcomes: 
   List<String>? get possibleOutcomes;
-  set possibleOutcomes(List<String>? possibleOutcomes);
+  
 
   @override
   String toString();

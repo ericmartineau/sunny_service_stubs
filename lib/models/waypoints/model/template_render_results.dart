@@ -10,7 +10,7 @@ import '../model/template_render_result.dart';
 abstract class ITemplateRenderResults implements MModel {
   /// Property getter and setter for results: 
   List<ITemplateRenderResult>? get results;
-  set results(List<ITemplateRenderResult>? results);
+  
 
   @override
   String toString();

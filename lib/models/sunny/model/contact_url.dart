@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactUrl implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for url: 
   String? get url;
-  set url(String? url);
+  
 
   /// Property getter and setter for sortOrder: 
   int? get sortOrder;
-  set sortOrder(int? sortOrder);
+  
 
   @override
   String toString();

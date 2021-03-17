@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IImportBundleImportResult implements MModel {
   /// Property getter and setter for created: 
   int? get created;
-  set created(int? created);
+  
 
   /// Property getter and setter for updated: 
   int? get updated;
-  set updated(int? updated);
+  
 
   @override
   String toString();

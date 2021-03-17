@@ -10,11 +10,11 @@ import '../model/pet.dart';
 abstract class IPetList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IPet>? get data;
-  set data(List<IPet>? data);
+  
 
   @override
   String toString();

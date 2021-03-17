@@ -10,15 +10,15 @@ import '../model/icon_info.dart';
 abstract class IStartFlowInfo implements MModel {
   /// Property getter and setter for flowToStartGraphId: 
   String? get flowToStartGraphId;
-  set flowToStartGraphId(String? flowToStartGraphId);
+  
 
   /// Property getter and setter for startFlowIcon: 
   IIconInfo? get startFlowIcon;
-  set startFlowIcon(IIconInfo? startFlowIcon);
+  
 
   /// Property getter and setter for startFlowLabel: 
   String? get startFlowLabel;
-  set startFlowLabel(String? startFlowLabel);
+  
 
   @override
   String toString();

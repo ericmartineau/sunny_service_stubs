@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IPhoneInfo implements MModel {
   /// Property getter and setter for isInbound: 
   bool? get isInbound;
-  set isInbound(bool? isInbound);
+  
 
   /// Property getter and setter for inboundNumber: 
   String? get inboundNumber;
-  set inboundNumber(String? inboundNumber);
+  
 
   /// Property getter and setter for outboundNumber: 
   String? get outboundNumber;
-  set outboundNumber(String? outboundNumber);
+  
 
   /// Property getter and setter for callInstructions: 
   String? get callInstructions;
-  set callInstructions(String? callInstructions);
+  
 
   @override
   String toString();

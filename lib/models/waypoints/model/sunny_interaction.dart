@@ -14,31 +14,31 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ISunnyInteraction implements IFact {
   /// Property getter and setter for initiatorKey: 
   MKey? get initiatorKey;
-  set initiatorKey(MKey? initiatorKey);
+  
 
   /// Property getter and setter for recipientKeys: 
   List<MKey>? get recipientKeys;
-  set recipientKeys(List<MKey>? recipientKeys);
+  
 
   /// Property getter and setter for interactionType: 
   String? get interactionType;
-  set interactionType(String? interactionType);
+  
 
   /// Property getter and setter for content: 
   IInteractionContent? get content;
-  set content(IInteractionContent? content);
+  
 
   /// Property getter and setter for comment: 
   String? get comment;
-  set comment(String? comment);
+  
 
   /// Property getter and setter for commentUserId: 
   String? get commentUserId;
-  set commentUserId(String? commentUserId);
+  
 
   /// Property getter and setter for interactionDate: 
   DateTime? get interactionDate;
-  set interactionDate(DateTime? interactionDate);
+  
 
   @override
   String toString();

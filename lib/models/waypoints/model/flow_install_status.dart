@@ -11,15 +11,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFlowInstallStatus implements MModel {
   /// Property getter and setter for flowGraphId: 
   String? get flowGraphId;
-  set flowGraphId(String? flowGraphId);
+  
 
   /// Property getter and setter for flowThreadId: 
   RecordKey? get flowThreadId;
-  set flowThreadId(RecordKey? flowThreadId);
+  
 
   /// Property getter and setter for threadStatus: 
   IThreadStatus? get threadStatus;
-  set threadStatus(IThreadStatus? threadStatus);
+  
 
   @override
   String toString();

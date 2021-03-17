@@ -11,43 +11,43 @@ import '../model/tag.dart';
 abstract class IGroupData implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for identifier: 
   String? get identifier;
-  set identifier(String? identifier);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for picture: 
   String? get picture;
-  set picture(String? picture);
+  
 
   /// Property getter and setter for favorite: 
   int? get favorite;
-  set favorite(int? favorite);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for contacts: 
   List<String>? get contacts;
-  set contacts(List<String>? contacts);
+  
 
   /// Property getter and setter for automations: 
   List<String>? get automations;
-  set automations(List<String>? automations);
+  
 
   /// Property getter and setter for permissions: 
   List<IGroupPermission>? get permissions;
-  set permissions(List<IGroupPermission>? permissions);
+  
 
   /// Property getter and setter for tags: 
   List<ITag>? get tags;
-  set tags(List<ITag>? tags);
+  
 
   @override
   String toString();

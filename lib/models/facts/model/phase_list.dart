@@ -10,11 +10,11 @@ import '../model/phase.dart';
 abstract class IPhaseList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IPhase>? get data;
-  set data(List<IPhase>? data);
+  
 
   @override
   String toString();

@@ -10,23 +10,23 @@ import '../model/start_flow_info.dart';
 abstract class IStartFlowSet implements MModel {
   /// Property getter and setter for options: 
   List<IStartFlowInfo>? get options;
-  set options(List<IStartFlowInfo>? options);
+  
 
   /// Property getter and setter for flowSetTitle: 
   String? get flowSetTitle;
-  set flowSetTitle(String? flowSetTitle);
+  
 
   /// Property getter and setter for enabledByDefault: 
   bool? get enabledByDefault;
-  set enabledByDefault(bool? enabledByDefault);
+  
 
   /// Property getter and setter for defaultGraphId: 
   String? get defaultGraphId;
-  set defaultGraphId(String? defaultGraphId);
+  
 
   /// Property getter and setter for flowSetDescription: 
   String? get flowSetDescription;
-  set flowSetDescription(String? flowSetDescription);
+  
 
   @override
   String toString();

@@ -11,15 +11,15 @@ import '../model/m_schema_definition.dart';
 abstract class IMModuleDefinition implements MModel {
   /// Property getter and setter for moduleRef: 
   String? get moduleRef;
-  set moduleRef(String? moduleRef);
+  
 
   /// Property getter and setter for schemas: 
   List<IMSchemaDefinition>? get schemas;
-  set schemas(List<IMSchemaDefinition>? schemas);
+  
 
   /// Property getter and setter for operations: 
   List<IMOperationDefinition>? get operations;
-  set operations(List<IMOperationDefinition>? operations);
+  
 
   @override
   String toString();

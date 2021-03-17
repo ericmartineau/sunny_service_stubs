@@ -9,31 +9,31 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IMSchemaProperty implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for path: 
   String? get path;
-  set path(String? path);
+  
 
   /// Property getter and setter for label: 
   String? get label;
-  set label(String? label);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for uri: 
   Uri? get uri;
-  set uri(Uri? uri);
+  
 
   /// Property getter and setter for baseCode: 
   String? get baseCode;
-  set baseCode(String? baseCode);
+  
 
   /// Property getter and setter for isRequired: 
   bool? get isRequired;
-  set isRequired(bool? isRequired);
+  
 
   @override
   String toString();

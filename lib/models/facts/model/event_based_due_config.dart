@@ -11,7 +11,7 @@ import '../model/task_due_config.dart';
 abstract class IEventBasedDueConfig implements ITaskDueConfig {
   /// Property getter and setter for eventName: 
   IEventType? get eventName;
-  set eventName(IEventType? eventName);
+  
 
   @override
   String toString();

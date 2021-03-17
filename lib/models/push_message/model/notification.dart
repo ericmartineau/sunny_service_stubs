@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class INotification implements MModel {
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for subtitle: 
   String? get subtitle;
-  set subtitle(String? subtitle);
+  
 
   /// Property getter and setter for body: 
   String? get body;
-  set body(String? body);
+  
 
   /// Property getter and setter for imageUrl: 
   Uri? get imageUrl;
-  set imageUrl(Uri? imageUrl);
+  
 
   @override
   String toString();

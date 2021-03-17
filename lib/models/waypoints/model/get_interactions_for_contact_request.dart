@@ -10,7 +10,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IGetInteractionsForContactRequest implements MModel {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   @override
   String toString();

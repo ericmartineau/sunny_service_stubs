@@ -13,7 +13,7 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IBookClub implements IOrganization {
   /// Property getter and setter for organizer: 
   MKey? get organizer;
-  set organizer(MKey? organizer);
+  
 
   @override
   String toString();

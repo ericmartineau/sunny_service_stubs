@@ -9,23 +9,23 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactAttachment implements MModel {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for contentType: 
   String? get contentType;
-  set contentType(String? contentType);
+  
 
   /// Property getter and setter for contentUrl: 
   String? get contentUrl;
-  set contentUrl(String? contentUrl);
+  
 
   @override
   String toString();

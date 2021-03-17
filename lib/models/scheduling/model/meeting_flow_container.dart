@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IMeetingFlowContainer implements MModel {
   /// Property getter and setter for isAlwaysShowCreate: 
   bool? get isAlwaysShowCreate;
-  set isAlwaysShowCreate(bool? isAlwaysShowCreate);
+  
 
   /// Property getter and setter for isExpandCreate: 
   bool? get isExpandCreate;
-  set isExpandCreate(bool? isExpandCreate);
+  
 
   @override
   String toString();

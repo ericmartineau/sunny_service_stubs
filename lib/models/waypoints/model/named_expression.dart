@@ -10,11 +10,11 @@ import '../model/expression.dart';
 abstract class INamedExpression implements IExpression {
   /// Property getter and setter for expressionName: 
   String? get expressionName;
-  set expressionName(String? expressionName);
+  
 
   /// Property getter and setter for args: 
   Map<String, IExpression>? get args;
-  set args(Map<String, IExpression>? args);
+  
 
   @override
   String toString();

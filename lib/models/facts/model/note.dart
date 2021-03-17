@@ -14,23 +14,23 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class INote implements IFact {
   /// Property getter and setter for noteTitle: 
   String? get noteTitle;
-  set noteTitle(String? noteTitle);
+  
 
   /// Property getter and setter for notes: 
   String? get notes;
-  set notes(String? notes);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for noteDate: 
   DateTime? get noteDate;
-  set noteDate(DateTime? noteDate);
+  
 
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   @override
   String toString();

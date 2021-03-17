@@ -13,11 +13,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IRandomAnimationContent implements IContent {
   /// Property getter and setter for category: 
   IContentCategory? get category;
-  set category(IContentCategory? category);
+  
 
   /// Property getter and setter for loop: 
   bool? get loop;
-  set loop(bool? loop);
+  
 
   @override
   String toString();

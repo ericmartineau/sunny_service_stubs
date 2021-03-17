@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContactFormCreateResponse implements MModel {
   /// Property getter and setter for token: 
   String? get token;
-  set token(String? token);
+  
 
   @override
   String toString();

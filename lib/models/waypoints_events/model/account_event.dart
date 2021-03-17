@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IAccountEvent implements MModel {
   /// Property getter and setter for accountId: 
   String? get accountId;
-  set accountId(String? accountId);
+  
 
   /// Property getter and setter for eventId: 
   String? get eventId;
-  set eventId(String? eventId);
+  
 
   @override
   String toString();

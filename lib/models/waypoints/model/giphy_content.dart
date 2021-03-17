@@ -12,15 +12,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IGiphyContent implements IContent {
   /// Property getter and setter for giphyUrl: 
   String? get giphyUrl;
-  set giphyUrl(String? giphyUrl);
+  
 
   /// Property getter and setter for caption: 
   String? get caption;
-  set caption(String? caption);
+  
 
   /// Property getter and setter for text: 
   String? get text;
-  set text(String? text);
+  
 
   @override
   String toString();

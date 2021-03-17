@@ -14,83 +14,83 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFlowNode implements MModel {
   /// Property getter and setter for nodeId: 
   String? get nodeId;
-  set nodeId(String? nodeId);
+  
 
   /// Property getter and setter for graphId: 
   String? get graphId;
-  set graphId(String? graphId);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for icon: 
   IIconInfo? get icon;
-  set icon(IIconInfo? icon);
+  
 
   /// Property getter and setter for actionVerb: 
   String? get actionVerb;
-  set actionVerb(String? actionVerb);
+  
 
   /// Property getter and setter for timeoutUnit: 
   TimeUnit? get timeoutUnit;
-  set timeoutUnit(TimeUnit? timeoutUnit);
+  
 
   /// Property getter and setter for timeoutLength: 
   int? get timeoutLength;
-  set timeoutLength(int? timeoutLength);
+  
 
   /// Property getter and setter for skippable: 
   bool? get skippable;
-  set skippable(bool? skippable);
+  
 
   /// Property getter and setter for taskOperationRef: 
   MOperationRef? get taskOperationRef;
-  set taskOperationRef(MOperationRef? taskOperationRef);
+  
 
   /// Property getter and setter for flowActionType: 
   IFlowActionType? get flowActionType;
-  set flowActionType(IFlowActionType? flowActionType);
+  
 
   /// Property getter and setter for help: 
   List<IContent>? get help;
-  set help(List<IContent>? help);
+  
 
   /// Property getter and setter for completion: 
   List<IContent>? get completion;
-  set completion(List<IContent>? completion);
+  
 
   /// Property getter and setter for info: 
   MModel? get info;
-  set info(MModel? info);
+  
 
   /// Property getter and setter for config: 
   Map<String, IExpression>? get config;
-  set config(Map<String, IExpression>? config);
+  
 
   /// Property getter and setter for isAssisted: 
   bool? get isAssisted;
-  set isAssisted(bool? isAssisted);
+  
 
   /// Property getter and setter for due: 
   IExpression? get due;
-  set due(IExpression? due);
+  
 
   /// Property getter and setter for displayOffset: 
   TimeSpan? get displayOffset;
-  set displayOffset(TimeSpan? displayOffset);
+  
 
   /// Property getter and setter for isAlert: 
   bool? get isAlert;
-  set isAlert(bool? isAlert);
+  
 
   /// Property getter and setter for expires: 
   IExpression? get expires;
-  set expires(IExpression? expires);
+  
 
   @override
   String toString();

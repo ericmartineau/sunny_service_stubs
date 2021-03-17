@@ -17,23 +17,23 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IAssistedTask implements ITaskFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for assigneeKey: 
   MKey? get assigneeKey;
-  set assigneeKey(MKey? assigneeKey);
+  
 
   /// Property getter and setter for frameId: 
   String? get frameId;
-  set frameId(String? frameId);
+  
 
   /// Property getter and setter for linkedFactId: 
   String? get linkedFactId;
-  set linkedFactId(String? linkedFactId);
+  
 
   /// Property getter and setter for recurrence: 
   IRecurrence? get recurrence;
-  set recurrence(IRecurrence? recurrence);
+  
 
   @override
   String toString();

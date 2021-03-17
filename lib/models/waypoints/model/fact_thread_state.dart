@@ -11,11 +11,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFactThreadState implements IContactThreadState {
   /// Property getter and setter for factType: 
   MSchemaRef? get factType;
-  set factType(MSchemaRef? factType);
+  
 
   /// Property getter and setter for factKey: 
   RecordKey? get factKey;
-  set factKey(RecordKey? factKey);
+  
 
   @override
   String toString();

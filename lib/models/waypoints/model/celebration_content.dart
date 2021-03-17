@@ -12,11 +12,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ICelebrationContent implements IContent {
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for celebrationId: 
   String? get celebrationId;
-  set celebrationId(String? celebrationId);
+  
 
   @override
   String toString();

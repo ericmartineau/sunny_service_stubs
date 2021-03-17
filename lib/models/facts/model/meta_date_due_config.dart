@@ -12,15 +12,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMetaDateDueConfig implements ITaskDueConfig {
   /// Property getter and setter for schemaRef: 
   MSchemaRef? get schemaRef;
-  set schemaRef(MSchemaRef? schemaRef);
+  
 
   /// Property getter and setter for path: 
   JsonPath? get path;
-  set path(JsonPath? path);
+  
 
   /// Property getter and setter for factId: 
   String? get factId;
-  set factId(String? factId);
+  
 
   @override
   String toString();

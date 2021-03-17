@@ -13,35 +13,35 @@ import '../model/template_medium.dart';
 abstract class ITemplateData implements MEntity {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for medium: 
   ITemplateMedium? get medium;
-  set medium(ITemplateMedium? medium);
+  
 
   /// Property getter and setter for contentType: 
   IContentType? get contentType;
-  set contentType(IContentType? contentType);
+  
 
   /// Property getter and setter for subject: 
   String? get subject;
-  set subject(String? subject);
+  
 
   /// Property getter and setter for body: 
   String? get body;
-  set body(String? body);
+  
 
   /// Property getter and setter for tags: 
   List<IContentTag>? get tags;
-  set tags(List<IContentTag>? tags);
+  
 
   /// Property getter and setter for scope: 
   IContentScope? get scope;
-  set scope(IContentScope? scope);
+  
 
   @override
   String toString();

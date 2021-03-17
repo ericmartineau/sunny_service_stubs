@@ -10,7 +10,7 @@ import '../model/message_body.dart';
 abstract class IPushUrlBody implements IMessageBody {
   /// Property getter and setter for url: 
   Uri? get url;
-  set url(Uri? url);
+  
 
   @override
   String toString();

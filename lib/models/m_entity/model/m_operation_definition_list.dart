@@ -10,7 +10,7 @@ import '../model/m_operation_definition.dart';
 abstract class IMOperationDefinitionList implements MModel {
   /// Property getter and setter for data: 
   List<IMOperationDefinition>? get data;
-  set data(List<IMOperationDefinition>? data);
+  
 
   @override
   String toString();

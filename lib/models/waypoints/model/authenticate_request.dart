@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IAuthenticateRequest implements MModel {
   /// Property getter and setter for username: 
   String? get username;
-  set username(String? username);
+  
 
   /// Property getter and setter for password: 
   String? get password;
-  set password(String? password);
+  
 
   @override
   String toString();

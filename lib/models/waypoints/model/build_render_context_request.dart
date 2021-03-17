@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IBuildRenderContextRequest implements MModel {
   /// Property getter and setter for lenient: 
   bool? get lenient;
-  set lenient(bool? lenient);
+  
 
   /// Property getter and setter for flowThreadId: 
   String? get flowThreadId;
-  set flowThreadId(String? flowThreadId);
+  
 
   /// Property getter and setter for extraScope: 
   Map<String, dynamic>? get extraScope;
-  set extraScope(Map<String, dynamic>? extraScope);
+  
 
   @override
   String toString();

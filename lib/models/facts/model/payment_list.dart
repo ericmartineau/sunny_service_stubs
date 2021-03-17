@@ -10,11 +10,11 @@ import '../model/payment.dart';
 abstract class IPaymentList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IPayment>? get data;
-  set data(List<IPayment>? data);
+  
 
   @override
   String toString();

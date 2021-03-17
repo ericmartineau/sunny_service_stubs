@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ILookupResult implements MModel {
   /// Property getter and setter for key: 
   String? get key;
-  set key(String? key);
+  
 
   /// Property getter and setter for text: 
   String? get text;
-  set text(String? text);
+  
 
   @override
   String toString();

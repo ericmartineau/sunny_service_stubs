@@ -14,31 +14,31 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITradition implements IFact {
   /// Property getter and setter for group: 
   List<MKey>? get group;
-  set group(List<MKey>? group);
+  
 
   /// Property getter and setter for traditionDate: 
   FlexiDate? get traditionDate;
-  set traditionDate(FlexiDate? traditionDate);
+  
 
   /// Property getter and setter for traditionType: 
   String? get traditionType;
-  set traditionType(String? traditionType);
+  
 
   /// Property getter and setter for traditionTitle: 
   String? get traditionTitle;
-  set traditionTitle(String? traditionTitle);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for location: 
   IPhysicalLocation? get location;
-  set location(IPhysicalLocation? location);
+  
 
   /// Property getter and setter for emotes: 
   List<String>? get emotes;
-  set emotes(List<String>? emotes);
+  
 
   @override
   String toString();

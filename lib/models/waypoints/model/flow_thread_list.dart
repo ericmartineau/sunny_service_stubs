@@ -10,11 +10,11 @@ import '../model/flow_thread.dart';
 abstract class IFlowThreadList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IFlowThread>? get data;
-  set data(List<IFlowThread>? data);
+  
 
   @override
   String toString();

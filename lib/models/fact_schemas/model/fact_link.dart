@@ -11,35 +11,35 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFactLink implements MModel {
   /// Property getter and setter for path: 
   JsonPath? get path;
-  set path(JsonPath? path);
+  
 
   /// Property getter and setter for label: 
   String? get label;
-  set label(String? label);
+  
 
   /// Property getter and setter for factRef: 
   MSchemaRef? get factRef;
-  set factRef(MSchemaRef? factRef);
+  
 
   /// Property getter and setter for linkRef: 
   MSchemaRef? get linkRef;
-  set linkRef(MSchemaRef? linkRef);
+  
 
   /// Property getter and setter for isLinkSingleton: 
   bool? get isLinkSingleton;
-  set isLinkSingleton(bool? isLinkSingleton);
+  
 
   /// Property getter and setter for isEmbed: 
   bool? get isEmbed;
-  set isEmbed(bool? isEmbed);
+  
 
   /// Property getter and setter for maxLinks: 
   int? get maxLinks;
-  set maxLinks(int? maxLinks);
+  
 
   /// Property getter and setter for minLinks: 
   int? get minLinks;
-  set minLinks(int? minLinks);
+  
 
   @override
   String toString();

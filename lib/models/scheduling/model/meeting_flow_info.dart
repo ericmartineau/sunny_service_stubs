@@ -10,55 +10,55 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMeetingFlowInfo implements MModel {
   /// Property getter and setter for meetingTypeName: 
   String? get meetingTypeName;
-  set meetingTypeName(String? meetingTypeName);
+  
 
   /// Property getter and setter for meetingTemplateName: 
   String? get meetingTemplateName;
-  set meetingTemplateName(String? meetingTemplateName);
+  
 
   /// Property getter and setter for meetingImageUrl: 
   Uri? get meetingImageUrl;
-  set meetingImageUrl(Uri? meetingImageUrl);
+  
 
   /// Property getter and setter for meetingTemplateDescription: 
   String? get meetingTemplateDescription;
-  set meetingTemplateDescription(String? meetingTemplateDescription);
+  
 
   /// Property getter and setter for meetingCompletionTitle: 
   String? get meetingCompletionTitle;
-  set meetingCompletionTitle(String? meetingCompletionTitle);
+  
 
   /// Property getter and setter for meetingCompletionDescription: 
   String? get meetingCompletionDescription;
-  set meetingCompletionDescription(String? meetingCompletionDescription);
+  
 
   /// Property getter and setter for showMeetingCompletionTask: 
   bool? get showMeetingCompletionTask;
-  set showMeetingCompletionTask(bool? showMeetingCompletionTask);
+  
 
   /// Property getter and setter for completedRequiredFacts: 
   List<MSchemaRef>? get completedRequiredFacts;
-  set completedRequiredFacts(List<MSchemaRef>? completedRequiredFacts);
+  
 
   /// Property getter and setter for attendedRequiredFacts: 
   List<MSchemaRef>? get attendedRequiredFacts;
-  set attendedRequiredFacts(List<MSchemaRef>? attendedRequiredFacts);
+  
 
   /// Property getter and setter for attendedOptionalFacts: 
   List<MSchemaRef>? get attendedOptionalFacts;
-  set attendedOptionalFacts(List<MSchemaRef>? attendedOptionalFacts);
+  
 
   /// Property getter and setter for notAttendedRequiredFacts: 
   List<MSchemaRef>? get notAttendedRequiredFacts;
-  set notAttendedRequiredFacts(List<MSchemaRef>? notAttendedRequiredFacts);
+  
 
   /// Property getter and setter for notAttendedOptionalFacts: 
   List<MSchemaRef>? get notAttendedOptionalFacts;
-  set notAttendedOptionalFacts(List<MSchemaRef>? notAttendedOptionalFacts);
+  
 
   /// Property getter and setter for availableMeetingTypes: 
   List<String>? get availableMeetingTypes;
-  set availableMeetingTypes(List<String>? availableMeetingTypes);
+  
 
   @override
   String toString();

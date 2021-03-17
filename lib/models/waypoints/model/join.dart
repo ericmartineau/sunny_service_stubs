@@ -10,7 +10,7 @@ import '../model/join_rule.dart';
 abstract class IJoin implements MModel {
   /// Property getter and setter for joinRule: 
   IJoinRule? get joinRule;
-  set joinRule(IJoinRule? joinRule);
+  
 
   @override
   String toString();

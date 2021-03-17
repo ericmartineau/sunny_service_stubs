@@ -14,63 +14,63 @@ import '../model/sunny_publisher.dart';
 abstract class ISunnyBundle implements MEntity {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for marketingDescription: 
   String? get marketingDescription;
-  set marketingDescription(String? marketingDescription);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for colorPalette: 
   IColorPalette? get colorPalette;
-  set colorPalette(IColorPalette? colorPalette);
+  
 
   /// Property getter and setter for icon: 
   IIconInfo? get icon;
-  set icon(IIconInfo? icon);
+  
 
   /// Property getter and setter for headerImage: 
   Uri? get headerImage;
-  set headerImage(Uri? headerImage);
+  
 
   /// Property getter and setter for headerImageHeight: 
   int? get headerImageHeight;
-  set headerImageHeight(int? headerImageHeight);
+  
 
   /// Property getter and setter for publisher: 
   ISunnyPublisher? get publisher;
-  set publisher(ISunnyPublisher? publisher);
+  
 
   /// Property getter and setter for includedFlows: 
   List<IIncludedPack>? get includedFlows;
-  set includedFlows(List<IIncludedPack>? includedFlows);
+  
 
   /// Property getter and setter for help: 
   List<IContent>? get help;
-  set help(List<IContent>? help);
+  
 
   /// Property getter and setter for marketingInfo: 
   List<IContent>? get marketingInfo;
-  set marketingInfo(List<IContent>? marketingInfo);
+  
 
   /// Property getter and setter for features: 
   List<IContent>? get features;
-  set features(List<IContent>? features);
+  
 
   /// Property getter and setter for isUnlisted: 
   bool? get isUnlisted;
-  set isUnlisted(bool? isUnlisted);
+  
 
   /// Property getter and setter for pinned: 
   bool? get pinned;
-  set pinned(bool? pinned);
+  
 
   /// Property getter and setter for availableResources: 
   List<IContent>? get availableResources;
-  set availableResources(List<IContent>? availableResources);
+  
 
   @override
   String toString();

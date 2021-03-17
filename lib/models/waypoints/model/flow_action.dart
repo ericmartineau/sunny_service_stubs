@@ -11,15 +11,15 @@ import '../model/flow_node.dart';
 abstract class IFlowAction implements MModel {
   /// Property getter and setter for node: 
   IFlowNode? get node;
-  set node(IFlowNode? node);
+  
 
   /// Property getter and setter for config: 
   Map<String, dynamic>? get config;
-  set config(Map<String, dynamic>? config);
+  
 
   /// Property getter and setter for type: 
   IFlowActionType? get type;
-  set type(IFlowActionType? type);
+  
 
   @override
   String toString();

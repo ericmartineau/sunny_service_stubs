@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IContentTag implements MModel {
   /// Property getter and setter for tagType: 
   String? get tagType;
-  set tagType(String? tagType);
+  
 
   /// Property getter and setter for tag: 
   String? get tag;
-  set tag(String? tag);
+  
 
   @override
   String toString();

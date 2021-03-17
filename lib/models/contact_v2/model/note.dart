@@ -9,19 +9,19 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class INote implements MEntity {
   /// Property getter and setter for contact: 
   String? get contact;
-  set contact(String? contact);
+  
 
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for body: 
   String? get body;
-  set body(String? body);
+  
 
   /// Property getter and setter for created: 
   String? get created;
-  set created(String? created);
+  
 
   @override
   String toString();

@@ -10,11 +10,11 @@ import '../model/flow_query.dart';
 abstract class IScriptFlowQuery implements IFlowQuery {
   /// Property getter and setter for query: 
   String? get query;
-  set query(String? query);
+  
 
   /// Property getter and setter for arguments: 
   Map<String, dynamic>? get arguments;
-  set arguments(Map<String, dynamic>? arguments);
+  
 
   @override
   String toString();

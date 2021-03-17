@@ -15,31 +15,31 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFamilyAssociation implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for family: 
   IFamily? get family;
-  set family(IFamily? family);
+  
 
   /// Property getter and setter for associatedPhases: 
   List<MKey>? get associatedPhases;
-  set associatedPhases(List<MKey>? associatedPhases);
+  
 
   /// Property getter and setter for connectionType: 
   String? get connectionType;
-  set connectionType(String? connectionType);
+  
 
   /// Property getter and setter for connectionLabel: 
   String? get connectionLabel;
-  set connectionLabel(String? connectionLabel);
+  
 
   /// Property getter and setter for connectionNotes: 
   String? get connectionNotes;
-  set connectionNotes(String? connectionNotes);
+  
 
   /// Property getter and setter for meetDate: 
   FlexiDate? get meetDate;
-  set meetDate(FlexiDate? meetDate);
+  
 
   @override
   String toString();

@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IAppInfo implements MModel {
   /// Property getter and setter for forceUpgradePrior: 
   String? get forceUpgradePrior;
-  set forceUpgradePrior(String? forceUpgradePrior);
+  
 
   /// Property getter and setter for warnUpgradePrior: 
   String? get warnUpgradePrior;
-  set warnUpgradePrior(String? warnUpgradePrior);
+  
 
   @override
   String toString();

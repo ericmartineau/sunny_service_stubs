@@ -11,31 +11,31 @@ import 'package:timezone/timezone.dart';
 abstract class IContact implements MEntity {
   /// Property getter and setter for givenName: 
   String? get givenName;
-  set givenName(String? givenName);
+  
 
   /// Property getter and setter for familyName: 
   String? get familyName;
-  set familyName(String? familyName);
+  
 
   /// Property getter and setter for email: 
   String? get email;
-  set email(String? email);
+  
 
   /// Property getter and setter for phone: 
   String? get phone;
-  set phone(String? phone);
+  
 
   /// Property getter and setter for timeZone: 
   Location? get timeZone;
-  set timeZone(Location? timeZone);
+  
 
   /// Property getter and setter for photoUrl: 
   Uri? get photoUrl;
-  set photoUrl(Uri? photoUrl);
+  
 
   /// Property getter and setter for address: 
   IPhysicalLocation? get address;
-  set address(IPhysicalLocation? address);
+  
 
   @override
   String toString();

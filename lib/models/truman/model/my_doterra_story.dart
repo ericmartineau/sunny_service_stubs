@@ -13,15 +13,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMyDoterraStory implements IFact {
   /// Property getter and setter for storyTitle: 
   String? get storyTitle;
-  set storyTitle(String? storyTitle);
+  
 
   /// Property getter and setter for theStory: 
   String? get theStory;
-  set theStory(String? theStory);
+  
 
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   @override
   String toString();

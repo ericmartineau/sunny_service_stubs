@@ -10,7 +10,7 @@ import '../model/expression.dart';
 abstract class ILiteralExpression implements IExpression {
   /// Property getter and setter for literalValue: 
   dynamic? get literalValue;
-  set literalValue(dynamic? literalValue);
+  
 
   @override
   String toString();

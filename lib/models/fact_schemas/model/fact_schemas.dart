@@ -10,11 +10,11 @@ import '../model/fact_schema.dart';
 abstract class IFactSchemas implements MModel {
   /// Property getter and setter for data: 
   List<IFactSchema>? get data;
-  set data(List<IFactSchema>? data);
+  
 
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   @override
   String toString();

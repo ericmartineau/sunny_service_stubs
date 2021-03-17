@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IProcessResetPasswordRequest implements MModel {
   /// Property getter and setter for password: 
   String? get password;
-  set password(String? password);
+  
 
   /// Property getter and setter for token: 
   String? get token;
-  set token(String? token);
+  
 
   @override
   String toString();

@@ -10,23 +10,23 @@ import '../model/tag.dart';
 abstract class IContactUpdateRequest implements MModel {
   /// Property getter and setter for id: 
   String? get id;
-  set id(String? id);
+  
 
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for tags: 
   List<ITag>? get tags;
-  set tags(List<ITag>? tags);
+  
 
   /// Property getter and setter for groups: 
   List<String>? get groups;
-  set groups(List<String>? groups);
+  
 
   /// Property getter and setter for automations: 
   List<String>? get automations;
-  set automations(List<String>? automations);
+  
 
   @override
   String toString();

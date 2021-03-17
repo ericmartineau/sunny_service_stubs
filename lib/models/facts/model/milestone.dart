@@ -16,31 +16,31 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMilestone implements IFact {
   /// Property getter and setter for contactKeys: 
   List<MKey>? get contactKeys;
-  set contactKeys(List<MKey>? contactKeys);
+  
 
   /// Property getter and setter for milestoneDate: 
   FlexiDate? get milestoneDate;
-  set milestoneDate(FlexiDate? milestoneDate);
+  
 
   /// Property getter and setter for milestone: 
   String? get milestone;
-  set milestone(String? milestone);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for videos: 
   List<IVideoContent>? get videos;
-  set videos(List<IVideoContent>? videos);
+  
 
   /// Property getter and setter for location: 
   IPhysicalLocation? get location;
-  set location(IPhysicalLocation? location);
+  
 
   /// Property getter and setter for details: 
   String? get details;
-  set details(String? details);
+  
 
   @override
   String toString();

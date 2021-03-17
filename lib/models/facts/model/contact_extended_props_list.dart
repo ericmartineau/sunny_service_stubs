@@ -10,11 +10,11 @@ import '../model/contact_extended_props.dart';
 abstract class IContactExtendedPropsList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IContactExtendedProps>? get data;
-  set data(List<IContactExtendedProps>? data);
+  
 
   @override
   String toString();

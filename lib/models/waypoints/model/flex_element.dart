@@ -13,27 +13,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFlexElement implements IContent {
   /// Property getter and setter for child: 
   IContent? get child;
-  set child(IContent? child);
+  
 
   /// Property getter and setter for flex: 
   int? get flex;
-  set flex(int? flex);
+  
 
   /// Property getter and setter for size: 
   IDimensions? get size;
-  set size(IDimensions? size);
+  
 
   /// Property getter and setter for background: 
   String? get background;
-  set background(String? background);
+  
 
   /// Property getter and setter for padding: 
   IDimensions? get padding;
-  set padding(IDimensions? padding);
+  
 
   /// Property getter and setter for margin: 
   IDimensions? get margin;
-  set margin(IDimensions? margin);
+  
 
   @override
   String toString();

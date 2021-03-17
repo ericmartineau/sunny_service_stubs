@@ -10,7 +10,7 @@ import '../model/flow_query.dart';
 abstract class IGroupFlowQuery implements IFlowQuery {
   /// Property getter and setter for groupIdentifier: 
   String? get groupIdentifier;
-  set groupIdentifier(String? groupIdentifier);
+  
 
   @override
   String toString();

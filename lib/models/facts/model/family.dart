@@ -13,27 +13,27 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFamily implements IOrganization {
   /// Property getter and setter for familyName: 
   String? get familyName;
-  set familyName(String? familyName);
+  
 
   /// Property getter and setter for familyGreeting: 
   String? get familyGreeting;
-  set familyGreeting(String? familyGreeting);
+  
 
   /// Property getter and setter for marriageStart: 
   FlexiDate? get marriageStart;
-  set marriageStart(FlexiDate? marriageStart);
+  
 
   /// Property getter and setter for marriageEnd: 
   FlexiDate? get marriageEnd;
-  set marriageEnd(FlexiDate? marriageEnd);
+  
 
   /// Property getter and setter for parents: 
   List<MKey>? get parents;
-  set parents(List<MKey>? parents);
+  
 
   /// Property getter and setter for children: 
   List<MKey>? get children;
-  set children(List<MKey>? children);
+  
 
   @override
   String toString();

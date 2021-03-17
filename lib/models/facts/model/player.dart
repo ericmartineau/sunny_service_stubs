@@ -15,15 +15,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IPlayer implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for team: 
   ITeam? get team;
-  set team(ITeam? team);
+  
 
   /// Property getter and setter for position: 
   String? get position;
-  set position(String? position);
+  
 
   @override
   String toString();

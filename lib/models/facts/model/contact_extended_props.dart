@@ -14,15 +14,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IContactExtendedProps implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for gender: 
   IGender? get gender;
-  set gender(IGender? gender);
+  
 
   /// Property getter and setter for nickName: 
   String? get nickName;
-  set nickName(String? nickName);
+  
 
   @override
   String toString();

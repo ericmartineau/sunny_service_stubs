@@ -13,19 +13,19 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IOwesMoney implements IFact {
   /// Property getter and setter for debtor: 
   MKey? get debtor;
-  set debtor(MKey? debtor);
+  
 
   /// Property getter and setter for creditor: 
   MKey? get creditor;
-  set creditor(MKey? creditor);
+  
 
   /// Property getter and setter for reason: 
   String? get reason;
-  set reason(String? reason);
+  
 
   /// Property getter and setter for amount: 
   double? get amount;
-  set amount(double? amount);
+  
 
   @override
   String toString();

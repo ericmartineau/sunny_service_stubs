@@ -12,11 +12,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IAnimationContent implements IContent {
   /// Property getter and setter for animationId: 
   String? get animationId;
-  set animationId(String? animationId);
+  
 
   /// Property getter and setter for loop: 
   bool? get loop;
-  set loop(bool? loop);
+  
 
   @override
   String toString();

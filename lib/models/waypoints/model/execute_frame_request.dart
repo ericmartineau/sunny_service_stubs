@@ -10,19 +10,19 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IExecuteFrameRequest implements MModel {
   /// Property getter and setter for flowThreadId: 
   RecordKey? get flowThreadId;
-  set flowThreadId(RecordKey? flowThreadId);
+  
 
   /// Property getter and setter for frameId: 
   RecordKey? get frameId;
-  set frameId(RecordKey? frameId);
+  
 
   /// Property getter and setter for state: 
   MModel? get state;
-  set state(MModel? state);
+  
 
   /// Property getter and setter for isSkip: 
   bool? get isSkip;
-  set isSkip(bool? isSkip);
+  
 
   @override
   String toString();

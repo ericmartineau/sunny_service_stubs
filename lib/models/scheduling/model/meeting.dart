@@ -14,78 +14,78 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMeeting implements MEntity {
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for description: 
   String? get description;
-  set description(String? description);
+  
 
   /// Property getter and setter for meetingImage: 
   Uri? get meetingImage;
-  set meetingImage(Uri? meetingImage);
+  
 
   /// Property getter and setter for discriminator: The discriminator is used to create different types of meetings, without the need to subclass them.  When used as part of an automation flow, the discriminator should match the flow's [FlowGraphId]
   /// The discriminator is used to create different types of meetings, without the need to subclass them.  When used as part of an automation flow, the discriminator should match the flow's [FlowGraphId]
   String? get discriminator;
-  set discriminator(String? discriminator);
+  
 
   /// Property getter and setter for organizerId: 
   String? get organizerId;
-  set organizerId(String? organizerId);
+  
 
   /// Property getter and setter for meetingType: A free-form type that identifies this meeting as a specific type of meeting - this may change things like notification reminders, templates, prep tasks, etc
   /// A free-form type that identifies this meeting as a specific type of meeting - this may change things like notification reminders, templates, prep tasks, etc
   String? get meetingType;
-  set meetingType(String? meetingType);
+  
 
   /// Property getter and setter for startDate: 
   DateTime? get startDate;
-  set startDate(DateTime? startDate);
+  
 
   /// Property getter and setter for durationUnit: 
   TimeUnit? get durationUnit;
-  set durationUnit(TimeUnit? durationUnit);
+  
 
   /// Property getter and setter for isCancelled: 
   bool? get isCancelled;
-  set isCancelled(bool? isCancelled);
+  
 
   /// Property getter and setter for isComplete: 
   bool? get isComplete;
-  set isComplete(bool? isComplete);
+  
 
   /// Property getter and setter for previousDate: In the case of a rescheduled meeting - this will contain the original date/time  as a reference in case communications should include that
   /// In the case of a rescheduled meeting - this will contain the original date/time  as a reference in case communications should include that
   DateTime? get previousDate;
-  set previousDate(DateTime? previousDate);
+  
 
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   /// Property getter and setter for durationAmount: 
   int? get durationAmount;
-  set durationAmount(int? durationAmount);
+  
 
   /// Property getter and setter for whatToExpect: 
   String? get whatToExpect;
-  set whatToExpect(String? whatToExpect);
+  
 
   /// Property getter and setter for inPersonInfo: 
   IInPersonInfo? get inPersonInfo;
-  set inPersonInfo(IInPersonInfo? inPersonInfo);
+  
 
   /// Property getter and setter for webInfo: 
   IWebInfo? get webInfo;
-  set webInfo(IWebInfo? webInfo);
+  
 
   /// Property getter and setter for phoneInfo: 
   IPhoneInfo? get phoneInfo;
-  set phoneInfo(IPhoneInfo? phoneInfo);
+  
 
   /// Property getter and setter for attendees: 
   Map<String, IAttendee>? get attendees;
-  set attendees(Map<String, IAttendee>? attendees);
+  
 
   @override
   String toString();

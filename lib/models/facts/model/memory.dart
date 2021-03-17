@@ -16,51 +16,51 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMemory implements IFact {
   /// Property getter and setter for contactKeys: 
   List<MKey>? get contactKeys;
-  set contactKeys(List<MKey>? contactKeys);
+  
 
   /// Property getter and setter for possessions: 
   List<MKey>? get possessions;
-  set possessions(List<MKey>? possessions);
+  
 
   /// Property getter and setter for organizations: 
   List<MKey>? get organizations;
-  set organizations(List<MKey>? organizations);
+  
 
   /// Property getter and setter for pets: 
   List<MKey>? get pets;
-  set pets(List<MKey>? pets);
+  
 
   /// Property getter and setter for traditions: 
   List<MKey>? get traditions;
-  set traditions(List<MKey>? traditions);
+  
 
   /// Property getter and setter for traits: 
   List<MKey>? get traits;
-  set traits(List<MKey>? traits);
+  
 
   /// Property getter and setter for memoryDate: 
   FlexiDate? get memoryDate;
-  set memoryDate(FlexiDate? memoryDate);
+  
 
   /// Property getter and setter for memory: 
   String? get memory;
-  set memory(String? memory);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for videos: 
   List<IVideoContent>? get videos;
-  set videos(List<IVideoContent>? videos);
+  
 
   /// Property getter and setter for location: 
   IPhysicalLocation? get location;
-  set location(IPhysicalLocation? location);
+  
 
   /// Property getter and setter for details: 
   String? get details;
-  set details(String? details);
+  
 
   @override
   String toString();

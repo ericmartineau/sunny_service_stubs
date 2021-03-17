@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IChangePasswordRequest implements MModel {
   /// Property getter and setter for oldPassword: 
   String? get oldPassword;
-  set oldPassword(String? oldPassword);
+  
 
   /// Property getter and setter for newPassword: 
   String? get newPassword;
-  set newPassword(String? newPassword);
+  
 
   @override
   String toString();

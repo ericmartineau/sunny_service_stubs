@@ -13,19 +13,19 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IRemember implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for rememberUntil: 
   DateTime? get rememberUntil;
-  set rememberUntil(DateTime? rememberUntil);
+  
 
   /// Property getter and setter for rememberTitle: 
   String? get rememberTitle;
-  set rememberTitle(String? rememberTitle);
+  
 
   /// Property getter and setter for rememberDetails: 
   String? get rememberDetails;
-  set rememberDetails(String? rememberDetails);
+  
 
   @override
   String toString();

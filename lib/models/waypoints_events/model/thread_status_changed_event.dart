@@ -14,11 +14,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IThreadStatusChangedEvent implements IEntityUpdatedEvent {
   /// Property getter and setter for oldStatus: 
   IThreadStatus? get oldStatus;
-  set oldStatus(IThreadStatus? oldStatus);
+  
 
   /// Property getter and setter for newStatus: 
   IThreadStatus? get newStatus;
-  set newStatus(IThreadStatus? newStatus);
+  
 
   @override
   String toString();

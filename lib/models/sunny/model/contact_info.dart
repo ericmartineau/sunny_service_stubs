@@ -17,51 +17,51 @@ import '../model/important_date.dart';
 abstract class IContactInfo implements IBasicContact {
   /// Property getter and setter for timeZone: 
   String? get timeZone;
-  set timeZone(String? timeZone);
+  
 
   /// Property getter and setter for locale: 
   String? get locale;
-  set locale(String? locale);
+  
 
   /// Property getter and setter for phones: 
   List<IContactPhone>? get phones;
-  set phones(List<IContactPhone>? phones);
+  
 
   /// Property getter and setter for emails: 
   List<IContactEmail>? get emails;
-  set emails(List<IContactEmail>? emails);
+  
 
   /// Property getter and setter for addresses: 
   List<IContactAddress>? get addresses;
-  set addresses(List<IContactAddress>? addresses);
+  
 
   /// Property getter and setter for urls: 
   List<IContactUrl>? get urls;
-  set urls(List<IContactUrl>? urls);
+  
 
   /// Property getter and setter for socialProfiles: 
   List<IContactSocialProfile>? get socialProfiles;
-  set socialProfiles(List<IContactSocialProfile>? socialProfiles);
+  
 
   /// Property getter and setter for attachments: 
   List<IContactAttachment>? get attachments;
-  set attachments(List<IContactAttachment>? attachments);
+  
 
   /// Property getter and setter for dates: 
   List<IImportantDate>? get dates;
-  set dates(List<IImportantDate>? dates);
+  
 
   /// Property getter and setter for interests: 
   List<String>? get interests;
-  set interests(List<String>? interests);
+  
 
   /// Property getter and setter for dateCreated: 
   DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  
 
   /// Property getter and setter for dateUpdated: 
   DateTime? get dateUpdated;
-  set dateUpdated(DateTime? dateUpdated);
+  
 
   @override
   String toString();

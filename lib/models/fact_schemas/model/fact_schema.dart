@@ -16,59 +16,59 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IFactSchema implements MModel {
   /// Property getter and setter for ref: 
   MSchemaRef? get ref;
-  set ref(MSchemaRef? ref);
+  
 
   /// Property getter and setter for mschema: 
   IMSchemaDefinition? get mschema;
-  set mschema(IMSchemaDefinition? mschema);
+  
 
   /// Property getter and setter for recordType: 
   MSchemaRef? get recordType;
-  set recordType(MSchemaRef? recordType);
+  
 
   /// Property getter and setter for category: 
   String? get category;
-  set category(String? category);
+  
 
   /// Property getter and setter for templates: 
   Map<String, IFactSchemaTemplate>? get templates;
-  set templates(Map<String, IFactSchemaTemplate>? templates);
+  
 
   /// Property getter and setter for icon: 
   String? get icon;
-  set icon(String? icon);
+  
 
   /// Property getter and setter for tenses: 
   List<IFactTense>? get tenses;
-  set tenses(List<IFactTense>? tenses);
+  
 
   /// Property getter and setter for factTokens: 
   List<String>? get factTokens;
-  set factTokens(List<String>? factTokens);
+  
 
   /// Property getter and setter for bundle: 
   String? get bundle;
-  set bundle(String? bundle);
+  
 
   /// Property getter and setter for dates: 
   List<IFactMetaDate>? get dates;
-  set dates(List<IFactMetaDate>? dates);
+  
 
   /// Property getter and setter for links: 
   List<IFactLink>? get links;
-  set links(List<IFactLink>? links);
+  
 
   /// Property getter and setter for duration: 
   IFactDuration? get duration;
-  set duration(IFactDuration? duration);
+  
 
   /// Property getter and setter for isSingleton: 
   bool? get isSingleton;
-  set isSingleton(bool? isSingleton);
+  
 
   /// Property getter and setter for isAttribute: 
   bool? get isAttribute;
-  set isAttribute(bool? isAttribute);
+  
 
   @override
   String toString();

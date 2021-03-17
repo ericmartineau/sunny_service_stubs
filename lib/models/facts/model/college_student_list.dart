@@ -10,11 +10,11 @@ import '../model/college_student.dart';
 abstract class ICollegeStudentList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ICollegeStudent>? get data;
-  set data(List<ICollegeStudent>? data);
+  
 
   @override
   String toString();

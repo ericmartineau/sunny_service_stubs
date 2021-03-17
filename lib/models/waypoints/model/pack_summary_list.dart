@@ -10,11 +10,11 @@ import '../model/pack_summary.dart';
 abstract class IPackSummaryList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IPackSummary>? get data;
-  set data(List<IPackSummary>? data);
+  
 
   @override
   String toString();

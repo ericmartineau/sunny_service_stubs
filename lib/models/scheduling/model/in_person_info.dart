@@ -10,11 +10,11 @@ import '../../contact_v2/model/physical_location.dart';
 abstract class IInPersonInfo implements MModel {
   /// Property getter and setter for location: 
   IPhysicalLocation? get location;
-  set location(IPhysicalLocation? location);
+  
 
   /// Property getter and setter for howToPrepare: 
   String? get howToPrepare;
-  set howToPrepare(String? howToPrepare);
+  
 
   @override
   String toString();

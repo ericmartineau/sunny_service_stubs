@@ -10,11 +10,11 @@ import '../model/task_fact.dart';
 abstract class ITaskFactList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ITaskFact>? get data;
-  set data(List<ITaskFact>? data);
+  
 
   @override
   String toString();

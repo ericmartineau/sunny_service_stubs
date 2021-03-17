@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IGroupInvitationRedeemRequest implements MModel {
   /// Property getter and setter for excludeContactIds: 
   List<String>? get excludeContactIds;
-  set excludeContactIds(List<String>? excludeContactIds);
+  
 
   @override
   String toString();

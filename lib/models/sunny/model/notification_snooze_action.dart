@@ -9,7 +9,7 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class INotificationSnoozeAction implements MModel {
   /// Property getter and setter for date: 
   DateTime? get date;
-  set date(DateTime? date);
+  
 
   @override
   String toString();

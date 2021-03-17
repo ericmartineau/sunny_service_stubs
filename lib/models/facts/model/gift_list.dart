@@ -10,11 +10,11 @@ import '../model/gift.dart';
 abstract class IGiftList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IGift>? get data;
-  set data(List<IGift>? data);
+  
 
   @override
   String toString();

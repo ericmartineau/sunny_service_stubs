@@ -13,35 +13,35 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IReaction implements MEntity {
   /// Property getter and setter for comment: 
   String? get comment;
-  set comment(String? comment);
+  
 
   /// Property getter and setter for emote: 
   String? get emote;
-  set emote(String? emote);
+  
 
   /// Property getter and setter for photos: 
   List<IImageContent>? get photos;
-  set photos(List<IImageContent>? photos);
+  
 
   /// Property getter and setter for videos: 
   List<IVideoContent>? get videos;
-  set videos(List<IVideoContent>? videos);
+  
 
   /// Property getter and setter for creator: 
   IReliveItContact? get creator;
-  set creator(IReliveItContact? creator);
+  
 
   /// Property getter and setter for user: 
   MKey? get user;
-  set user(MKey? user);
+  
 
   /// Property getter and setter for chain: 
   List<MKey>? get chain;
-  set chain(List<MKey>? chain);
+  
 
   /// Property getter and setter for content: 
   MKey? get content;
-  set content(MKey? content);
+  
 
   @override
   String toString();

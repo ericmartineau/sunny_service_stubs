@@ -10,11 +10,11 @@ import '../model/the_why.dart';
 abstract class ITheWhyList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<ITheWhy>? get data;
-  set data(List<ITheWhy>? data);
+  
 
   @override
   String toString();

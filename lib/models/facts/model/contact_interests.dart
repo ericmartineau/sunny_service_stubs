@@ -13,11 +13,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IContactInterests implements IFact {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for interests: 
   List<String>? get interests;
-  set interests(List<String>? interests);
+  
 
   @override
   String toString();

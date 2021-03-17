@@ -14,27 +14,27 @@ import '../model/push_display_type.dart';
 abstract class IPushContentBody implements IMessageBody {
   /// Property getter and setter for displayType: 
   IPushDisplayType? get displayType;
-  set displayType(IPushDisplayType? displayType);
+  
 
   /// Property getter and setter for blocks: 
   List<IContent>? get blocks;
-  set blocks(List<IContent>? blocks);
+  
 
   /// Property getter and setter for title: 
   String? get title;
-  set title(String? title);
+  
 
   /// Property getter and setter for image: 
   IIconInfo? get image;
-  set image(IIconInfo? image);
+  
 
   /// Property getter and setter for actions: 
   List<IButtonContent>? get actions;
-  set actions(List<IButtonContent>? actions);
+  
 
   /// Property getter and setter for showLargeTitle: 
   bool? get showLargeTitle;
-  set showLargeTitle(bool? showLargeTitle);
+  
 
   @override
   String toString();

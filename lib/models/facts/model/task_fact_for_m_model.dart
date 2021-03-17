@@ -10,11 +10,11 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ITaskFactForMModel implements MEntity {
   /// Property getter and setter for taskTitle: 
   String? get taskTitle;
-  set taskTitle(String? taskTitle);
+  
 
   /// Property getter and setter for operationRef: 
   MOperationRef? get operationRef;
-  set operationRef(MOperationRef? operationRef);
+  
 
   @override
   String toString();

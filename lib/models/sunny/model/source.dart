@@ -9,27 +9,27 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class ISource implements MModel {
   /// Property getter and setter for id: 
   String? get id;
-  set id(String? id);
+  
 
   /// Property getter and setter for type: 
   String? get type;
-  set type(String? type);
+  
 
   /// Property getter and setter for identifier: 
   String? get identifier;
-  set identifier(String? identifier);
+  
 
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for credentials: 
   dynamic? get credentials;
-  set credentials(dynamic? credentials);
+  
 
   /// Property getter and setter for credentialsValid: 
   bool? get credentialsValid;
-  set credentialsValid(bool? credentialsValid);
+  
 
   @override
   String toString();

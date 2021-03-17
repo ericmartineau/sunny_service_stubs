@@ -9,15 +9,15 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IImportContactResponse implements MModel {
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for identityId: 
   String? get identityId;
-  set identityId(String? identityId);
+  
 
   /// Property getter and setter for created: 
   bool? get created;
-  set created(bool? created);
+  
 
   @override
   String toString();

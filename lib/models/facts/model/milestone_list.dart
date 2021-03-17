@@ -10,11 +10,11 @@ import '../model/milestone.dart';
 abstract class IMilestoneList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IMilestone>? get data;
-  set data(List<IMilestone>? data);
+  
 
   @override
   String toString();

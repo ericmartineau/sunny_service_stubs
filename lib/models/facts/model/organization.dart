@@ -12,19 +12,19 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IOrganization implements MEntity {
   /// Property getter and setter for name: 
   String? get name;
-  set name(String? name);
+  
 
   /// Property getter and setter for logo: 
   IImageContent? get logo;
-  set logo(IImageContent? logo);
+  
 
   /// Property getter and setter for phases: 
   List<IPhase>? get phases;
-  set phases(List<IPhase>? phases);
+  
 
   /// Property getter and setter for parent: 
   List<MKey>? get parent;
-  set parent(List<MKey>? parent);
+  
 
   @override
   String toString();

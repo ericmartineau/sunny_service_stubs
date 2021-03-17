@@ -10,11 +10,11 @@ import '../model/hometown.dart';
 abstract class IHometownList implements MModel {
   /// Property getter and setter for count: 
   int? get count;
-  set count(int? count);
+  
 
   /// Property getter and setter for data: 
   List<IHometown>? get data;
-  set data(List<IHometown>? data);
+  
 
   @override
   String toString();

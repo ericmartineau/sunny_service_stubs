@@ -11,51 +11,51 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IMOperationDefinition implements MModel {
   /// Property getter and setter for operationRef: 
   MOperationRef? get operationRef;
-  set operationRef(MOperationRef? operationRef);
+  
 
   /// Property getter and setter for implements_: 
   MOperationRef? get implements_;
-  set implements_(MOperationRef? implements_);
+  
 
   /// Property getter and setter for owningType: 
   MSchemaRef? get owningType;
-  set owningType(MSchemaRef? owningType);
+  
 
   /// Property getter and setter for operationLabel: 
   String? get operationLabel;
-  set operationLabel(String? operationLabel);
+  
 
   /// Property getter and setter for operationDescription: 
   String? get operationDescription;
-  set operationDescription(String? operationDescription);
+  
 
   /// Property getter and setter for isAssisted: 
   bool? get isAssisted;
-  set isAssisted(bool? isAssisted);
+  
 
   /// Property getter and setter for isVirtual: 
   bool? get isVirtual;
-  set isVirtual(bool? isVirtual);
+  
 
   /// Property getter and setter for realm: 
   String? get realm;
-  set realm(String? realm);
+  
 
   /// Property getter and setter for requiredTokens: 
   List<String>? get requiredTokens;
-  set requiredTokens(List<String>? requiredTokens);
+  
 
   /// Property getter and setter for inputSchema: 
   IMSchemaDefinition? get inputSchema;
-  set inputSchema(IMSchemaDefinition? inputSchema);
+  
 
   /// Property getter and setter for outputSchema: 
   IMSchemaDefinition? get outputSchema;
-  set outputSchema(IMSchemaDefinition? outputSchema);
+  
 
   /// Property getter and setter for initSchema: 
   IMSchemaDefinition? get initSchema;
-  set initSchema(IMSchemaDefinition? initSchema);
+  
 
   @override
   String toString();

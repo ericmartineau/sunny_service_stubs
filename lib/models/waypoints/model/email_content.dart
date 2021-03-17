@@ -10,15 +10,15 @@ import '../model/interaction_content.dart';
 abstract class IEmailContent implements IInteractionContent {
   /// Property getter and setter for subject: 
   String? get subject;
-  set subject(String? subject);
+  
 
   /// Property getter and setter for messageBody: 
   String? get messageBody;
-  set messageBody(String? messageBody);
+  
 
   /// Property getter and setter for contentType: 
   String? get contentType;
-  set contentType(String? contentType);
+  
 
   @override
   String toString();

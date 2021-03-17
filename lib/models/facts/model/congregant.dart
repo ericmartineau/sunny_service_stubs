@@ -15,15 +15,15 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class ICongregant implements IMembership {
   /// Property getter and setter for contactKey: 
   MKey? get contactKey;
-  set contactKey(MKey? contactKey);
+  
 
   /// Property getter and setter for church: 
   IChurch? get church;
-  set church(IChurch? church);
+  
 
   /// Property getter and setter for churchPosition: 
   String? get churchPosition;
-  set churchPosition(String? churchPosition);
+  
 
   @override
   String toString();

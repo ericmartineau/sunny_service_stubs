@@ -10,23 +10,23 @@ import '../model/contact.dart';
 abstract class IContactList implements MModel {
   /// Property getter and setter for total: 
   int? get total;
-  set total(int? total);
+  
 
   /// Property getter and setter for offset: 
   int? get offset;
-  set offset(int? offset);
+  
 
   /// Property getter and setter for max: 
   int? get max;
-  set max(int? max);
+  
 
   /// Property getter and setter for stats: 
   dynamic? get stats;
-  set stats(dynamic? stats);
+  
 
   /// Property getter and setter for data: 
   List<IContact>? get data;
-  set data(List<IContact>? data);
+  
 
   @override
   String toString();

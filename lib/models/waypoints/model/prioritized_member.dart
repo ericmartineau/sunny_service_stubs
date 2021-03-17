@@ -9,11 +9,11 @@ import 'package:sunny_sdk_core/model_exports.dart';
 abstract class IPrioritizedMember implements MModel {
   /// Property getter and setter for contactId: 
   String? get contactId;
-  set contactId(String? contactId);
+  
 
   /// Property getter and setter for priority: 
   int? get priority;
-  set priority(int? priority);
+  
 
   @override
   String toString();

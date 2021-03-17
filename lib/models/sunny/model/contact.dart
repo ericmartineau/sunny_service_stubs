@@ -14,55 +14,42 @@ import '../model/tag.dart';
 abstract class IContact implements IBasicContact {
   /// Property getter and setter for id:
   String? get id;
-  set id(String? id);
 
   /// Property getter and setter for type:
   String? get type;
-  set type(String? type);
 
   /// Property getter and setter for userId:
   String? get userId;
-  set userId(String? userId);
 
   /// Property getter and setter for deleted:
   bool? get deleted;
-  set deleted(bool? deleted);
 
   /// Property getter and setter for picture:
   String? get picture;
-  set picture(String? picture);
 
   /// Property getter and setter for favorite:
   int? get favorite;
-  set favorite(int? favorite);
 
   /// Property getter and setter for lastInteraction:
   IContactLastInteraction? get lastInteraction;
-  set lastInteraction(IContactLastInteraction? lastInteraction);
 
   /// Property getter and setter for tags:
   List<ITag>? get tags;
-  set tags(List<ITag>? tags);
 
   /// Property getter and setter for groups:
   List<String>? get groups;
-  set groups(List<String>? groups);
 
   /// Property getter and setter for automations:
   List<String>? get automations;
-  set automations(List<String>? automations);
 
   /// Property getter and setter for notes:
   List<IContactNote>? get notes;
-  set notes(List<IContactNote>? notes);
 
   /// Property getter and setter for linkedContacts:
   List<IContact>? get linkedContacts;
-  set linkedContacts(List<IContact>? linkedContacts);
 
   /// Property getter and setter for identities:
   List<IContactIdentity>? get identities;
-  set identities(List<IContactIdentity>? identities);
 
   @override
   String toString();

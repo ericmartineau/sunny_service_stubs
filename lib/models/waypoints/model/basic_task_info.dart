@@ -12,45 +12,45 @@ import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 abstract class IBasicTaskInfo implements MModel {
   /// Property getter and setter for requiredDataEntry: 
   MSchemaRef? get requiredDataEntry;
-  set requiredDataEntry(MSchemaRef? requiredDataEntry);
+  
 
   /// Property getter and setter for isUserFact: Whether the contact linked to this fact should be the user
   /// Whether the contact linked to this fact should be the user
   bool? get isUserFact;
-  set isUserFact(bool? isUserFact);
+  
 
   /// Property getter and setter for appLinkDestination: 
   Uri? get appLinkDestination;
-  set appLinkDestination(Uri? appLinkDestination);
+  
 
   /// Property getter and setter for appLinkDestinationArgs: 
   Map<String, dynamic>? get appLinkDestinationArgs;
-  set appLinkDestinationArgs(Map<String, dynamic>? appLinkDestinationArgs);
+  
 
   /// Property getter and setter for isCompleteOnTap: 
   bool? get isCompleteOnTap;
-  set isCompleteOnTap(bool? isCompleteOnTap);
+  
 
   /// Property getter and setter for isCompleteOnResult: 
   bool? get isCompleteOnResult;
-  set isCompleteOnResult(bool? isCompleteOnResult);
+  
 
   /// Property getter and setter for starts: 
   List<IStartFlowSet>? get starts;
-  set starts(List<IStartFlowSet>? starts);
+  
 
   /// Property getter and setter for contactLinkPath: 
   JsonPath? get contactLinkPath;
-  set contactLinkPath(JsonPath? contactLinkPath);
+  
 
   /// Property getter and setter for defaultValues: 
   MModel? get defaultValues;
-  set defaultValues(MModel? defaultValues);
+  
 
   /// Property getter and setter for formName: Specifies a specific form used to do the rendering, in case the standard metadata generated form doesn't cut it
   /// Specifies a specific form used to do the rendering, in case the standard metadata generated form doesn't cut it
   String? get formName;
-  set formName(String? formName);
+  
 
   @override
   String toString();
