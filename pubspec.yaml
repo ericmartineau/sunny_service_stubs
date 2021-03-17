@@ -7,6 +7,7 @@ environment:
 dependencies:
   timezone: ^0.7.0-nullsafety.0
   sunny_data: ^1.0.0-nullsafety.2
+  logging: ^1.0.0
   sunny_dart: ^0.8.0+7
   flexidate: ^0.4.5-nullsafety.2
   equatable: ^2.0.0-nullsafety.0
