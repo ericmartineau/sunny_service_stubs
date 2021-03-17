@@ -1,4 +1,7 @@
 library sunny_service_stubs;
 
-export 'lib/sunny_entity_stubs.dart';
-export 'lib/meta.dart';
+export 'meta.dart';
+export 'contact.dart';
+export 'options.dart';
+export 'models.dart';
+export 'services.dart';
