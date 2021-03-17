@@ -1,7 +1,4 @@
 library sunny_service_stubs;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'lib/sunny_entity_stubs.dart';
+export 'lib/meta.dart';
