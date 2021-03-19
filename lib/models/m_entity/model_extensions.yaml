@@ -1,0 +1,7 @@
+MSchemaProperty:
+  interfaces:
+    - ISchemaProperty
+MEntityDefinition:
+  interface: true
+MSchemaDefinition:
+  interface: true

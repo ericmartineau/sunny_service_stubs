@@ -1,7 +1,8 @@
 library sunny_service_stubs.waypoints;
 
+// ignore: unused_import
 import 'package:sunny_sdk_core/model_exports.dart';
-
+export 'waypoints_ext.dart';
 export 'model/account_content_template.dart';
 export 'model/account_content_template_list.dart';
 export 'model/account_flow_graph.dart';
@@ -142,6 +143,22 @@ export 'model/video_content.dart';
 export 'model/wait_prior.dart';
 export 'model/youtube_content.dart';
 
+export 'api/account_content_template_api.dart';
+export 'api/account_flow_graph_api.dart';
+export 'api/content_api.dart';
+export 'api/flow_frame_api.dart';
+export 'api/flow_graph_api.dart';
+export 'api/flow_thread_api.dart';
+export 'api/global_content_template_api.dart';
+export 'api/group_thread_state_api.dart';
+export 'api/pack_summary_api.dart';
+export 'api/slick_sunny_api.dart';
+export 'api/sunny_bundle_api.dart';
+export 'api/sunny_group_flow_api.dart';
+export 'api/sunny_interaction_api.dart';
+export 'api/sunny_publisher_api.dart';
+export 'api/template_data_api.dart';
+export 'api/template_set_api.dart';
 
 
 const waypointsBuilderModuleRef = MModuleRef.ofParts("sunny", "waypointsBuilder", "0.0.1");

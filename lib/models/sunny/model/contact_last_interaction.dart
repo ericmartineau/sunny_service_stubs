@@ -6,14 +6,21 @@ import 'package:sunny_sdk_core/model_exports.dart';
 
 
 
-abstract class IContactLastInteraction implements MModel {
+abstract class IContactLastInteraction
+  implements MModel {
+
+  static late _ContactLastInteractionConstructor of;
+  static late _ContactLastInteractionFromJson fromJson;
+
   /// Property getter and setter for date: 
   DateTime? get date;
-  
+  set date(DateTime? date);
+
 
   /// Property getter and setter for type: 
   String? get type;
-  
+  set type(String? type);
+
 
   @override
   String toString();
@@ -40,7 +47,6 @@ abstract class IContactLastInteraction implements MModel {
 }
 
 class ContactLastInteractionFields {
-  
   static const date = "date";
   static const type = "type";
   static const Set<String> values = {
@@ -49,7 +55,6 @@ class ContactLastInteractionFields {
 }
 
 class ContactLastInteractionPaths {
-  
   static const JsonPath<DateTime> date = JsonPath.internal(["date"], "/date");
   static const JsonPath<String> type = JsonPath.internal(["type"], "/type");
   static final Set<JsonPath> values = {
@@ -59,3 +64,8 @@ class ContactLastInteractionPaths {
 
 
 const ContactLastInteractionRef = MSchemaRef("mverse", "sunny", "contact_lastInteraction", "0.0.1", "ephemeral");
+
+typedef _ContactLastInteractionConstructor = IContactLastInteraction Function({   DateTime? date, 
+  String? type
+ });
+typedef _ContactLastInteractionFromJson = IContactLastInteraction Function(dynamic any);

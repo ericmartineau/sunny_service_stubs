@@ -9,6 +9,7 @@ export 'models/contact_v2/contact_v2.dart'
         NoteFields,
         NotePaths,
         INoteList,
+        INoteApi,
         IContactInfo,
         ContactInfoPaths,
         ContactInfoFields,

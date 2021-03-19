@@ -1,7 +1,8 @@
 library sunny_service_stubs.facts;
 
+// ignore: unused_import
 import 'package:sunny_sdk_core/model_exports.dart';
-
+export 'facts_ext.dart';
 export 'model/assisted_task.dart';
 export 'model/assisted_task_list.dart';
 export 'model/assisted_tasks.dart';
@@ -91,6 +92,42 @@ export 'model/tradition_list.dart';
 export 'model/trait.dart';
 export 'model/trait_list.dart';
 
+export 'api/assisted_task_api.dart';
+export 'api/birthday_api.dart';
+export 'api/book_club_api.dart';
+export 'api/book_club_member_api.dart';
+export 'api/church_api.dart';
+export 'api/college_api.dart';
+export 'api/college_student_api.dart';
+export 'api/congregant_api.dart';
+export 'api/contact_extended_props_api.dart';
+export 'api/contact_interests_api.dart';
+export 'api/employee_api.dart';
+export 'api/employer_api.dart';
+export 'api/fact_api.dart';
+export 'api/family_api.dart';
+export 'api/family_association_api.dart';
+export 'api/gift_api.dart';
+export 'api/hometown_api.dart';
+export 'api/membership_api.dart';
+export 'api/memory_api.dart';
+export 'api/milestone_api.dart';
+export 'api/note_api.dart';
+export 'api/organization_api.dart';
+export 'api/owes_money_api.dart';
+export 'api/payment_api.dart';
+export 'api/pet_api.dart';
+export 'api/phase_api.dart';
+export 'api/player_api.dart';
+export 'api/possession_api.dart';
+export 'api/prep_school_api.dart';
+export 'api/prep_school_student_api.dart';
+export 'api/reaction_api.dart';
+export 'api/remember_api.dart';
+export 'api/task_fact_api.dart';
+export 'api/team_api.dart';
+export 'api/tradition_api.dart';
+export 'api/trait_api.dart';
 
 
 const factModuleRef = MModuleRef.ofParts("sunny", "fact", "0.0.1");

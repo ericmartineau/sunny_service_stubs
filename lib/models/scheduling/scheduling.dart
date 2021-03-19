@@ -1,7 +1,8 @@
 library sunny_service_stubs.scheduling;
 
+// ignore: unused_import
 import 'package:sunny_sdk_core/model_exports.dart';
-
+export 'scheduling_ext.dart';
 export 'model/attend_method.dart';
 export 'model/attendee.dart';
 export 'model/attendee_flow_thread.dart';
@@ -22,6 +23,10 @@ export 'model/recurring_time_span.dart';
 export 'model/web_info.dart';
 export 'model/web_meeting_provider.dart';
 
+export 'api/attendee_api.dart';
+export 'api/attendee_flow_thread_api.dart';
+export 'api/meeting_api.dart';
+export 'api/meeting_flow_thread_api.dart';
 
 
 const schedulingModuleRef = MModuleRef.ofParts("sunny", "scheduling", "0.0.1");

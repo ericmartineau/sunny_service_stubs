@@ -1,7 +1,8 @@
 library sunny_service_stubs.sunny;
 
+// ignore: unused_import
 import 'package:sunny_sdk_core/model_exports.dart';
-
+export 'sunny_ext.dart';
 export 'model/account_info.dart';
 export 'model/account_setting_map.dart';
 export 'model/account_settings.dart';
@@ -24,7 +25,6 @@ export 'model/contact_identity.dart';
 export 'model/contact_identity_update_request.dart';
 export 'model/contact_info.dart';
 export 'model/contact_interaction.dart';
-export 'model/contact_last_interaction.dart';
 export 'model/contact_list.dart';
 export 'model/contact_note.dart';
 export 'model/contact_phone.dart';
@@ -61,10 +61,21 @@ export 'model/registration_response.dart';
 export 'model/reset_password_request.dart';
 export 'model/reset_password_response.dart';
 export 'model/resource.dart';
+export 'model/setting.dart';
 export 'model/source.dart';
 export 'model/sync_options.dart';
 export 'model/tag.dart';
 export 'model/token_response.dart';
 export 'model/user_profile.dart';
 
+export 'api/account_api.dart';
+export 'api/config_api.dart';
+export 'api/contacts_api.dart';
+export 'api/forms_api.dart';
+export 'api/groups_api.dart';
+export 'api/imports_api.dart';
+export 'api/notifications_api.dart';
+export 'api/pictures_api.dart';
+export 'api/profiles_api.dart';
+export 'api/resources_api.dart';
 

@@ -1,7 +1,8 @@
 library sunny_service_stubs.m_entity;
 
+// ignore: unused_import
 import 'package:sunny_sdk_core/model_exports.dart';
-
+export 'm_entity_ext.dart';
 export 'model/embedded_property.dart';
 export 'model/entity_list_property.dart';
 export 'model/list_property.dart';
