@@ -1,3 +1,8 @@
+## [0.1.1-nullsafety.9]
+ * sdk 2.0
+Updating sunny_sdk_core
+sdk 2.0
+
 ## [0.1.1-nullsafety.8]
  * Ignor eswagger
 Stubs without setters
