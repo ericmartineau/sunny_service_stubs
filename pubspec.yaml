@@ -1,5 +1,5 @@
 name: sunny_service_stubs
-version: 0.1.1-nullsafety.12
+version: 0.3.0
 description: A new Flutter package project.
 environment: 
   sdk: '>=2.12.0 <3.0.0'
@@ -7,17 +7,17 @@ environment:
 dependencies: 
   timezone: ^0.7.0-nullsafety.0
   meta: ^1.3.0
-  sunny_data: ^1.0.0-nullsafety.2
+  sunny_data: ^1.0.0+1
   logging: ^1.0.0
   intl: ^0.17.0
-  info_x: ^0.4.4-nullsafety.2
-  pfile: ^2.0.1-nullsafety.3
-  sunny_dart: ^0.8.3+2
-  flexidate: ^0.4.5-nullsafety.2
+  info_x: ^0.5.0+1
+  pfile: ^2.1.0+1
+  sunny_dart: ^0.9.0+1
+  flexidate: ^0.5.0+1
   equatable: ^2.0.0
-  dartxx: ^0.4.5-nullsafety.6
-  collection_diff: ^2.0.3+5
-  sunny_sdk_core: ^2.0.0-nullsafe.17
+  dartxx: ^0.5.0+2
+  collection_diff: ^2.0.3+6
+  sunny_sdk_core: ^2.0.0+1
   flutter: 
     sdk: flutter
 dev_dependencies: 

@@ -5,23 +5,17 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../waypoints_ext.dart';
 
-
-
-abstract class ICompletion
-  implements MModel {
-
+abstract class ICompletion implements MModel {
   static late _CompletionConstructor of;
   static late _CompletionFromJson fromJson;
 
-  /// Property getter and setter for type: 
+  /// Property getter and setter for type:
   String? get type;
   set type(String? type);
 
-
-  /// Property getter and setter for query: 
+  /// Property getter and setter for query:
   dynamic? get query;
   set query(dynamic? query);
-
 
   @override
   String toString();
@@ -44,48 +38,45 @@ abstract class ICompletion
 
   @override
   Set<String> get mfields => CompletionFields.values;
-
 }
 
 class CompletionFields {
   static const type = "type";
   static const query = "query";
-  static const Set<String> values = {
-    type, query
-  };
+  static const Set<String> values = {type, query};
 }
 
 class CompletionPaths {
   static const JsonPath<String> type = JsonPath.internal(["type"], "/type");
   static const JsonPath<dynamic> query = JsonPath.internal(["query"], "/query");
-  static final Set<JsonPath> values = {
-    type, query
-  };
+  static final Set<JsonPath> values = {type, query};
 }
 
-
 class CompletionType extends MLiteral<String> {
-  const CompletionType._internal(String value): super(value);
-  // ignore: non_constant_identifier_names
-  static const CompletionType queryString_ = CompletionType._internal("QUERY_STRING");
-  // ignore: non_constant_identifier_names
-  static const CompletionType structured_ = CompletionType._internal("STRUCTURED");
+  const CompletionType._internal(String value) : super(value);
+  static const CompletionType queryString_ =
+      CompletionType._internal("QUERY_STRING");
+  static const CompletionType structured_ =
+      CompletionType._internal("STRUCTURED");
 
   static CompletionType fromJson(dynamic data) {
     switch (data?.toString()) {
-      case "QUERY_STRING": return CompletionType.queryString_;
-      case "STRUCTURED": return CompletionType.structured_;
-      default: throw('Unknown enum value to decode: $data');
+      case "QUERY_STRING":
+        return CompletionType.queryString_;
+      case "STRUCTURED":
+        return CompletionType.structured_;
+      default:
+        throw ('Unknown enum value to decode: $data');
     }
   }
 
   static dynamic encode(CompletionType data) => data.value;
   dynamic toJson() => json.encode(value);
-
 }
-const CompletionRef = MSchemaRef("sunny", "waypointsBuilder", "completion", "0.0.1", "ephemeral");
 
-typedef _CompletionConstructor = ICompletion Function({   required String? type, 
-  required dynamic? query
- });
+const CompletionRef =
+    MSchemaRef("sunny", "waypointsBuilder", "completion", "0.0.1", "ephemeral");
+
+typedef _CompletionConstructor = ICompletion Function(
+    {required String? type, required dynamic? query});
 typedef _CompletionFromJson = ICompletion Function(dynamic any);
