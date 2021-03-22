@@ -1,6 +1,5 @@
 import 'package:flexidate/flexible_date.dart';
 import 'package:intl/intl.dart';
-import 'package:sunny_dart/i18n.dart';
 import 'package:timezone/timezone.dart';
 
 final isoDateFormat = DateFormat("yyyy-MM-dd");
