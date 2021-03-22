@@ -10,6 +10,7 @@ dependencies:
   sunny_data: ^1.0.0-nullsafety.2
   logging: ^1.0.0
   intl: ^0.17.0
+  info_x: ^0.4.4-nullsafety.2
   pfile: ^2.0.1-nullsafety.3
   sunny_dart: ^0.8.3+2
   flexidate: ^0.4.5-nullsafety.2
