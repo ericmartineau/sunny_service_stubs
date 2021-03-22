@@ -1,2 +1,4 @@
+ImageContent:
+  interface: true
 FlowNode:
   interface: true

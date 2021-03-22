@@ -1,3 +1,6 @@
+ContactAddress:
+  interfaces:
+    - SunnyPlace
 Account:
   interfaces:
     - Entity

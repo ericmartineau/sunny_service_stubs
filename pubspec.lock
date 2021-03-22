@@ -262,7 +262,7 @@ packages:
     source: hosted
     version: "0.12.10"
   meta:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: meta
       url: "https://pub.dartlang.org"
@@ -332,7 +332,7 @@ packages:
     source: hosted
     version: "1.11.0"
   pfile:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: pfile
       url: "https://pub.dartlang.org"
@@ -447,7 +447,7 @@ packages:
       name: sunny_sdk_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.0-nullsafe.15"
+    version: "2.0.0-nullsafe.16"
   synchronized:
     dependency: transitive
     description:

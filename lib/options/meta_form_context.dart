@@ -9,7 +9,7 @@ abstract class IMetaFormFieldContext {
   List<IMetaPropertyHandler> get extraHandlers;
   Map<String, dynamic> get data;
 
-  T formConfig<T extends MetaFieldConfig>();
+  T? formConfig<T extends MetaFieldConfig>();
 }
 
 abstract class IMetaFormContext {

@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:collection_diff/diff_equality.dart';
+import 'package:flutter/material.dart';
 import 'package:sunny_dart/sunny_dart.dart';
 
 /// A builder that passes in whether or not the current suggested item is the one that's presently selected.
@@ -8,7 +9,7 @@ import 'package:sunny_dart/sunny_dart.dart';
 //     BuildContext context, bool isSelected);
 
 abstract class IKeyedOptionsHandler<K, V> {
-  FutureOr<V> loadValue(K key);
+  FutureOr<V?> loadValue(K key);
   String get key;
   bool get canShowAll;
 
@@ -53,22 +54,23 @@ abstract class TypeaheadOptions {
 /// Contains all the view-related concerns for integrating [KeyedOption] handlers into typeahead fields
 abstract class TypeaheadHandler<K, T> {
   /// Gets the selected text that shows up in the
-  String getSelection(KeyedOption<K, T> selectedOption);
+  String? getSelection(KeyedOption<K, T>? selectedOption);
 
   /// Renders the suffix for the selected item in the form control
-  R renderSelectedItemSuffix<C, R>(C context, KeyedOption<K, T> selected,
+  Widget? renderSelectedItemSuffix(
+      BuildContext context, KeyedOption<K, T> selected,
       {required SelectOption<K, T> selectOption});
 
   /// Renders the suggested tile in the list of options
-  R renderSuggestionTile<C, R>(
-    C context,
+  Widget renderSuggestionTile(
+    BuildContext context,
     KeyedOption<K, T> suggestion, {
     required bool isSelected,
     required SelectOption<K, T> selectOption,
     void onTap()?,
   });
 
-  R wrapSuggestionTile<R>(R tile);
+  Widget wrapSuggestionTile(Widget tile);
 
   const TypeaheadHandler();
 }
@@ -102,13 +104,13 @@ class KeyedContextSwitchOption<K, V> extends _KeyedOption<K, V> {
   get diffSource => key;
 }
 
-typedef KeyedAdhocBuilder<K, V> = KeyedAdhocOption<K, V> Function(
+typedef KeyedAdhocBuilder<K, V> = KeyedAdhocOption<K, V>? Function(
     String message);
 
 class KeyedAdhocOption<K, V> extends _KeyedOption<K, V> {
   KeyedAdhocOption(
-    K key,
-    V value, {
+    K? key,
+    V? value, {
     required String label,
     this.adhocCreator,
     icon,
@@ -188,14 +190,14 @@ abstract class Option<V> extends KeyedOption<V, V> {
   static Option<String> ofString(String value, {icon}) =>
       _Option.ofString(value, icon: icon);
 
-  static Option<T> ofValue<T>(T key, {String? label}) {
+  static Option<T> ofValue<T>(T? key, {String? label}) {
     // ignore: can_be_null_after_null_aware
     return _Option<T>(key, label: (label ?? key?.toString().toTitle())!);
   }
 
   static KeyedOption<K, V> keyed<K, V>(
-    K key,
-    V value, {
+    K? key,
+    V? value, {
     required String label,
     List? subtitle,
     List<String>? extraTokens,
@@ -268,9 +270,9 @@ abstract class KeyedOption<K, V> implements DiffDelegate {
         extraTokens: extraTokens,
       );
 
-  K get key;
+  K? get key;
 
-  V get value;
+  V? get value;
 
   String get label;
 
@@ -297,8 +299,8 @@ class StringOption extends _Option<String> {
 
 /// Default impl of [KeyedOption] - an option that has a key and value
 class _KeyedOption<K, V> with DiffDelegateMixin implements KeyedOption<K, V> {
-  final K key;
-  final V value;
+  final K? key;
+  final V? value;
   final String label;
   final String selection;
   final icon;
@@ -340,7 +342,7 @@ class _Option<V> extends _KeyedOption<V, V>
     with DiffDelegateMixin
     implements Option<V> {
   _Option(
-    V value, {
+    V? value, {
     required String label,
     icon,
     List? subtitle,
