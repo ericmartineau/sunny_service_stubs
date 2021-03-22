@@ -1,3 +1,7 @@
+## [0.1.1-nullsafety.12]
+ * Added info_x depenency
+Updated dependencies, releasing
+
 ## [0.1.1-nullsafety.11]
  * constraints
 Regen
