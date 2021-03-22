@@ -10,13 +10,13 @@ dependencies:
   sunny_data: ^1.0.0-nullsafety.2
   logging: ^1.0.0
   intl: ^0.17.0
-  pfile: ^2.0.1-nullsafety.3
-  sunny_dart: ^0.8.0+7
-  flexidate: ^0.4.5-nullsafety.2
-  equatable: ^2.0.0-nullsafety.0
-  dartxx: ^0.4.5-nullsafety.3
+  pfile: ^1.0.1+2
+  sunny_dart: ^0.8.1+3
+  flexidate: ^0.4.4+5
+  equatable: ^2.0.0
+  dartxx: ^0.4.5-nullsafety.6
   collection_diff: ^2.0.3+5
-  sunny_sdk_core: ^2.0.0-nullsafe.16
+  sunny_sdk_core: ^2.0.0-nullsafe.7
   flutter: 
     sdk: flutter
 dev_dependencies: 
