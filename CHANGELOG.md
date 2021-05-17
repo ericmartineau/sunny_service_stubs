@@ -1,3 +1,7 @@
+## [0.4.0+1]
+ * Updated dependencies
+Fixing analyzer
+
 ## [0.3.0+1]
  * Minor bump
 
