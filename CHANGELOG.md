@@ -1,3 +1,6 @@
+## [0.4.0+2]
+ * Updated dependencies
+
 ## [0.4.0+1]
  * Updated dependencies
 Fixing analyzer
