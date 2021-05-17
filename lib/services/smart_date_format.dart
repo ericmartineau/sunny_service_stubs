@@ -62,7 +62,9 @@ String formatDateTimeSameDay(TZDateTime dateTime) =>
 String _withLocation(DateFormat format, TZDateTime toFormat) {
   // To format it properly, we need to convert it to a local time
   toFormat.toLocal();
-  return format.format(toFormat) + " " + toFormat.location.currentTimeZone.abbr;
+  return format.format(toFormat) +
+      " " +
+      toFormat.location.currentTimeZone.abbreviation;
 }
 
 final _dateTimeFormatWithYear = DateFormat("MMM d, yyyy 'at' h:mma");

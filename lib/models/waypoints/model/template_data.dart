@@ -10,51 +10,40 @@ import '../model/content_tag.dart';
 import '../model/content_type.dart';
 import '../model/template_medium.dart';
 
-
-abstract class ITemplateData
-  implements MEntity {
-
+abstract class ITemplateData implements MEntity {
   static late _TemplateDataFromJson fromJson;
 
-  /// Property getter and setter for name: 
+  /// Property getter and setter for name:
   String? get name;
   set name(String? name);
 
-
-  /// Property getter and setter for description: 
+  /// Property getter and setter for description:
   String? get description;
   set description(String? description);
 
-
-  /// Property getter and setter for medium: 
+  /// Property getter and setter for medium:
   ITemplateMedium? get medium;
   set medium(ITemplateMedium? medium);
 
-
-  /// Property getter and setter for contentType: 
+  /// Property getter and setter for contentType:
   IContentType? get contentType;
   set contentType(IContentType? contentType);
 
-
-  /// Property getter and setter for subject: 
+  /// Property getter and setter for subject:
   String? get subject;
   set subject(String? subject);
 
-
-  /// Property getter and setter for body: 
+  /// Property getter and setter for body:
   String? get body;
   set body(String? body);
 
-
-  /// Property getter and setter for tags: 
+  /// Property getter and setter for tags:
   List<IContentTag>? get tags;
   set tags(List<IContentTag>? tags);
 
-
-  /// Property getter and setter for scope: 
+  /// Property getter and setter for scope:
   IContentScope? get scope;
   set scope(IContentScope? scope);
-
 
   @override
   String toString();
@@ -77,7 +66,6 @@ abstract class ITemplateData
 
   @override
   Set<String> get mfields => TemplateDataFields.values;
-
 }
 
 class TemplateDataFields {
@@ -90,34 +78,55 @@ class TemplateDataFields {
   static const tags = "tags";
   static const scope = "scope";
   static const Set<String> values = {
-    name, description, medium, contentType, subject, body, tags, scope
+    name,
+    description,
+    medium,
+    contentType,
+    subject,
+    body,
+    tags,
+    scope
   };
 }
 
 class TemplateDataPaths {
   static const JsonPath<String> name = JsonPath.internal(["name"], "/name");
-  static const JsonPath<String> description = JsonPath.internal(["description"], "/description");
-  static const JsonPath<ITemplateMedium> medium = JsonPath.internal(["medium"], "/medium");
-  static const JsonPath<IContentType> contentType = JsonPath.internal(["contentType"], "/contentType");
-  static const JsonPath<String> subject = JsonPath.internal(["subject"], "/subject");
+  static const JsonPath<String> description =
+      JsonPath.internal(["description"], "/description");
+  static const JsonPath<ITemplateMedium> medium =
+      JsonPath.internal(["medium"], "/medium");
+  static const JsonPath<IContentType> contentType =
+      JsonPath.internal(["contentType"], "/contentType");
+  static const JsonPath<String> subject =
+      JsonPath.internal(["subject"], "/subject");
   static const JsonPath<String> body = JsonPath.internal(["body"], "/body");
-  static const JsonPath<List<IContentTag>> tags = JsonPath.internal(["tags"], "/tags");
-  static const JsonPath<IContentScope> scope = JsonPath.internal(["scope"], "/scope");
+  static const JsonPath<List<IContentTag>> tags =
+      JsonPath.internal(["tags"], "/tags");
+  static const JsonPath<IContentScope> scope =
+      JsonPath.internal(["scope"], "/scope");
   static final Set<JsonPath> values = {
-    name, description, medium, contentType, subject, body, tags, scope
+    name,
+    description,
+    medium,
+    contentType,
+    subject,
+    body,
+    tags,
+    scope
   };
 }
 
+const TemplateDataRef =
+    MSchemaRef("sunny", "content", "templateData", "0.0.1", "abstract");
 
-const TemplateDataRef = MSchemaRef("sunny", "content", "templateData", "0.0.1", "abstract");
-
-typedef _TemplateDataConstructor = ITemplateData Function({   required String? name, 
-  String? description, 
-  required ITemplateMedium? medium, 
-  required IContentType? contentType, 
-  String? subject, 
-  required String? body, 
-  required List<IContentTag>? tags, 
-  required IContentScope? scope
- });
+// ignore: unused_element
+typedef _TemplateDataConstructor = ITemplateData Function(
+    {required String? name,
+    String? description,
+    required ITemplateMedium? medium,
+    required IContentType? contentType,
+    String? subject,
+    required String? body,
+    required List<IContentTag>? tags,
+    required IContentScope? scope});
 typedef _TemplateDataFromJson = ITemplateData Function(dynamic any);

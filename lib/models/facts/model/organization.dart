@@ -9,31 +9,24 @@ import '../model/phase.dart';
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/image_content.dart';
 
-
-abstract class IOrganization
-  implements MEntity {
-
+abstract class IOrganization implements MEntity {
   static late _OrganizationFromJson fromJson;
 
-  /// Property getter and setter for name: 
+  /// Property getter and setter for name:
   String? get name;
   set name(String? name);
 
-
-  /// Property getter and setter for logo: 
+  /// Property getter and setter for logo:
   IImageContent? get logo;
   set logo(IImageContent? logo);
 
-
-  /// Property getter and setter for phases: 
+  /// Property getter and setter for phases:
   List<IPhase>? get phases;
   set phases(List<IPhase>? phases);
 
-
-  /// Property getter and setter for parent: 
+  /// Property getter and setter for parent:
   List<MKey>? get parent;
   set parent(List<MKey>? parent);
-
 
   @override
   String toString();
@@ -56,7 +49,6 @@ abstract class IOrganization
 
   @override
   Set<String> get mfields => OrganizationFields.values;
-
 }
 
 class OrganizationFields {
@@ -64,27 +56,27 @@ class OrganizationFields {
   static const logo = "logo";
   static const phases = "phases";
   static const parent = "parent";
-  static const Set<String> values = {
-    name, logo, phases, parent
-  };
+  static const Set<String> values = {name, logo, phases, parent};
 }
 
 class OrganizationPaths {
   static const JsonPath<String> name = JsonPath.internal(["name"], "/name");
-  static const JsonPath<IImageContent> logo = JsonPath.internal(["logo"], "/logo");
-  static const JsonPath<List<IPhase>> phases = JsonPath.internal(["phases"], "/phases");
-  static const JsonPath<List<MKey>> parent = JsonPath.internal(["parent"], "/parent");
-  static final Set<JsonPath> values = {
-    name, logo, phases, parent
-  };
+  static const JsonPath<IImageContent> logo =
+      JsonPath.internal(["logo"], "/logo");
+  static const JsonPath<List<IPhase>> phases =
+      JsonPath.internal(["phases"], "/phases");
+  static const JsonPath<List<MKey>> parent =
+      JsonPath.internal(["parent"], "/parent");
+  static final Set<JsonPath> values = {name, logo, phases, parent};
 }
 
+const OrganizationRef =
+    MSchemaRef("sunny", "fact", "organization", "0.0.1", "abstract");
 
-const OrganizationRef = MSchemaRef("sunny", "fact", "organization", "0.0.1", "abstract");
-
-typedef _OrganizationConstructor = IOrganization Function({   required String? name, 
-  IImageContent? logo, 
-  List<IPhase>? phases, 
-  required List<MKey>? parent
- });
+// ignore: unused_element
+typedef _OrganizationConstructor = IOrganization Function(
+    {required String? name,
+    IImageContent? logo,
+    List<IPhase>? phases,
+    required List<MKey>? parent});
 typedef _OrganizationFromJson = IOrganization Function(dynamic any);

@@ -8,27 +8,20 @@ import '../facts_ext.dart';
 import '../model/task_fact_for_m_model.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';
 
-
-abstract class IFact
-  with FactMixin
-  implements MEntity {
-
+abstract class IFact with FactMixin implements MEntity {
   static late _FactFromJson fromJson;
 
-  /// Property getter and setter for creator: 
+  /// Property getter and setter for creator:
   IReliveItContact? get creator;
   set creator(IReliveItContact? creator);
 
-
-  /// Property getter and setter for dateCreated: 
+  /// Property getter and setter for dateCreated:
   DateTime? get dateCreated;
   set dateCreated(DateTime? dateCreated);
 
-
-  /// Property getter and setter for assistedTask: 
+  /// Property getter and setter for assistedTask:
   ITaskFactForMModel? get assistedTask;
   set assistedTask(ITaskFactForMModel? assistedTask);
-
 
   @override
   String toString();
@@ -51,32 +44,30 @@ abstract class IFact
 
   @override
   Set<String> get mfields => FactFields.values;
-
 }
 
 class FactFields {
   static const creator = "creator";
   static const dateCreated = "dateCreated";
   static const assistedTask = "assistedTask";
-  static const Set<String> values = {
-    creator, dateCreated, assistedTask
-  };
+  static const Set<String> values = {creator, dateCreated, assistedTask};
 }
 
 class FactPaths {
-  static const JsonPath<IReliveItContact> creator = JsonPath.internal(["creator"], "/creator");
-  static const JsonPath<DateTime> dateCreated = JsonPath.internal(["dateCreated"], "/dateCreated");
-  static const JsonPath<ITaskFactForMModel> assistedTask = JsonPath.internal(["assistedTask"], "/assistedTask");
-  static final Set<JsonPath> values = {
-    creator, dateCreated, assistedTask
-  };
+  static const JsonPath<IReliveItContact> creator =
+      JsonPath.internal(["creator"], "/creator");
+  static const JsonPath<DateTime> dateCreated =
+      JsonPath.internal(["dateCreated"], "/dateCreated");
+  static const JsonPath<ITaskFactForMModel> assistedTask =
+      JsonPath.internal(["assistedTask"], "/assistedTask");
+  static final Set<JsonPath> values = {creator, dateCreated, assistedTask};
 }
-
 
 const FactRef = MSchemaRef("sunny", "fact", "fact", "0.0.1", "abstract");
 
-typedef _FactConstructor = IFact Function({   IReliveItContact? creator, 
-  required DateTime? dateCreated, 
-  ITaskFactForMModel? assistedTask
- });
+// ignore: unused_element
+typedef _FactConstructor = IFact Function(
+    {IReliveItContact? creator,
+    required DateTime? dateCreated,
+    ITaskFactForMModel? assistedTask});
 typedef _FactFromJson = IFact Function(dynamic any);

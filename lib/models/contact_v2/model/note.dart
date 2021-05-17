@@ -5,32 +5,24 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../contact_v2_ext.dart';
 
-
-
-abstract class INote
-  implements MEntity {
-
+abstract class INote implements MEntity {
   static late _NoteFromJson fromJson;
 
-  /// Property getter and setter for contact: 
+  /// Property getter and setter for contact:
   String? get contact;
   set contact(String? contact);
 
-
-  /// Property getter and setter for title: 
+  /// Property getter and setter for title:
   String? get title;
   set title(String? title);
 
-
-  /// Property getter and setter for body: 
+  /// Property getter and setter for body:
   String? get body;
   set body(String? body);
 
-
-  /// Property getter and setter for created: 
+  /// Property getter and setter for created:
   String? get created;
   set created(String? created);
-
 
   @override
   String toString();
@@ -53,7 +45,6 @@ abstract class INote
 
   @override
   Set<String> get mfields => NoteFields.values;
-
 }
 
 class NoteFields {
@@ -61,27 +52,25 @@ class NoteFields {
   static const title = "title";
   static const body = "body";
   static const created = "created";
-  static const Set<String> values = {
-    contact, title, body, created
-  };
+  static const Set<String> values = {contact, title, body, created};
 }
 
 class NotePaths {
-  static const JsonPath<String> contact = JsonPath.internal(["contact"], "/contact");
+  static const JsonPath<String> contact =
+      JsonPath.internal(["contact"], "/contact");
   static const JsonPath<String> title = JsonPath.internal(["title"], "/title");
   static const JsonPath<String> body = JsonPath.internal(["body"], "/body");
-  static const JsonPath<String> created = JsonPath.internal(["created"], "/created");
-  static final Set<JsonPath> values = {
-    contact, title, body, created
-  };
+  static const JsonPath<String> created =
+      JsonPath.internal(["created"], "/created");
+  static final Set<JsonPath> values = {contact, title, body, created};
 }
-
 
 const NoteRef = MSchemaRef("mverse", "contact", "note", "0.0.1", "abstract");
 
-typedef _NoteConstructor = INote Function({   String? contact, 
-  required String? title, 
-  required String? body, 
-  String? created
- });
+// ignore: unused_element
+typedef _NoteConstructor = INote Function(
+    {String? contact,
+    required String? title,
+    required String? body,
+    String? created});
 typedef _NoteFromJson = INote Function(dynamic any);

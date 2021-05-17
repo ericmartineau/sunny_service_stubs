@@ -5,37 +5,28 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../contact_v2_ext.dart';
 
-
-
-abstract class ITask
-  implements MEntity {
-
+abstract class ITask implements MEntity {
   static late _TaskFromJson fromJson;
 
-  /// Property getter and setter for contact: 
+  /// Property getter and setter for contact:
   String? get contact;
   set contact(String? contact);
 
-
-  /// Property getter and setter for title: 
+  /// Property getter and setter for title:
   String? get title;
   set title(String? title);
 
-
-  /// Property getter and setter for description: 
+  /// Property getter and setter for description:
   String? get description;
   set description(String? description);
 
-
-  /// Property getter and setter for dueDate: 
+  /// Property getter and setter for dueDate:
   DateTime? get dueDate;
   set dueDate(DateTime? dueDate);
 
-
-  /// Property getter and setter for completeDate: 
+  /// Property getter and setter for completeDate:
   DateTime? get completeDate;
   set completeDate(DateTime? completeDate);
-
 
   @override
   String toString();
@@ -58,7 +49,6 @@ abstract class ITask
 
   @override
   Set<String> get mfields => TaskFields.values;
-
 }
 
 class TaskFields {
@@ -68,28 +58,39 @@ class TaskFields {
   static const dueDate = "dueDate";
   static const completeDate = "completeDate";
   static const Set<String> values = {
-    contact, title, description, dueDate, completeDate
+    contact,
+    title,
+    description,
+    dueDate,
+    completeDate
   };
 }
 
 class TaskPaths {
-  static const JsonPath<String> contact = JsonPath.internal(["contact"], "/contact");
+  static const JsonPath<String> contact =
+      JsonPath.internal(["contact"], "/contact");
   static const JsonPath<String> title = JsonPath.internal(["title"], "/title");
-  static const JsonPath<String> description = JsonPath.internal(["description"], "/description");
-  static const JsonPath<DateTime> dueDate = JsonPath.internal(["dueDate"], "/dueDate");
-  static const JsonPath<DateTime> completeDate = JsonPath.internal(["completeDate"], "/completeDate");
+  static const JsonPath<String> description =
+      JsonPath.internal(["description"], "/description");
+  static const JsonPath<DateTime> dueDate =
+      JsonPath.internal(["dueDate"], "/dueDate");
+  static const JsonPath<DateTime> completeDate =
+      JsonPath.internal(["completeDate"], "/completeDate");
   static final Set<JsonPath> values = {
-    contact, title, description, dueDate, completeDate
+    contact,
+    title,
+    description,
+    dueDate,
+    completeDate
   };
 }
 
-
 const TaskRef = MSchemaRef("mverse", "contact", "task", "0.0.1", "abstract");
-
-typedef _TaskConstructor = ITask Function({   String? contact, 
-  required String? title, 
-  String? description, 
-  required DateTime? dueDate, 
-  DateTime? completeDate
- });
+// ignore: unused_element
+typedef _TaskConstructor = ITask Function(
+    {String? contact,
+    required String? title,
+    String? description,
+    required DateTime? dueDate,
+    DateTime? completeDate});
 typedef _TaskFromJson = ITask Function(dynamic any);

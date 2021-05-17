@@ -8,46 +8,36 @@ import '../contact_v2_ext.dart';
 import '../model/physical_location.dart';
 import 'package:timezone/timezone.dart';
 
-
-abstract class IContact
-  implements MEntity {
-
+abstract class IContact implements MEntity {
   static late _ContactFromJson fromJson;
 
-  /// Property getter and setter for givenName: 
+  /// Property getter and setter for givenName:
   String? get givenName;
   set givenName(String? givenName);
 
-
-  /// Property getter and setter for familyName: 
+  /// Property getter and setter for familyName:
   String? get familyName;
   set familyName(String? familyName);
 
-
-  /// Property getter and setter for email: 
+  /// Property getter and setter for email:
   String? get email;
   set email(String? email);
 
-
-  /// Property getter and setter for phone: 
+  /// Property getter and setter for phone:
   String? get phone;
   set phone(String? phone);
 
-
-  /// Property getter and setter for timeZone: 
+  /// Property getter and setter for timeZone:
   Location? get timeZone;
   set timeZone(Location? timeZone);
 
-
-  /// Property getter and setter for photoUrl: 
+  /// Property getter and setter for photoUrl:
   Uri? get photoUrl;
   set photoUrl(Uri? photoUrl);
 
-
-  /// Property getter and setter for address: 
+  /// Property getter and setter for address:
   IPhysicalLocation? get address;
   set address(IPhysicalLocation? address);
-
 
   @override
   String toString();
@@ -70,7 +60,6 @@ abstract class IContact
 
   @override
   Set<String> get mfields => ContactFields.values;
-
 }
 
 class ContactFields {
@@ -82,32 +71,50 @@ class ContactFields {
   static const photoUrl = "photoUrl";
   static const address = "address";
   static const Set<String> values = {
-    givenName, familyName, email, phone, timeZone, photoUrl, address
+    givenName,
+    familyName,
+    email,
+    phone,
+    timeZone,
+    photoUrl,
+    address
   };
 }
 
 class ContactPaths {
-  static const JsonPath<String> givenName = JsonPath.internal(["givenName"], "/givenName");
-  static const JsonPath<String> familyName = JsonPath.internal(["familyName"], "/familyName");
+  static const JsonPath<String> givenName =
+      JsonPath.internal(["givenName"], "/givenName");
+  static const JsonPath<String> familyName =
+      JsonPath.internal(["familyName"], "/familyName");
   static const JsonPath<String> email = JsonPath.internal(["email"], "/email");
   static const JsonPath<String> phone = JsonPath.internal(["phone"], "/phone");
-  static const JsonPath<Location> timeZone = JsonPath.internal(["timeZone"], "/timeZone");
-  static const JsonPath<Uri> photoUrl = JsonPath.internal(["photoUrl"], "/photoUrl");
-  static const JsonPath<IPhysicalLocation> address = JsonPath.internal(["address"], "/address");
+  static const JsonPath<Location> timeZone =
+      JsonPath.internal(["timeZone"], "/timeZone");
+  static const JsonPath<Uri> photoUrl =
+      JsonPath.internal(["photoUrl"], "/photoUrl");
+  static const JsonPath<IPhysicalLocation> address =
+      JsonPath.internal(["address"], "/address");
   static final Set<JsonPath> values = {
-    givenName, familyName, email, phone, timeZone, photoUrl, address
+    givenName,
+    familyName,
+    email,
+    phone,
+    timeZone,
+    photoUrl,
+    address
   };
 }
 
+const ContactRef =
+    MSchemaRef("mverse", "contact", "contact", "0.0.1", "abstract");
 
-const ContactRef = MSchemaRef("mverse", "contact", "contact", "0.0.1", "abstract");
-
-typedef _ContactConstructor = IContact Function({   String? givenName, 
-  String? familyName, 
-  String? email, 
-  String? phone, 
-  Location? timeZone, 
-  Uri? photoUrl, 
-  IPhysicalLocation? address
- });
+// ignore: unused_element
+typedef _ContactConstructor = IContact Function(
+    {String? givenName,
+    String? familyName,
+    String? email,
+    String? phone,
+    Location? timeZone,
+    Uri? photoUrl,
+    IPhysicalLocation? address});
 typedef _ContactFromJson = IContact Function(dynamic any);

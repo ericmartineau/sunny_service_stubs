@@ -12,96 +12,76 @@ import '../model/time_sensitivity.dart';
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';
 
-
-abstract class ITaskFact
-  implements IFact {
-
+abstract class ITaskFact implements IFact {
   static late _TaskFactFromJson fromJson;
 
-  /// Property getter and setter for displayDate: 
+  /// Property getter and setter for displayDate:
   DateTime? get displayDate;
   set displayDate(DateTime? displayDate);
 
-
-  /// Property getter and setter for dueDate: 
+  /// Property getter and setter for dueDate:
   DateTime? get dueDate;
   set dueDate(DateTime? dueDate);
 
-
-  /// Property getter and setter for completionDate: 
+  /// Property getter and setter for completionDate:
   DateTime? get completionDate;
   set completionDate(DateTime? completionDate);
 
-
-  /// Property getter and setter for taskTitle: 
+  /// Property getter and setter for taskTitle:
   String? get taskTitle;
   set taskTitle(String? taskTitle);
 
-
-  /// Property getter and setter for taskDescription: 
+  /// Property getter and setter for taskDescription:
   String? get taskDescription;
   set taskDescription(String? taskDescription);
 
-
-  /// Property getter and setter for timeSensitivity: 
+  /// Property getter and setter for timeSensitivity:
   ITimeSensitivity? get timeSensitivity;
   set timeSensitivity(ITimeSensitivity? timeSensitivity);
 
-
-  /// Property getter and setter for isCancelled: 
+  /// Property getter and setter for isCancelled:
   bool? get isCancelled;
   set isCancelled(bool? isCancelled);
 
-
-  /// Property getter and setter for dueConfig: 
+  /// Property getter and setter for dueConfig:
   ITaskDueConfig? get dueConfig;
   set dueConfig(ITaskDueConfig? dueConfig);
 
-
-  /// Property getter and setter for displayOffset: 
+  /// Property getter and setter for displayOffset:
   TimeSpan? get displayOffset;
   set displayOffset(TimeSpan? displayOffset);
 
-
-  /// Property getter and setter for isAlert: 
+  /// Property getter and setter for isAlert:
   bool? get isAlert;
   set isAlert(bool? isAlert);
 
-
-  /// Property getter and setter for isSkippable: 
+  /// Property getter and setter for isSkippable:
   bool? get isSkippable;
   set isSkippable(bool? isSkippable);
 
-
-  /// Property getter and setter for state: 
+  /// Property getter and setter for state:
   MModel? get state;
   set state(MModel? state);
 
-
-  /// Property getter and setter for result: 
+  /// Property getter and setter for result:
   MModel? get result;
   set result(MModel? result);
 
-
-  /// Property getter and setter for operationRef: 
+  /// Property getter and setter for operationRef:
   MOperationRef? get operationRef;
   set operationRef(MOperationRef? operationRef);
 
-
-  /// Property getter and setter for isUnread: 
+  /// Property getter and setter for isUnread:
   bool? get isUnread;
   set isUnread(bool? isUnread);
 
-
-  /// Property getter and setter for isNotified: 
+  /// Property getter and setter for isNotified:
   bool? get isNotified;
   set isNotified(bool? isNotified);
 
-
-  /// Property getter and setter for setup: 
+  /// Property getter and setter for setup:
   MModel? get setup;
   set setup(MModel? setup);
-
 
   @override
   String toString();
@@ -124,7 +104,6 @@ abstract class ITaskFact
 
   @override
   Set<String> get mfields => TaskFactFields.values;
-
 }
 
 class TaskFactFields {
@@ -149,58 +128,115 @@ class TaskFactFields {
   static const isNotified = "isNotified";
   static const setup = "setup";
   static const Set<String> values = {
-    creator, dateCreated, assistedTask, displayDate, dueDate, completionDate, taskTitle, taskDescription, timeSensitivity, isCancelled, dueConfig, displayOffset, isAlert, isSkippable, state, result, operationRef, isUnread, isNotified, setup
+    creator,
+    dateCreated,
+    assistedTask,
+    displayDate,
+    dueDate,
+    completionDate,
+    taskTitle,
+    taskDescription,
+    timeSensitivity,
+    isCancelled,
+    dueConfig,
+    displayOffset,
+    isAlert,
+    isSkippable,
+    state,
+    result,
+    operationRef,
+    isUnread,
+    isNotified,
+    setup
   };
 }
 
 class TaskFactPaths {
-  static const JsonPath<IReliveItContact> creator = JsonPath.internal(["creator"], "/creator");
-  static const JsonPath<DateTime> dateCreated = JsonPath.internal(["dateCreated"], "/dateCreated");
-  static const JsonPath<ITaskFactForMModel> assistedTask = JsonPath.internal(["assistedTask"], "/assistedTask");
-  static const JsonPath<DateTime> displayDate = JsonPath.internal(["displayDate"], "/displayDate");
-  static const JsonPath<DateTime> dueDate = JsonPath.internal(["dueDate"], "/dueDate");
-  static const JsonPath<DateTime> completionDate = JsonPath.internal(["completionDate"], "/completionDate");
-  static const JsonPath<String> taskTitle = JsonPath.internal(["taskTitle"], "/taskTitle");
-  static const JsonPath<String> taskDescription = JsonPath.internal(["taskDescription"], "/taskDescription");
-  static const JsonPath<ITimeSensitivity> timeSensitivity = JsonPath.internal(["timeSensitivity"], "/timeSensitivity");
-  static const JsonPath<bool> isCancelled = JsonPath.internal(["isCancelled"], "/isCancelled");
-  static const JsonPath<ITaskDueConfig> dueConfig = JsonPath.internal(["dueConfig"], "/dueConfig");
-  static const JsonPath<TimeSpan> displayOffset = JsonPath.internal(["displayOffset"], "/displayOffset");
-  static const JsonPath<bool> isAlert = JsonPath.internal(["isAlert"], "/isAlert");
-  static const JsonPath<bool> isSkippable = JsonPath.internal(["isSkippable"], "/isSkippable");
+  static const JsonPath<IReliveItContact> creator =
+      JsonPath.internal(["creator"], "/creator");
+  static const JsonPath<DateTime> dateCreated =
+      JsonPath.internal(["dateCreated"], "/dateCreated");
+  static const JsonPath<ITaskFactForMModel> assistedTask =
+      JsonPath.internal(["assistedTask"], "/assistedTask");
+  static const JsonPath<DateTime> displayDate =
+      JsonPath.internal(["displayDate"], "/displayDate");
+  static const JsonPath<DateTime> dueDate =
+      JsonPath.internal(["dueDate"], "/dueDate");
+  static const JsonPath<DateTime> completionDate =
+      JsonPath.internal(["completionDate"], "/completionDate");
+  static const JsonPath<String> taskTitle =
+      JsonPath.internal(["taskTitle"], "/taskTitle");
+  static const JsonPath<String> taskDescription =
+      JsonPath.internal(["taskDescription"], "/taskDescription");
+  static const JsonPath<ITimeSensitivity> timeSensitivity =
+      JsonPath.internal(["timeSensitivity"], "/timeSensitivity");
+  static const JsonPath<bool> isCancelled =
+      JsonPath.internal(["isCancelled"], "/isCancelled");
+  static const JsonPath<ITaskDueConfig> dueConfig =
+      JsonPath.internal(["dueConfig"], "/dueConfig");
+  static const JsonPath<TimeSpan> displayOffset =
+      JsonPath.internal(["displayOffset"], "/displayOffset");
+  static const JsonPath<bool> isAlert =
+      JsonPath.internal(["isAlert"], "/isAlert");
+  static const JsonPath<bool> isSkippable =
+      JsonPath.internal(["isSkippable"], "/isSkippable");
   static const JsonPath<MModel> state = JsonPath.internal(["state"], "/state");
-  static const JsonPath<MModel> result = JsonPath.internal(["result"], "/result");
-  static const JsonPath<MOperationRef> operationRef = JsonPath.internal(["operationRef"], "/operationRef");
-  static const JsonPath<bool> isUnread = JsonPath.internal(["isUnread"], "/isUnread");
-  static const JsonPath<bool> isNotified = JsonPath.internal(["isNotified"], "/isNotified");
+  static const JsonPath<MModel> result =
+      JsonPath.internal(["result"], "/result");
+  static const JsonPath<MOperationRef> operationRef =
+      JsonPath.internal(["operationRef"], "/operationRef");
+  static const JsonPath<bool> isUnread =
+      JsonPath.internal(["isUnread"], "/isUnread");
+  static const JsonPath<bool> isNotified =
+      JsonPath.internal(["isNotified"], "/isNotified");
   static const JsonPath<MModel> setup = JsonPath.internal(["setup"], "/setup");
   static final Set<JsonPath> values = {
-    creator, dateCreated, assistedTask, displayDate, dueDate, completionDate, taskTitle, taskDescription, timeSensitivity, isCancelled, dueConfig, displayOffset, isAlert, isSkippable, state, result, operationRef, isUnread, isNotified, setup
+    creator,
+    dateCreated,
+    assistedTask,
+    displayDate,
+    dueDate,
+    completionDate,
+    taskTitle,
+    taskDescription,
+    timeSensitivity,
+    isCancelled,
+    dueConfig,
+    displayOffset,
+    isAlert,
+    isSkippable,
+    state,
+    result,
+    operationRef,
+    isUnread,
+    isNotified,
+    setup
   };
 }
 
+const TaskFactRef =
+    MSchemaRef("sunny", "fact", "taskFact", "0.0.1", "abstract");
 
-const TaskFactRef = MSchemaRef("sunny", "fact", "taskFact", "0.0.1", "abstract");
-
-typedef _TaskFactConstructor = ITaskFact Function({   IReliveItContact? creator, 
-  required DateTime? dateCreated, 
-  ITaskFactForMModel? assistedTask, 
-  DateTime? displayDate, 
-  DateTime? dueDate, 
-  DateTime? completionDate, 
-  String? taskTitle, 
-  String? taskDescription, 
-  ITimeSensitivity? timeSensitivity, 
-  bool? isCancelled, 
-  ITaskDueConfig? dueConfig, 
-  TimeSpan? displayOffset, 
-  bool? isAlert, 
-  bool? isSkippable, 
-  MModel? state, 
-  MModel? result, 
-  MOperationRef? operationRef, 
-  required bool? isUnread, 
-  required bool? isNotified, 
-  MModel? setup
- });
+// ignore: unused_element
+typedef _TaskFactConstructor = ITaskFact Function(
+    {IReliveItContact? creator,
+    required DateTime? dateCreated,
+    ITaskFactForMModel? assistedTask,
+    DateTime? displayDate,
+    DateTime? dueDate,
+    DateTime? completionDate,
+    String? taskTitle,
+    String? taskDescription,
+    ITimeSensitivity? timeSensitivity,
+    bool? isCancelled,
+    ITaskDueConfig? dueConfig,
+    TimeSpan? displayOffset,
+    bool? isAlert,
+    bool? isSkippable,
+    MModel? state,
+    MModel? result,
+    MOperationRef? operationRef,
+    required bool? isUnread,
+    required bool? isNotified,
+    MModel? setup});
 typedef _TaskFactFromJson = ITaskFact Function(dynamic any);

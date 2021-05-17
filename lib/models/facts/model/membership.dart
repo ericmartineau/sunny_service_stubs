@@ -9,16 +9,12 @@ import '../model/fact.dart';
 import '../model/task_fact_for_m_model.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';
 
-
-abstract class IMembership
-  implements IFact {
-
+abstract class IMembership implements IFact {
   static late _MembershipFromJson fromJson;
 
-  /// Property getter and setter for isActive: 
+  /// Property getter and setter for isActive:
   bool? get isActive;
   set isActive(bool? isActive);
-
 
   @override
   String toString();
@@ -41,7 +37,6 @@ abstract class IMembership
 
   @override
   Set<String> get mfields => MembershipFields.values;
-
 }
 
 class MembershipFields {
@@ -50,26 +45,37 @@ class MembershipFields {
   static const assistedTask = "assistedTask";
   static const isActive = "isActive";
   static const Set<String> values = {
-    creator, dateCreated, assistedTask, isActive
+    creator,
+    dateCreated,
+    assistedTask,
+    isActive
   };
 }
 
 class MembershipPaths {
-  static const JsonPath<IReliveItContact> creator = JsonPath.internal(["creator"], "/creator");
-  static const JsonPath<DateTime> dateCreated = JsonPath.internal(["dateCreated"], "/dateCreated");
-  static const JsonPath<ITaskFactForMModel> assistedTask = JsonPath.internal(["assistedTask"], "/assistedTask");
-  static const JsonPath<bool> isActive = JsonPath.internal(["isActive"], "/isActive");
+  static const JsonPath<IReliveItContact> creator =
+      JsonPath.internal(["creator"], "/creator");
+  static const JsonPath<DateTime> dateCreated =
+      JsonPath.internal(["dateCreated"], "/dateCreated");
+  static const JsonPath<ITaskFactForMModel> assistedTask =
+      JsonPath.internal(["assistedTask"], "/assistedTask");
+  static const JsonPath<bool> isActive =
+      JsonPath.internal(["isActive"], "/isActive");
   static final Set<JsonPath> values = {
-    creator, dateCreated, assistedTask, isActive
+    creator,
+    dateCreated,
+    assistedTask,
+    isActive
   };
 }
 
+const MembershipRef =
+    MSchemaRef("sunny", "fact", "membership", "0.0.1", "abstract");
 
-const MembershipRef = MSchemaRef("sunny", "fact", "membership", "0.0.1", "abstract");
-
-typedef _MembershipConstructor = IMembership Function({   IReliveItContact? creator, 
-  required DateTime? dateCreated, 
-  ITaskFactForMModel? assistedTask, 
-  bool? isActive
- });
+// ignore: unused_element
+typedef _MembershipConstructor = IMembership Function(
+    {IReliveItContact? creator,
+    required DateTime? dateCreated,
+    ITaskFactForMModel? assistedTask,
+    bool? isActive});
 typedef _MembershipFromJson = IMembership Function(dynamic any);
