@@ -1,3 +1,6 @@
+## [0.4.0+3]
+ * Adding image requirements
+
 ## [0.4.0+2]
  * Updated dependencies
 
