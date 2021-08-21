@@ -1,3 +1,7 @@
+## [0.4.0+4]
+ * Fixing compile issue
+Fixed tokenize
+
 ## [0.4.0+3]
  * Adding image requirements
 
