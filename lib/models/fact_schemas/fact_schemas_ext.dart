@@ -11,7 +11,9 @@ extension FactMetaDateExtension on IFactMetaDate {
   String? get remindLabel => remindableInfo?.remindMeLabel;
 
   bool get isActionable => remindableInfo != null;
+
   bool get isRecurring => !(recurs == null || recurs?.isKnown != true);
+
   bool get isTimeSensitive => timeSensitivity != null;
 }
 
@@ -37,11 +39,12 @@ extension FactSchemaExtension on IFactSchema {
 
   bool get isNotSingleton => isSingleton != true;
 
-  Set<String> tokenize() => [
+  Set<String> tokenize() =>
+      [
         ...?factTokens,
         label,
         template,
-      ].map((e) => e.isNotNullOrBlank).toSet().cast<String>();
+      ].filter((e) => e.isNotNullOrBlank).toSet().cast<String>();
 
   bool get isDue => this is ITaskFact;
 
@@ -59,17 +62,21 @@ extension FactSchemaExtension on IFactSchema {
   }
 
   IMEntityDefinition get entitySchema {
-    assert(this.mschema is IMEntityDefinition);
-    return this.mschema as IMEntityDefinition;
+    if (this.mschema?.wrapped['mtype'] == MEntityDefinitionRef.value) {
+      return IMEntityDefinition.fromJson(this.mschema!.wrapped);
+    } else {
+      throw "Couldn't convert schema to mEntityDefinition";
+    }
   }
 
   bool get isTimeSensitive =>
       dates?.any((date) => date.isTimeSensitive) == true;
 
-  JsonPath? get timelineField => dates
-      .orEmptyList()
-      .firstOrNull((date) => date.isHistorical == true)
-      ?.path;
+  JsonPath? get timelineField =>
+      dates
+          .orEmptyList()
+          .firstOrNull((date) => date.isHistorical == true)
+          ?.path;
 
   IFactMetaDate? get firstHistoricalDate =>
       dates.orEmptyList().firstOrNull((date) => date.isHistorical == true);
