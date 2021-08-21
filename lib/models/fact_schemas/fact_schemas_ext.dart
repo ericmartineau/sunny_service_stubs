@@ -44,7 +44,7 @@ extension FactSchemaExtension on IFactSchema {
         ...?factTokens,
         label,
         template,
-      ].filter((e) => e.isNotNullOrBlank).toSet().cast<String>();
+      ].where((e) => e.isNotNullOrBlank).toSet().cast<String>();
 
   bool get isDue => this is ITaskFact;
 
