@@ -1,3 +1,7 @@
+## [0.5.0+2]
+ * Updated stubs
+Updated gem
+
 ## [0.4.0+4]
  * Fixing compile issue
 Fixed tokenize
