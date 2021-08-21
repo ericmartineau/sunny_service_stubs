@@ -5,39 +5,31 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-import '../model/contact.dart';
+import '../model/sunny_contact.dart';
 
-
-abstract class IContactList
-  implements MModel {
-
+abstract class IContactList implements MModel {
   static late _ContactListConstructor of;
   static late _ContactListFromJson fromJson;
 
-  /// Property getter and setter for total: 
+  /// Property getter and setter for total:
   int? get total;
   set total(int? total);
 
-
-  /// Property getter and setter for offset: 
+  /// Property getter and setter for offset:
   int? get offset;
   set offset(int? offset);
 
-
-  /// Property getter and setter for max: 
+  /// Property getter and setter for max:
   int? get max;
   set max(int? max);
 
-
-  /// Property getter and setter for stats: 
+  /// Property getter and setter for stats:
   dynamic? get stats;
   set stats(dynamic? stats);
 
-
-  /// Property getter and setter for data: 
-  List<IContact>? get data;
-  set data(List<IContact>? data);
-
+  /// Property getter and setter for data:
+  List<ISunnyContact>? get data;
+  set data(List<ISunnyContact>? data);
 
   @override
   String toString();
@@ -60,7 +52,6 @@ abstract class IContactList
 
   @override
   Set<String> get mfields => ContactListFields.values;
-
 }
 
 class ContactListFields {
@@ -69,9 +60,7 @@ class ContactListFields {
   static const max = "max";
   static const stats = "stats";
   static const data = "data";
-  static const Set<String> values = {
-    total, offset, max, stats, data
-  };
+  static const Set<String> values = {total, offset, max, stats, data};
 }
 
 class ContactListPaths {
@@ -79,19 +68,12 @@ class ContactListPaths {
   static const JsonPath<int> offset = JsonPath.internal(["offset"], "/offset");
   static const JsonPath<int> max = JsonPath.internal(["max"], "/max");
   static const JsonPath<dynamic> stats = JsonPath.internal(["stats"], "/stats");
-  static const JsonPath<List<IContact>> data = JsonPath.internal(["data"], "/data");
-  static final Set<JsonPath> values = {
-    total, offset, max, stats, data
-  };
+  static const JsonPath<List<ISunnyContact>> data = JsonPath.internal(["data"], "/data");
+  static final Set<JsonPath> values = {total, offset, max, stats, data};
 }
-
 
 const ContactListRef = MSchemaRef("mverse", "sunny", "contactList", "0.0.1", "ephemeral");
 
-typedef _ContactListConstructor = IContactList Function({   required int? total, 
-  required int? offset, 
-  required int? max, 
-  dynamic? stats, 
-  required List<IContact>? data
- });
+typedef _ContactListConstructor = IContactList Function(
+    {required int? total, required int? offset, required int? max, dynamic? stats, required List<ISunnyContact>? data});
 typedef _ContactListFromJson = IContactList Function(dynamic any);

@@ -14,25 +14,24 @@ import 'contactable.dart';
 
 IContactService get contactService => sunny.get();
 
-abstract class IContactService extends SunnyStore<IContact> {
-  IContactService(
-      Repository<IContact> repository, MSchemaRef type, IAuthState loginState)
+abstract class IContactService extends SunnyStore<ISunnyContact> {
+  IContactService(Repository<ISunnyContact> repository, MSchemaRef type, IAuthState loginState)
       : super(repository, type, loginState);
 
-  Future<IContact> createFromIdentity(IContactIdentity identity);
+  Future<ISunnyContact> createFromIdentity(IContactIdentity identity);
 
   Future markContactFavorite(MKey mkey);
 
-  FutureOr<IContact?> load(MKey key) {
+  FutureOr<ISunnyContact?> load(MKey key) {
     return super.load(key);
   }
 
-  Iterable<Contactable> getContactables(IContact iContact);
+  Iterable<Contactable> getContactables(ISunnyContact iContact);
 }
 
 abstract class IContactGroupService {
   ///
-  ValueStream<Iterable<IContact>> members(MKey mkey);
+  ValueStream<Iterable<ISunnyContact>> members(MKey mkey);
 
   ///
   ValueStream<Iterable<Record<IGroup>>> groups(String mkey);
@@ -59,11 +58,11 @@ const manualSource = "manual";
 class Contacts {
   Contacts._();
 
-  static void sorted(List<IContact> contacts) {
+  static void sorted(List<ISunnyContact> contacts) {
     contacts.sort(ContactComparator);
   }
 
-  static void sortedRecords(List<IContact> records) {
+  static void sortedRecords(List<ISunnyContact> records) {
     records.sort((a, b) => ContactComparator(a, b));
   }
 
@@ -72,10 +71,8 @@ class Contacts {
       return <String>[];
     }
 
-    final statePostal =
-        Lists.compactEmpty([address.region, address.postalCode]).join(", ");
-    final regionLine =
-        Lists.compactEmpty([address.locality, statePostal]).join(" ");
+    final statePostal = Lists.compactEmpty([address.region, address.postalCode]).join(", ");
+    final regionLine = Lists.compactEmpty([address.locality, statePostal]).join(" ");
     return Lists.compactEmpty([
       address.streetLineOne,
       address.streetLineTwo,
@@ -110,19 +107,17 @@ class Contacts {
     return data;
   }
 
-  static updateFromIdentity(IContact contact, IContactIdentity identity) {}
+  static updateFromIdentity(ISunnyContact contact, IContactIdentity identity) {}
 
-  static IContactIdentity? sunnyIdentity(IContact contact) => contact.identities
-      .orWhere((identity) => identity.sourceType == sunnySource)
-      .firstOr();
+  static IContactIdentity? sunnyIdentity(ISunnyContact contact) =>
+      contact.identities.orWhere((identity) => identity.sourceType == sunnySource).firstOr();
 
-  static String? contactString(IContact? contact) {
+  static String? contactString(ISunnyContact? contact) {
     return firstNonEmpty([fullName(contact), contact?.companyName]);
   }
 
-  static String? firstName(IContact contact) {
-    return firstNonEmpty(
-        [contact.firstName, contact.companyName, contact.fullName]);
+  static String? firstName(ISunnyContact contact) {
+    return firstNonEmpty([contact.firstName, contact.companyName, contact.fullName]);
   }
 
   static String contactable(Contactable contactable) {
@@ -145,14 +140,13 @@ class Contacts {
           ),
         );
 
-  static IContactIdentity? identityWhere(
-          IContact? contact, bool Function(IContactIdentity identity) predicate,
+  static IContactIdentity? identityWhere(ISunnyContact? contact, bool Function(IContactIdentity identity) predicate,
           {Factory<IContactIdentity>? orElse}) =>
       contact?.identities?.firstOrNull(predicate) ?? create(orElse);
 }
 
 // ignore: non_constant_identifier_names
-Comparator<IContact> ContactComparator = (IContact a, IContact b) {
+Comparator<ISunnyContact> ContactComparator = (ISunnyContact a, ISunnyContact b) {
   if (a.isFavorite != b.isFavorite) {
     return b.isFavorite == true ? 1 : -1;
   }
@@ -161,7 +155,7 @@ Comparator<IContact> ContactComparator = (IContact a, IContact b) {
   return fullA?.compareTo(fullB ?? "") ?? 1;
 };
 
-extension IContactCoreExt on IContact {
+extension IContactCoreExt on ISunnyContact {
   bool get isFavorite => this.favorite == 1;
 
   Iterable<Contactable> get contactables {

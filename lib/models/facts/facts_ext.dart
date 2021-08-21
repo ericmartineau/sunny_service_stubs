@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flexidate/flexidate.dart';
 import 'package:sunny_sdk_core/mverse.dart';
+import 'package:sunny_service_stubs/contact/contactable.dart';
 import 'package:sunny_service_stubs/models.dart';
 import 'package:timezone/timezone.dart';
 
@@ -11,6 +12,10 @@ abstract class FactMixin {
   set contactKey(MKey? key);
 
   MKey? get author => null;
+
+  String? title(IRef contact);
+
+  String? subtitle(IRef contact);
 
   bool involves(MKey contactId);
 

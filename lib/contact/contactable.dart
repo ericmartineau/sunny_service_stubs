@@ -22,28 +22,23 @@ abstract class Contactable with DiffDelegateMixin implements Diffable {
   get diffKey => "$this";
   get diffSource => "$this";
 
-  static UserPrefKey preferredContactKey(
-      {required String contactId, required ContactableType type}) {
+  static UserPrefKey preferredContactKey({required String contactId, required ContactableType type}) {
     return UserPrefKey("sunnyPreferredContact$contactId${type.value}");
   }
 
-  static FutureOr<Contactable?> findPreferredMethod(
-      IContact? contact, ContactableType? type) async {
+  static FutureOr<Contactable?> findPreferredMethod(ISunnyContact? contact, ContactableType? type) async {
     if (contact == null || type == null) return null;
     return findPreferredMethodSunny(contact, type);
   }
 
-  static FutureOr<Contactable?> findPreferredMethodSunny(
-      IContact contact, ContactableType? type) async {
+  static FutureOr<Contactable?> findPreferredMethodSunny(ISunnyContact contact, ContactableType? type) async {
     /// Look up a preferred contact method
     if (type != null) {
-      final key =
-          Contactable.preferredContactKey(contactId: contact.id!, type: type);
+      final key = Contactable.preferredContactKey(contactId: contact.id!, type: type);
       final pref = await sunny.userPreferencesService.get(key);
       _log.info("Found pref for $key: $pref");
       if (pref.toString().isNotEmpty == true) {
-        final found = Lists.firstOrNull(contact.contactables,
-            filter: (c) => "$c" == "$pref");
+        final found = Lists.firstOrNull(contact.contactables, filter: (c) => "$c" == "$pref");
         return found;
       }
     }
@@ -116,6 +111,12 @@ class Textable extends Contactable {
 
   @override
   ContactableType get type => ContactableType.sms;
+}
+
+abstract class IRef {
+  String? get id;
+  String? get displayName;
+  Uri? get photoUrl;
 }
 
 class Dialable extends Contactable {

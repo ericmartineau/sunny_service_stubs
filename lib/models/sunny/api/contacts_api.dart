@@ -5,7 +5,7 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/contact.dart';
+import '../model/sunny_contact.dart';
 import '../model/contact_identity.dart';
 import '../model/contact_list.dart';
 
@@ -24,7 +24,7 @@ abstract class IContactsApi {
     
   Future addContactNote(String id, IContactNote body,);
     
-  Future<IContact> automaticallyLinkContactToSimilarContacts(String id,);
+  Future<ISunnyContact> automaticallyLinkContactToSimilarContacts(String id,);
     
   Future contactsIdActionsCopyToCollaborationGroupPost(String id, IBody body,);
     
@@ -38,7 +38,7 @@ abstract class IContactsApi {
     
   Future getAllContactInteractions({ int? max });
     
-  Future<IContact> getContact(String id,);
+  Future<ISunnyContact> getContact(String id,);
     
   Future<IContactIdentity> getContactIdentity(String id, String identityId,);
     
@@ -50,7 +50,7 @@ abstract class IContactsApi {
     
   Future storeContactProfilePicture(String id,);
     
-  Future<IContact> updateContact(String id, IContactUpdateRequest body,);
+  Future<ISunnyContact> updateContact(String id, IContactUpdateRequest body,);
     
   Future<IContactIdentity> updateContactIdentity(String id, String identityId, IContactIdentityUpdateRequest body,);
     

@@ -5,29 +5,23 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-import '../model/contact.dart';
+import '../model/sunny_contact.dart';
 
-
-abstract class IImportBundlePreviewItem
-  implements MModel {
-
+abstract class IImportBundlePreviewItem implements MModel {
   static late _ImportBundlePreviewItemConstructor of;
   static late _ImportBundlePreviewItemFromJson fromJson;
 
-  /// Property getter and setter for identifier: 
+  /// Property getter and setter for identifier:
   String? get identifier;
   set identifier(String? identifier);
 
-
-  /// Property getter and setter for name: 
+  /// Property getter and setter for name:
   String? get name;
   set name(String? name);
 
-
-  /// Property getter and setter for contacts: 
-  List<IContact>? get contacts;
-  set contacts(List<IContact>? contacts);
-
+  /// Property getter and setter for contacts:
+  List<ISunnyContact>? get contacts;
+  set contacts(List<ISunnyContact>? contacts);
 
   @override
   String toString();
@@ -50,32 +44,24 @@ abstract class IImportBundlePreviewItem
 
   @override
   Set<String> get mfields => ImportBundlePreviewItemFields.values;
-
 }
 
 class ImportBundlePreviewItemFields {
   static const identifier = "identifier";
   static const name = "name";
   static const contacts = "contacts";
-  static const Set<String> values = {
-    identifier, name, contacts
-  };
+  static const Set<String> values = {identifier, name, contacts};
 }
 
 class ImportBundlePreviewItemPaths {
   static const JsonPath<String> identifier = JsonPath.internal(["identifier"], "/identifier");
   static const JsonPath<String> name = JsonPath.internal(["name"], "/name");
-  static const JsonPath<List<IContact>> contacts = JsonPath.internal(["contacts"], "/contacts");
-  static final Set<JsonPath> values = {
-    identifier, name, contacts
-  };
+  static const JsonPath<List<ISunnyContact>> contacts = JsonPath.internal(["contacts"], "/contacts");
+  static final Set<JsonPath> values = {identifier, name, contacts};
 }
-
 
 const ImportBundlePreviewItemRef = MSchemaRef("mverse", "sunny", "importBundlePreviewItem", "0.0.1", "ephemeral");
 
-typedef _ImportBundlePreviewItemConstructor = IImportBundlePreviewItem Function({   String? identifier, 
-  String? name, 
-  List<IContact>? contacts
- });
+typedef _ImportBundlePreviewItemConstructor = IImportBundlePreviewItem Function(
+    {String? identifier, String? name, List<ISunnyContact>? contacts});
 typedef _ImportBundlePreviewItemFromJson = IImportBundlePreviewItem Function(dynamic any);

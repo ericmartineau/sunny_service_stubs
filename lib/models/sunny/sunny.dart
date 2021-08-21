@@ -13,7 +13,7 @@ export 'model/basic_contact.dart';
 export 'model/body.dart';
 export 'model/change_password_request.dart';
 export 'model/client_info.dart';
-export 'model/contact.dart';
+export 'model/sunny_contact.dart';
 export 'model/contact_address.dart';
 export 'model/contact_attachment.dart';
 export 'model/contact_email.dart';
@@ -78,4 +78,3 @@ export 'api/notifications_api.dart';
 export 'api/pictures_api.dart';
 export 'api/profiles_api.dart';
 export 'api/resources_api.dart';
-

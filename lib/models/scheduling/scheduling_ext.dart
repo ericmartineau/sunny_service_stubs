@@ -1,4 +1,4 @@
-import 'package:sunny_service_stubs/models/sunny/model/contact.dart';
+import 'package:sunny_service_stubs/models/sunny/model/sunny_contact.dart';
 import 'package:sunny_service_stubs/models/waypoints/waypoints.dart';
 
 abstract class AttendeeExt {
@@ -20,7 +20,7 @@ abstract class AttendeeExt {
 
   bool hasNotCompleted(IFlowNode node);
 
-  IContact? get contact;
+  ISunnyContact? get contact;
 
   bool get hasContact => contact != null;
 }
