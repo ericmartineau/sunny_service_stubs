@@ -26,7 +26,6 @@ export 'model/content_delivery.dart';
 export 'model/content_scope.dart';
 export 'model/content_tag.dart';
 export 'model/content_type.dart';
-export 'model/dimensions.dart';
 export 'model/display_mode.dart';
 export 'model/email_content.dart';
 export 'model/entry_vertex.dart';
@@ -83,7 +82,6 @@ export 'model/literal_expression.dart';
 export 'model/locale.dart';
 export 'model/manual_entry_content.dart';
 export 'model/named_expression.dart';
-export 'model/orientation.dart';
 export 'model/other_setup.dart';
 export 'model/pack_summaries.dart';
 export 'model/pack_summary.dart';
@@ -99,7 +97,6 @@ export 'model/range.dart';
 export 'model/reach_out_content.dart';
 export 'model/reach_out_data.dart';
 export 'model/reach_out_setup.dart';
-export 'model/recurring_time_span.dart';
 export 'model/render_context.dart';
 export 'model/render_templates_request.dart';
 export 'model/resource_flow_info.dart';
@@ -159,7 +156,6 @@ export 'api/sunny_interaction_api.dart';
 export 'api/sunny_publisher_api.dart';
 export 'api/template_data_api.dart';
 export 'api/template_set_api.dart';
-
 
 const waypointsBuilderModuleRef = MModuleRef.ofParts("sunny", "waypointsBuilder", "0.0.1");
 

@@ -5,3 +5,6 @@ MEntityDefinition:
   interface: true
 MSchemaDefinition:
   interface: true
+MSchemaProperty:
+  interfaces:
+    - HasBaseCode

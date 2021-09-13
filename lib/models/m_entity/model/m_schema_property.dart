@@ -5,48 +5,37 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../m_entity_ext.dart';
 
-
-
-abstract class IMSchemaProperty
-  implements MModel, ISchemaProperty {
-
+abstract class IMSchemaProperty implements MModel, HasBaseCode, ISchemaProperty {
   static late _MSchemaPropertyConstructor of;
   static late _MSchemaPropertyFromJson fromJson;
 
-  /// Property getter and setter for type: 
+  /// Property getter and setter for type:
   String? get type;
   set type(String? type);
 
-
-  /// Property getter and setter for path: 
+  /// Property getter and setter for path:
   String? get path;
   set path(String? path);
 
-
-  /// Property getter and setter for label: 
+  /// Property getter and setter for label:
   String? get label;
   set label(String? label);
 
-
-  /// Property getter and setter for description: 
+  /// Property getter and setter for description:
   String? get description;
   set description(String? description);
 
-
-  /// Property getter and setter for uri: 
+  /// Property getter and setter for uri:
   Uri? get uri;
   set uri(Uri? uri);
 
-
-  /// Property getter and setter for baseCode: 
+  /// Property getter and setter for baseCode:
   String? get baseCode;
   set baseCode(String? baseCode);
 
-
-  /// Property getter and setter for isRequired: 
+  /// Property getter and setter for isRequired:
   bool? get isRequired;
   set isRequired(bool? isRequired);
-
 
   @override
   String toString();
@@ -69,7 +58,6 @@ abstract class IMSchemaProperty
 
   @override
   Set<String> get mfields => MSchemaPropertyFields.values;
-
 }
 
 class MSchemaPropertyFields {
@@ -80,9 +68,7 @@ class MSchemaPropertyFields {
   static const uri = "uri";
   static const baseCode = "baseCode";
   static const isRequired = "isRequired";
-  static const Set<String> values = {
-    type, path, label, description, uri, baseCode, isRequired
-  };
+  static const Set<String> values = {type, path, label, description, uri, baseCode, isRequired};
 }
 
 class MSchemaPropertyPaths {
@@ -93,20 +79,17 @@ class MSchemaPropertyPaths {
   static const JsonPath<Uri> uri = JsonPath.internal(["uri"], "/uri");
   static const JsonPath<String> baseCode = JsonPath.internal(["baseCode"], "/baseCode");
   static const JsonPath<bool> isRequired = JsonPath.internal(["isRequired"], "/isRequired");
-  static final Set<JsonPath> values = {
-    type, path, label, description, uri, baseCode, isRequired
-  };
+  static final Set<JsonPath> values = {type, path, label, description, uri, baseCode, isRequired};
 }
-
 
 const MSchemaPropertyRef = MSchemaRef("mverse", "mthing", "mSchemaProperty", "0.0.1", "ephemeral");
 
-typedef _MSchemaPropertyConstructor = IMSchemaProperty Function({   required String? type, 
-  required String? path, 
-  required String? label, 
-  String? description, 
-  Uri? uri, 
-  String? baseCode, 
-  required bool? isRequired
- });
+typedef _MSchemaPropertyConstructor = IMSchemaProperty Function(
+    {required String? type,
+    required String? path,
+    required String? label,
+    String? description,
+    Uri? uri,
+    String? baseCode,
+    required bool? isRequired});
 typedef _MSchemaPropertyFromJson = IMSchemaProperty Function(dynamic any);

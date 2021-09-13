@@ -46,7 +46,7 @@ IFactService get factService => sunny.get();
 abstract class IFactService {
   String getFactEmoji(MSchemaRef? schemaRef);
 
-  IFactSchema getFactSchema(MSchemaRef? schemaRef);
+  IFactSchema? getFactSchema(MSchemaRef? schemaRef);
 
   FutureOr<IFactSchema> loadFactSchema(MSchemaRef ref);
 

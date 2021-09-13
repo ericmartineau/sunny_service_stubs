@@ -27,7 +27,9 @@ abstract class FactMixin {
 
   DateTime? get smartNoteDate;
 
-  IFactSchema get factSchema;
+  IFactSchema get factSchema => this.factSchemaOrNull ?? (throw "Missing fact schema");
+
+  IFactSchema? get factSchemaOrNull;
 
   set factSchema(IFactSchema factSchema);
 

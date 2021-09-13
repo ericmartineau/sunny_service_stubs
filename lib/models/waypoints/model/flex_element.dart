@@ -7,45 +7,36 @@ import '../waypoints_ext.dart';
 
 import '../model/content.dart';
 import '../model/content_delivery.dart';
-import '../model/dimensions.dart';
+import '../../facts/model/dimensions.dart';
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
-
-abstract class IFlexElement
-  implements IContent {
-
+abstract class IFlexElement implements IContent {
   static late _FlexElementConstructor of;
   static late _FlexElementFromJson fromJson;
 
-  /// Property getter and setter for child: 
+  /// Property getter and setter for child:
   IContent? get child;
   set child(IContent? child);
 
-
-  /// Property getter and setter for flex: 
+  /// Property getter and setter for flex:
   int? get flex;
   set flex(int? flex);
 
-
-  /// Property getter and setter for size: 
+  /// Property getter and setter for size:
   IDimensions? get size;
   set size(IDimensions? size);
 
-
-  /// Property getter and setter for background: 
+  /// Property getter and setter for background:
   String? get background;
   set background(String? background);
 
-
-  /// Property getter and setter for padding: 
+  /// Property getter and setter for padding:
   IDimensions? get padding;
   set padding(IDimensions? padding);
 
-
-  /// Property getter and setter for margin: 
+  /// Property getter and setter for margin:
   IDimensions? get margin;
   set margin(IDimensions? margin);
-
 
   @override
   String toString();
@@ -68,7 +59,6 @@ abstract class IFlexElement
 
   @override
   Set<String> get mfields => FlexElementFields.values;
-
 }
 
 class FlexElementFields {
@@ -87,7 +77,20 @@ class FlexElementFields {
   static const padding = "padding";
   static const margin = "margin";
   static const Set<String> values = {
-    dismissible, repeatsFor, showEvery, delivery, durationUnit, durationAmount, delayUnit, delayAmount, child, flex, size, background, padding, margin
+    dismissible,
+    repeatsFor,
+    showEvery,
+    delivery,
+    durationUnit,
+    durationAmount,
+    delayUnit,
+    delayAmount,
+    child,
+    flex,
+    size,
+    background,
+    padding,
+    margin
   };
 }
 
@@ -107,26 +110,38 @@ class FlexElementPaths {
   static const JsonPath<IDimensions> padding = JsonPath.internal(["padding"], "/padding");
   static const JsonPath<IDimensions> margin = JsonPath.internal(["margin"], "/margin");
   static final Set<JsonPath> values = {
-    dismissible, repeatsFor, showEvery, delivery, durationUnit, durationAmount, delayUnit, delayAmount, child, flex, size, background, padding, margin
+    dismissible,
+    repeatsFor,
+    showEvery,
+    delivery,
+    durationUnit,
+    durationAmount,
+    delayUnit,
+    delayAmount,
+    child,
+    flex,
+    size,
+    background,
+    padding,
+    margin
   };
 }
 
-
 const FlexElementRef = MSchemaRef("sunny", "content", "flexElement", "0.0.1", "ephemeral");
 
-typedef _FlexElementConstructor = IFlexElement Function({   required bool? dismissible, 
-  int? repeatsFor, 
-  int? showEvery, 
-  required IContentDelivery? delivery, 
-  TimeUnit? durationUnit, 
-  int? durationAmount, 
-  TimeUnit? delayUnit, 
-  int? delayAmount, 
-  IContent? child, 
-  int? flex, 
-  IDimensions? size, 
-  String? background, 
-  IDimensions? padding, 
-  IDimensions? margin
- });
+typedef _FlexElementConstructor = IFlexElement Function(
+    {required bool? dismissible,
+    int? repeatsFor,
+    int? showEvery,
+    required IContentDelivery? delivery,
+    TimeUnit? durationUnit,
+    int? durationAmount,
+    TimeUnit? delayUnit,
+    int? delayAmount,
+    IContent? child,
+    int? flex,
+    IDimensions? size,
+    String? background,
+    IDimensions? padding,
+    IDimensions? margin});
 typedef _FlexElementFromJson = IFlexElement Function(dynamic any);

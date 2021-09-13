@@ -5,23 +5,17 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../waypoints_ext.dart';
 
-
-
-abstract class IContentTag
-  implements MModel {
-
+abstract class IContentTag implements MModel {
   static late _ContentTagConstructor of;
   static late _ContentTagFromJson fromJson;
 
-  /// Property getter and setter for tagType: 
+  /// Property getter and setter for tagType:
   String? get tagType;
   set tagType(String? tagType);
 
-
-  /// Property getter and setter for tag: 
+  /// Property getter and setter for tag:
   String? get tag;
   set tag(String? tag);
-
 
   @override
   String toString();
@@ -44,29 +38,21 @@ abstract class IContentTag
 
   @override
   Set<String> get mfields => ContentTagFields.values;
-
 }
 
 class ContentTagFields {
   static const tagType = "tagType";
   static const tag = "tag";
-  static const Set<String> values = {
-    tagType, tag
-  };
+  static const Set<String> values = {tagType, tag};
 }
 
 class ContentTagPaths {
   static const JsonPath<String> tagType = JsonPath.internal(["tagType"], "/tagType");
   static const JsonPath<String> tag = JsonPath.internal(["tag"], "/tag");
-  static final Set<JsonPath> values = {
-    tagType, tag
-  };
+  static final Set<JsonPath> values = {tagType, tag};
 }
-
 
 const ContentTagRef = MSchemaRef("sunny", "content", "contentTag", "0.0.1", "ephemeral");
 
-typedef _ContentTagConstructor = IContentTag Function({   required String? tagType, 
-  required String? tag
- });
+typedef _ContentTagConstructor = IContentTag Function({required String? tagType, required String? tag});
 typedef _ContentTagFromJson = IContentTag Function(dynamic any);

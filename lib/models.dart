@@ -29,21 +29,7 @@ export 'models/m_entity/m_entity.dart';
 export 'models/push_message/push_message.dart';
 export 'models/reliveit/reliveit.dart';
 export 'models/scheduling/scheduling.dart'
-    hide
-        IRecurringTimeSpanValues,
-        IRecurringTimeSpan,
-        IFlowFrameForFlowThread,
-        FlowFrameForFlowThreadRef;
+    hide IRecurringTimeSpanValues, IRecurringTimeSpan, IFlowFrameForFlowThread, FlowFrameForFlowThreadRef;
 export 'models/smart_dates/smart_dates.dart';
-export 'models/sunny/sunny.dart'
-    hide INotification, NotificationFields, NotificationPaths, NotificationRef;
-export 'models/waypoints/waypoints.dart'
-    hide
-        DimensionsPaths,
-        DimensionsFields,
-        IRecurringTimeSpan,
-        IRecurringTimeSpanValues,
-        IDimensions,
-        IOrientation,
-        IOrientationValues,
-        DimensionsRef;
+export 'models/sunny/sunny.dart' hide INotification, NotificationFields, NotificationPaths, NotificationRef;
+export 'models/waypoints/waypoints.dart';

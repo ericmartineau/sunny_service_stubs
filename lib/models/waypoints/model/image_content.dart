@@ -7,47 +7,38 @@ import '../waypoints_ext.dart';
 
 import '../model/content.dart';
 import '../model/content_delivery.dart';
-import '../model/dimensions.dart';
-import '../model/orientation.dart';
+import '../../facts/model/dimensions.dart';
+import '../../facts/model/orientation.dart';
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/contact_v2/model/physical_location.dart';
 
-
-abstract class IImageContent
-  implements IContent, ImageContentExt {
-
+abstract class IImageContent implements IContent, ImageContentExt {
   static late _ImageContentConstructor of;
   static late _ImageContentFromJson fromJson;
 
-  /// Property getter and setter for imageUrl: 
+  /// Property getter and setter for imageUrl:
   String? get imageUrl;
   set imageUrl(String? imageUrl);
 
-
-  /// Property getter and setter for caption: 
+  /// Property getter and setter for caption:
   String? get caption;
   set caption(String? caption);
 
-
-  /// Property getter and setter for location: 
+  /// Property getter and setter for location:
   IPhysicalLocation? get location;
   set location(IPhysicalLocation? location);
 
-
-  /// Property getter and setter for orientation: 
+  /// Property getter and setter for orientation:
   IOrientation? get orientation;
   set orientation(IOrientation? orientation);
 
-
-  /// Property getter and setter for dimensions: 
+  /// Property getter and setter for dimensions:
   IDimensions? get dimensions;
   set dimensions(IDimensions? dimensions);
 
-
-  /// Property getter and setter for originalUrl: 
+  /// Property getter and setter for originalUrl:
   String? get originalUrl;
   set originalUrl(String? originalUrl);
-
 
   @override
   String toString();
@@ -70,7 +61,6 @@ abstract class IImageContent
 
   @override
   Set<String> get mfields => ImageContentFields.values;
-
 }
 
 class ImageContentFields {
@@ -89,7 +79,20 @@ class ImageContentFields {
   static const dimensions = "dimensions";
   static const originalUrl = "originalUrl";
   static const Set<String> values = {
-    dismissible, repeatsFor, showEvery, delivery, durationUnit, durationAmount, delayUnit, delayAmount, imageUrl, caption, location, orientation, dimensions, originalUrl
+    dismissible,
+    repeatsFor,
+    showEvery,
+    delivery,
+    durationUnit,
+    durationAmount,
+    delayUnit,
+    delayAmount,
+    imageUrl,
+    caption,
+    location,
+    orientation,
+    dimensions,
+    originalUrl
   };
 }
 
@@ -109,26 +112,38 @@ class ImageContentPaths {
   static const JsonPath<IDimensions> dimensions = JsonPath.internal(["dimensions"], "/dimensions");
   static const JsonPath<String> originalUrl = JsonPath.internal(["originalUrl"], "/originalUrl");
   static final Set<JsonPath> values = {
-    dismissible, repeatsFor, showEvery, delivery, durationUnit, durationAmount, delayUnit, delayAmount, imageUrl, caption, location, orientation, dimensions, originalUrl
+    dismissible,
+    repeatsFor,
+    showEvery,
+    delivery,
+    durationUnit,
+    durationAmount,
+    delayUnit,
+    delayAmount,
+    imageUrl,
+    caption,
+    location,
+    orientation,
+    dimensions,
+    originalUrl
   };
 }
 
-
 const ImageContentRef = MSchemaRef("sunny", "content", "imageContent", "0.0.1", "ephemeral");
 
-typedef _ImageContentConstructor = IImageContent Function({   required bool? dismissible, 
-  int? repeatsFor, 
-  int? showEvery, 
-  required IContentDelivery? delivery, 
-  TimeUnit? durationUnit, 
-  int? durationAmount, 
-  TimeUnit? delayUnit, 
-  int? delayAmount, 
-  required String? imageUrl, 
-  String? caption, 
-  IPhysicalLocation? location, 
-  IOrientation? orientation, 
-  IDimensions? dimensions, 
-  String? originalUrl
- });
+typedef _ImageContentConstructor = IImageContent Function(
+    {required bool? dismissible,
+    int? repeatsFor,
+    int? showEvery,
+    required IContentDelivery? delivery,
+    TimeUnit? durationUnit,
+    int? durationAmount,
+    TimeUnit? delayUnit,
+    int? delayAmount,
+    required String? imageUrl,
+    String? caption,
+    IPhysicalLocation? location,
+    IOrientation? orientation,
+    IDimensions? dimensions,
+    String? originalUrl});
 typedef _ImageContentFromJson = IImageContent Function(dynamic any);
