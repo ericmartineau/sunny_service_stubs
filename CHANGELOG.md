@@ -1,3 +1,6 @@
+## [0.5.0+3]
+ * Updates to core models
+
 ## [0.5.0+2]
  * Updated stubs
 Updated gem
