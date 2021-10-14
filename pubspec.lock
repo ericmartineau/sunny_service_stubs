@@ -449,7 +449,7 @@ packages:
     source: hosted
     version: "1.0.0+2"
   sunny_sdk_core:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: sunny_sdk_core
       url: "https://pub.dartlang.org"

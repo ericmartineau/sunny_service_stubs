@@ -1,3 +1,6 @@
+## [0.5.0+5]
+ * Updated jsonPath refs
+
 ## [0.5.0+3]
  * Updates to core models
 
