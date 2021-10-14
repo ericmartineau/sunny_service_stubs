@@ -24,8 +24,8 @@ abstract class IContactList implements MModel {
   set max(int? max);
 
   /// Property getter and setter for stats:
-  dynamic? get stats;
-  set stats(dynamic? stats);
+  dynamic get stats;
+  set stats(dynamic stats);
 
   /// Property getter and setter for data:
   List<ISunnyContact>? get data;
@@ -75,5 +75,5 @@ class ContactListPaths {
 const ContactListRef = MSchemaRef("mverse", "sunny", "contactList", "0.0.1", "ephemeral");
 
 typedef _ContactListConstructor = IContactList Function(
-    {required int? total, required int? offset, required int? max, dynamic? stats, required List<ISunnyContact>? data});
+    {required int? total, required int? offset, required int? max, dynamic stats, required List<ISunnyContact>? data});
 typedef _ContactListFromJson = IContactList Function(dynamic any);

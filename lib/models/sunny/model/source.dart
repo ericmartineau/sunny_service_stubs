@@ -5,43 +5,33 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-
-
-abstract class ISource
-  implements MModel {
-
+abstract class ISource implements MModel {
   static late _SourceConstructor of;
   static late _SourceFromJson fromJson;
 
-  /// Property getter and setter for id: 
+  /// Property getter and setter for id:
   String? get id;
   set id(String? id);
 
-
-  /// Property getter and setter for type: 
+  /// Property getter and setter for type:
   String? get type;
   set type(String? type);
 
-
-  /// Property getter and setter for identifier: 
+  /// Property getter and setter for identifier:
   String? get identifier;
   set identifier(String? identifier);
 
-
-  /// Property getter and setter for name: 
+  /// Property getter and setter for name:
   String? get name;
   set name(String? name);
 
+  /// Property getter and setter for credentials:
+  dynamic get credentials;
+  set credentials(dynamic credentials);
 
-  /// Property getter and setter for credentials: 
-  dynamic? get credentials;
-  set credentials(dynamic? credentials);
-
-
-  /// Property getter and setter for credentialsValid: 
+  /// Property getter and setter for credentialsValid:
   bool? get credentialsValid;
   set credentialsValid(bool? credentialsValid);
-
 
   @override
   String toString();
@@ -64,7 +54,6 @@ abstract class ISource
 
   @override
   Set<String> get mfields => SourceFields.values;
-
 }
 
 class SourceFields {
@@ -74,9 +63,7 @@ class SourceFields {
   static const name = "name";
   static const credentials = "credentials";
   static const credentialsValid = "credentialsValid";
-  static const Set<String> values = {
-    id, type, identifier, name, credentials, credentialsValid
-  };
+  static const Set<String> values = {id, type, identifier, name, credentials, credentialsValid};
 }
 
 class SourcePaths {
@@ -86,19 +73,11 @@ class SourcePaths {
   static const JsonPath<String> name = JsonPath.internal(["name"], "/name");
   static const JsonPath<dynamic> credentials = JsonPath.internal(["credentials"], "/credentials");
   static const JsonPath<bool> credentialsValid = JsonPath.internal(["credentialsValid"], "/credentialsValid");
-  static final Set<JsonPath> values = {
-    id, type, identifier, name, credentials, credentialsValid
-  };
+  static final Set<JsonPath> values = {id, type, identifier, name, credentials, credentialsValid};
 }
-
 
 const SourceRef = MSchemaRef("mverse", "sunny", "source", "0.0.1", "ephemeral");
 
-typedef _SourceConstructor = ISource Function({   String? id, 
-  String? type, 
-  String? identifier, 
-  String? name, 
-  dynamic? credentials, 
-  bool? credentialsValid
- });
+typedef _SourceConstructor = ISource Function(
+    {String? id, String? type, String? identifier, String? name, dynamic credentials, bool? credentialsValid});
 typedef _SourceFromJson = ISource Function(dynamic any);

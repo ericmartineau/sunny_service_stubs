@@ -5,58 +5,45 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-
-
-abstract class INotification
-  implements MModel {
-
+abstract class INotification implements MModel {
   static late _NotificationConstructor of;
   static late _NotificationFromJson fromJson;
 
-  /// Property getter and setter for contactId: 
+  /// Property getter and setter for contactId:
   String? get contactId;
   set contactId(String? contactId);
 
-
-  /// Property getter and setter for dateCreated: 
+  /// Property getter and setter for dateCreated:
   DateTime? get dateCreated;
   set dateCreated(DateTime? dateCreated);
 
-
-  /// Property getter and setter for dateSent: 
+  /// Property getter and setter for dateSent:
   DateTime? get dateSent;
   set dateSent(DateTime? dateSent);
 
-
-  /// Property getter and setter for dateSeen: 
+  /// Property getter and setter for dateSeen:
   DateTime? get dateSeen;
   set dateSeen(DateTime? dateSeen);
 
-
-  /// Property getter and setter for dateSnoozed: 
+  /// Property getter and setter for dateSnoozed:
   DateTime? get dateSnoozed;
   set dateSnoozed(DateTime? dateSnoozed);
 
-
-  /// Property getter and setter for dateSnoozedTo: 
+  /// Property getter and setter for dateSnoozedTo:
   DateTime? get dateSnoozedTo;
   set dateSnoozedTo(DateTime? dateSnoozedTo);
 
-
-  /// Property getter and setter for dateCompleted: 
+  /// Property getter and setter for dateCompleted:
   DateTime? get dateCompleted;
   set dateCompleted(DateTime? dateCompleted);
 
-
-  /// Property getter and setter for text: 
+  /// Property getter and setter for text:
   String? get text;
   set text(String? text);
 
-
-  /// Property getter and setter for context: 
-  dynamic? get context;
-  set context(dynamic? context);
-
+  /// Property getter and setter for context:
+  dynamic get context;
+  set context(dynamic context);
 
   @override
   String toString();
@@ -79,7 +66,6 @@ abstract class INotification
 
   @override
   Set<String> get mfields => NotificationFields.values;
-
 }
 
 class NotificationFields {
@@ -93,7 +79,15 @@ class NotificationFields {
   static const text = "text";
   static const context = "context";
   static const Set<String> values = {
-    contactId, dateCreated, dateSent, dateSeen, dateSnoozed, dateSnoozedTo, dateCompleted, text, context
+    contactId,
+    dateCreated,
+    dateSent,
+    dateSeen,
+    dateSnoozed,
+    dateSnoozedTo,
+    dateCompleted,
+    text,
+    context
   };
 }
 
@@ -108,21 +102,28 @@ class NotificationPaths {
   static const JsonPath<String> text = JsonPath.internal(["text"], "/text");
   static const JsonPath<dynamic> context = JsonPath.internal(["context"], "/context");
   static final Set<JsonPath> values = {
-    contactId, dateCreated, dateSent, dateSeen, dateSnoozed, dateSnoozedTo, dateCompleted, text, context
+    contactId,
+    dateCreated,
+    dateSent,
+    dateSeen,
+    dateSnoozed,
+    dateSnoozedTo,
+    dateCompleted,
+    text,
+    context
   };
 }
 
-
 const NotificationRef = MSchemaRef("mverse", "sunny", "notification", "0.0.1", "ephemeral");
 
-typedef _NotificationConstructor = INotification Function({   String? contactId, 
-  DateTime? dateCreated, 
-  DateTime? dateSent, 
-  DateTime? dateSeen, 
-  DateTime? dateSnoozed, 
-  DateTime? dateSnoozedTo, 
-  DateTime? dateCompleted, 
-  String? text, 
-  dynamic? context
- });
+typedef _NotificationConstructor = INotification Function(
+    {String? contactId,
+    DateTime? dateCreated,
+    DateTime? dateSent,
+    DateTime? dateSeen,
+    DateTime? dateSnoozed,
+    DateTime? dateSnoozedTo,
+    DateTime? dateCompleted,
+    String? text,
+    dynamic context});
 typedef _NotificationFromJson = INotification Function(dynamic any);

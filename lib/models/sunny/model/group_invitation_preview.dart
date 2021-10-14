@@ -16,8 +16,8 @@ abstract class IGroupInvitationPreview implements MModel {
   set groupName(String? groupName);
 
   /// Property getter and setter for context:
-  dynamic? get context;
-  set context(dynamic? context);
+  dynamic get context;
+  set context(dynamic context);
 
   /// Property getter and setter for inviterContacts:
   List<ISunnyContact>? get inviterContacts;
@@ -76,7 +76,7 @@ const GroupInvitationPreviewRef = MSchemaRef("mverse", "sunny", "groupInvitation
 
 typedef _GroupInvitationPreviewConstructor = IGroupInvitationPreview Function(
     {String? groupName,
-    dynamic? context,
+    dynamic context,
     List<ISunnyContact>? inviterContacts,
     List<ISunnyContact>? inviteeContacts,
     List<dynamic>? matches});

@@ -14,8 +14,8 @@ abstract class ICompletion implements MModel {
   set type(String? type);
 
   /// Property getter and setter for query:
-  dynamic? get query;
-  set query(dynamic? query);
+  dynamic get query;
+  set query(dynamic query);
 
   @override
   String toString();
@@ -54,10 +54,8 @@ class CompletionPaths {
 
 class CompletionType extends MLiteral<String> {
   const CompletionType._internal(String value) : super(value);
-  static const CompletionType queryString_ =
-      CompletionType._internal("QUERY_STRING");
-  static const CompletionType structured_ =
-      CompletionType._internal("STRUCTURED");
+  static const CompletionType queryString_ = CompletionType._internal("QUERY_STRING");
+  static const CompletionType structured_ = CompletionType._internal("STRUCTURED");
 
   static CompletionType fromJson(dynamic data) {
     switch (data?.toString()) {
@@ -74,9 +72,7 @@ class CompletionType extends MLiteral<String> {
   dynamic toJson() => json.encode(value);
 }
 
-const CompletionRef =
-    MSchemaRef("sunny", "waypointsBuilder", "completion", "0.0.1", "ephemeral");
+const CompletionRef = MSchemaRef("sunny", "waypointsBuilder", "completion", "0.0.1", "ephemeral");
 
-typedef _CompletionConstructor = ICompletion Function(
-    {required String? type, required dynamic? query});
+typedef _CompletionConstructor = ICompletion Function({required String? type, required dynamic query});
 typedef _CompletionFromJson = ICompletion Function(dynamic any);

@@ -1,4 +1,4 @@
-import 'package:sunny_dart/json.dart';
+import 'package:dartxx/json_path.dart';
 import 'package:sunny_sdk_core/mverse.dart';
 
 import 'model/m_entity_definition.dart';

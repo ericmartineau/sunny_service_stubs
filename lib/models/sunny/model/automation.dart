@@ -30,8 +30,8 @@ abstract class IAutomation implements MModel {
   set type(String? type);
 
   /// Property getter and setter for context:
-  dynamic? get context;
-  set context(dynamic? context);
+  dynamic get context;
+  set context(dynamic context);
 
   @override
   String toString();
@@ -63,35 +63,17 @@ class AutomationFields {
   static const description = "description";
   static const type = "type";
   static const context = "context";
-  static const Set<String> values = {
-    groups,
-    contacts,
-    name,
-    description,
-    type,
-    context
-  };
+  static const Set<String> values = {groups, contacts, name, description, type, context};
 }
 
 class AutomationPaths {
-  static const JsonPath<List<String>> groups =
-      JsonPath.internal(["groups"], "/groups");
-  static const JsonPath<List<String>> contacts =
-      JsonPath.internal(["contacts"], "/contacts");
+  static const JsonPath<List<String>> groups = JsonPath.internal(["groups"], "/groups");
+  static const JsonPath<List<String>> contacts = JsonPath.internal(["contacts"], "/contacts");
   static const JsonPath<String> name = JsonPath.internal(["name"], "/name");
-  static const JsonPath<String> description =
-      JsonPath.internal(["description"], "/description");
+  static const JsonPath<String> description = JsonPath.internal(["description"], "/description");
   static const JsonPath<String> type = JsonPath.internal(["type"], "/type");
-  static const JsonPath<dynamic> context =
-      JsonPath.internal(["context"], "/context");
-  static final Set<JsonPath> values = {
-    groups,
-    contacts,
-    name,
-    description,
-    type,
-    context
-  };
+  static const JsonPath<dynamic> context = JsonPath.internal(["context"], "/context");
+  static final Set<JsonPath> values = {groups, contacts, name, description, type, context};
 }
 
 class AutomationType extends MLiteral<String> {
@@ -114,8 +96,7 @@ class AutomationType extends MLiteral<String> {
   dynamic toJson() => json.encode(value);
 }
 
-const AutomationRef =
-    MSchemaRef("mverse", "sunny", "automation", "0.0.1", "ephemeral");
+const AutomationRef = MSchemaRef("mverse", "sunny", "automation", "0.0.1", "ephemeral");
 
 typedef _AutomationConstructor = IAutomation Function(
     {List<String>? groups,
@@ -123,5 +104,5 @@ typedef _AutomationConstructor = IAutomation Function(
     required String? name,
     String? description,
     required String? type,
-    dynamic? context});
+    dynamic context});
 typedef _AutomationFromJson = IAutomation Function(dynamic any);

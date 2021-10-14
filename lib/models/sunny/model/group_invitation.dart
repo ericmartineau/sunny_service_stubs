@@ -5,23 +5,17 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-
-
-abstract class IGroupInvitation
-  implements MModel {
-
+abstract class IGroupInvitation implements MModel {
   static late _GroupInvitationConstructor of;
   static late _GroupInvitationFromJson fromJson;
 
-  /// Property getter and setter for token: 
+  /// Property getter and setter for token:
   String? get token;
   set token(String? token);
 
-
-  /// Property getter and setter for context: 
-  dynamic? get context;
-  set context(dynamic? context);
-
+  /// Property getter and setter for context:
+  dynamic get context;
+  set context(dynamic context);
 
   @override
   String toString();
@@ -44,29 +38,21 @@ abstract class IGroupInvitation
 
   @override
   Set<String> get mfields => GroupInvitationFields.values;
-
 }
 
 class GroupInvitationFields {
   static const token = "token";
   static const context = "context";
-  static const Set<String> values = {
-    token, context
-  };
+  static const Set<String> values = {token, context};
 }
 
 class GroupInvitationPaths {
   static const JsonPath<String> token = JsonPath.internal(["token"], "/token");
   static const JsonPath<dynamic> context = JsonPath.internal(["context"], "/context");
-  static final Set<JsonPath> values = {
-    token, context
-  };
+  static final Set<JsonPath> values = {token, context};
 }
-
 
 const GroupInvitationRef = MSchemaRef("mverse", "sunny", "groupInvitation", "0.0.1", "ephemeral");
 
-typedef _GroupInvitationConstructor = IGroupInvitation Function({   String? token, 
-  dynamic? context
- });
+typedef _GroupInvitationConstructor = IGroupInvitation Function({String? token, dynamic context});
 typedef _GroupInvitationFromJson = IGroupInvitation Function(dynamic any);

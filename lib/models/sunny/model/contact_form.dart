@@ -5,33 +5,25 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-
-
-abstract class IContactForm
-  implements MModel {
-
+abstract class IContactForm implements MModel {
   static late _ContactFormConstructor of;
   static late _ContactFormFromJson fromJson;
 
-  /// Property getter and setter for token: 
+  /// Property getter and setter for token:
   String? get token;
   set token(String? token);
 
-
-  /// Property getter and setter for userId: 
+  /// Property getter and setter for userId:
   String? get userId;
   set userId(String? userId);
 
-
-  /// Property getter and setter for contactId: 
+  /// Property getter and setter for contactId:
   String? get contactId;
   set contactId(String? contactId);
 
-
-  /// Property getter and setter for context: 
-  dynamic? get context;
-  set context(dynamic? context);
-
+  /// Property getter and setter for context:
+  dynamic get context;
+  set context(dynamic context);
 
   @override
   String toString();
@@ -54,7 +46,6 @@ abstract class IContactForm
 
   @override
   Set<String> get mfields => ContactFormFields.values;
-
 }
 
 class ContactFormFields {
@@ -62,9 +53,7 @@ class ContactFormFields {
   static const userId = "userId";
   static const contactId = "contactId";
   static const context = "context";
-  static const Set<String> values = {
-    token, userId, contactId, context
-  };
+  static const Set<String> values = {token, userId, contactId, context};
 }
 
 class ContactFormPaths {
@@ -72,17 +61,11 @@ class ContactFormPaths {
   static const JsonPath<String> userId = JsonPath.internal(["userId"], "/userId");
   static const JsonPath<String> contactId = JsonPath.internal(["contactId"], "/contactId");
   static const JsonPath<dynamic> context = JsonPath.internal(["context"], "/context");
-  static final Set<JsonPath> values = {
-    token, userId, contactId, context
-  };
+  static final Set<JsonPath> values = {token, userId, contactId, context};
 }
-
 
 const ContactFormRef = MSchemaRef("mverse", "sunny", "contactForm", "0.0.1", "ephemeral");
 
-typedef _ContactFormConstructor = IContactForm Function({   required String? token, 
-  required String? userId, 
-  String? contactId, 
-  dynamic? context
- });
+typedef _ContactFormConstructor = IContactForm Function(
+    {required String? token, required String? userId, String? contactId, dynamic context});
 typedef _ContactFormFromJson = IContactForm Function(dynamic any);

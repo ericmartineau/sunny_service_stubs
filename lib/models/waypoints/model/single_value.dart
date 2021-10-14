@@ -5,18 +5,13 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../waypoints_ext.dart';
 
-
-
-abstract class ISingleValue
-  implements MModel {
-
+abstract class ISingleValue implements MModel {
   static late _SingleValueConstructor of;
   static late _SingleValueFromJson fromJson;
 
-  /// Property getter and setter for value: 
-  dynamic? get value;
-  set value(dynamic? value);
-
+  /// Property getter and setter for value:
+  dynamic get value;
+  set value(dynamic value);
 
   @override
   String toString();
@@ -39,26 +34,19 @@ abstract class ISingleValue
 
   @override
   Set<String> get mfields => SingleValueFields.values;
-
 }
 
 class SingleValueFields {
   static const value = "value";
-  static const Set<String> values = {
-    value
-  };
+  static const Set<String> values = {value};
 }
 
 class SingleValuePaths {
   static const JsonPath<dynamic> value = JsonPath.internal(["value"], "/value");
-  static final Set<JsonPath> values = {
-    value
-  };
+  static final Set<JsonPath> values = {value};
 }
-
 
 const SingleValueRef = MSchemaRef("mverse", "core", "singleValue", "0.0.1", "ephemeral");
 
-typedef _SingleValueConstructor = ISingleValue Function({   required dynamic? value
- });
+typedef _SingleValueConstructor = ISingleValue Function({required dynamic value});
 typedef _SingleValueFromJson = ISingleValue Function(dynamic any);

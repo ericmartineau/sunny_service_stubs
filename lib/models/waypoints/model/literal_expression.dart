@@ -7,17 +7,13 @@ import '../waypoints_ext.dart';
 
 import '../model/expression.dart';
 
-
-abstract class ILiteralExpression
-  implements IExpression {
-
+abstract class ILiteralExpression implements IExpression {
   static late _LiteralExpressionConstructor of;
   static late _LiteralExpressionFromJson fromJson;
 
-  /// Property getter and setter for literalValue: 
-  dynamic? get literalValue;
-  set literalValue(dynamic? literalValue);
-
+  /// Property getter and setter for literalValue:
+  dynamic get literalValue;
+  set literalValue(dynamic literalValue);
 
   @override
   String toString();
@@ -40,26 +36,19 @@ abstract class ILiteralExpression
 
   @override
   Set<String> get mfields => LiteralExpressionFields.values;
-
 }
 
 class LiteralExpressionFields {
   static const literalValue = "literalValue";
-  static const Set<String> values = {
-    literalValue
-  };
+  static const Set<String> values = {literalValue};
 }
 
 class LiteralExpressionPaths {
   static const JsonPath<dynamic> literalValue = JsonPath.internal(["literalValue"], "/literalValue");
-  static final Set<JsonPath> values = {
-    literalValue
-  };
+  static final Set<JsonPath> values = {literalValue};
 }
-
 
 const LiteralExpressionRef = MSchemaRef("sunny", "waypointsBuilder", "literalExpression", "0.0.1", "ephemeral");
 
-typedef _LiteralExpressionConstructor = ILiteralExpression Function({   required dynamic? literalValue
- });
+typedef _LiteralExpressionConstructor = ILiteralExpression Function({required dynamic literalValue});
 typedef _LiteralExpressionFromJson = ILiteralExpression Function(dynamic any);

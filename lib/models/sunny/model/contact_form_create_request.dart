@@ -5,23 +5,17 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../sunny_ext.dart';
 
-
-
-abstract class IContactFormCreateRequest
-  implements MModel {
-
+abstract class IContactFormCreateRequest implements MModel {
   static late _ContactFormCreateRequestConstructor of;
   static late _ContactFormCreateRequestFromJson fromJson;
 
-  /// Property getter and setter for contactId: 
+  /// Property getter and setter for contactId:
   String? get contactId;
   set contactId(String? contactId);
 
-
-  /// Property getter and setter for context: 
-  dynamic? get context;
-  set context(dynamic? context);
-
+  /// Property getter and setter for context:
+  dynamic get context;
+  set context(dynamic context);
 
   @override
   String toString();
@@ -44,29 +38,21 @@ abstract class IContactFormCreateRequest
 
   @override
   Set<String> get mfields => ContactFormCreateRequestFields.values;
-
 }
 
 class ContactFormCreateRequestFields {
   static const contactId = "contactId";
   static const context = "context";
-  static const Set<String> values = {
-    contactId, context
-  };
+  static const Set<String> values = {contactId, context};
 }
 
 class ContactFormCreateRequestPaths {
   static const JsonPath<String> contactId = JsonPath.internal(["contactId"], "/contactId");
   static const JsonPath<dynamic> context = JsonPath.internal(["context"], "/context");
-  static final Set<JsonPath> values = {
-    contactId, context
-  };
+  static final Set<JsonPath> values = {contactId, context};
 }
-
 
 const ContactFormCreateRequestRef = MSchemaRef("mverse", "sunny", "contactFormCreateRequest", "0.0.1", "ephemeral");
 
-typedef _ContactFormCreateRequestConstructor = IContactFormCreateRequest Function({   String? contactId, 
-  dynamic? context
- });
+typedef _ContactFormCreateRequestConstructor = IContactFormCreateRequest Function({String? contactId, dynamic context});
 typedef _ContactFormCreateRequestFromJson = IContactFormCreateRequest Function(dynamic any);
