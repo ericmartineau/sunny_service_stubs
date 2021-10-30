@@ -451,9 +451,9 @@ packages:
   sunny_sdk_core:
     dependency: "direct main"
     description:
-      name: sunny_sdk_core
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "../sunny_sdk_core"
+      relative: true
+    source: path
     version: "2.2.0+4"
   synchronized:
     dependency: transitive

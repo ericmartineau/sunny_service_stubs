@@ -23,3 +23,6 @@ dependencies:
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
+dependency_overrides:
+  sunny_sdk_core:
+    path: ../sunny_sdk_core

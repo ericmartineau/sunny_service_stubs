@@ -8,8 +8,10 @@ import '../facts_ext.dart';
 import '../model/task_fact_for_m_model.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';
 
-abstract class IFact with FactMixin implements MEntity {
+abstract class IFact with FactMixin implements MBaseModel, Entity {
   static late _FactFromJson fromJson;
+
+  String? get id;
 
   /// Property getter and setter for creator:
   IReliveItContact? get creator;
@@ -54,12 +56,9 @@ class FactFields {
 }
 
 class FactPaths {
-  static const JsonPath<IReliveItContact> creator =
-      JsonPath.internal(["creator"], "/creator");
-  static const JsonPath<DateTime> dateCreated =
-      JsonPath.internal(["dateCreated"], "/dateCreated");
-  static const JsonPath<ITaskFactForMModel> assistedTask =
-      JsonPath.internal(["assistedTask"], "/assistedTask");
+  static const JsonPath<IReliveItContact> creator = JsonPath.internal(["creator"], "/creator");
+  static const JsonPath<DateTime> dateCreated = JsonPath.internal(["dateCreated"], "/dateCreated");
+  static const JsonPath<ITaskFactForMModel> assistedTask = JsonPath.internal(["assistedTask"], "/assistedTask");
   static final Set<JsonPath> values = {creator, dateCreated, assistedTask};
 }
 
@@ -67,7 +66,5 @@ const FactRef = MSchemaRef("sunny", "fact", "fact", "0.0.1", "abstract");
 
 // ignore: unused_element
 typedef _FactConstructor = IFact Function(
-    {IReliveItContact? creator,
-    required DateTime? dateCreated,
-    ITaskFactForMModel? assistedTask});
+    {IReliveItContact? creator, required DateTime? dateCreated, ITaskFactForMModel? assistedTask});
 typedef _FactFromJson = IFact Function(dynamic any);
