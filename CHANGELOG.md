@@ -1,3 +1,6 @@
+## [0.5.0+7]
+ * Updated deps
+
 ## [0.5.0+5]
  * Updated jsonPath refs
 

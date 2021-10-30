@@ -281,14 +281,14 @@ packages:
       name: mobx
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.1"
+    version: "2.0.5"
   observable_collections:
     dependency: transitive
     description:
       name: observable_collections
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.7.0+2"
+    version: "0.7.0+4"
   path:
     dependency: transitive
     description:
@@ -440,21 +440,21 @@ packages:
       name: sunny_dart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.0+4"
+    version: "0.11.0+5"
   sunny_data:
     dependency: "direct main"
     description:
       name: sunny_data
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0+2"
+    version: "1.0.0+3"
   sunny_sdk_core:
     dependency: "direct main"
     description:
-      path: "../sunny_sdk_core"
-      relative: true
-    source: path
-    version: "2.2.0+4"
+      name: sunny_sdk_core
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.0+6"
   synchronized:
     dependency: transitive
     description:

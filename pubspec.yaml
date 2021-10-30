@@ -1,5 +1,5 @@
 name: sunny_service_stubs
-version: 0.5.0+6
+version: 0.5.0+7
 description: A new Flutter package project.
 environment: 
   sdk: '>=2.13.0 <3.0.0'
@@ -10,19 +10,17 @@ dependencies:
   equatable: ^2.0.3
   flexidate: ^0.6.0+2
   info_x: ^0.7.0+1
-  logging: ^1.0.1
+  logging: ^1.0.2
   meta: ^1.3.0
-  pfile: ^2.1.0+3
-  sunny_data: ^1.0.0+2
+  pfile: ^2.1.0+4
+  sunny_data: ^1.0.0+3
   intl: ^0.17.0
   timezone: ^0.7.0
-  sunny_dart: ^0.10.0+4
-  sunny_sdk_core: ^2.2.0+4
+  sunny_dart: ^0.11.0+5
+  sunny_sdk_core: ^2.2.0+6
   flutter: 
     sdk: flutter
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
-dependency_overrides:
-  sunny_sdk_core:
-    path: ../sunny_sdk_core
+
