@@ -1,5 +1,5 @@
 name: sunny_service_stubs
-version: 0.5.0+7
+version: 0.5.0+8
 description: A new Flutter package project.
 environment: 
   sdk: '>=2.13.0 <3.0.0'
@@ -23,4 +23,3 @@ dependencies:
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
-
