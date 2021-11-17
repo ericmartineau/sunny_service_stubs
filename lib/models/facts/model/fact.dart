@@ -18,8 +18,8 @@ abstract class IFact with FactMixin implements MBaseModel, Entity {
   set creator(IReliveItContact? creator);
 
   /// Property getter and setter for dateCreated:
-  DateTime? get dateCreated;
-  set dateCreated(DateTime? dateCreated);
+  DateTime get dateCreated;
+  set dateCreated(DateTime dateCreated);
 
   /// Property getter and setter for assistedTask:
   ITaskFactForMModel? get assistedTask;
