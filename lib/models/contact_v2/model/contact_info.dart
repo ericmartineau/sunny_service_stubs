@@ -7,7 +7,6 @@ import 'package:sunny_service_stubs/contact/contactable.dart';
 import '../contact_v2_ext.dart';
 
 import '../model/physical_location.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:timezone/timezone.dart';
 
 abstract class IContactInfo implements MModel, IRef {
@@ -84,24 +83,53 @@ class ContactInfoFields {
   static const photoUrl = "photoUrl";
   static const address = "address";
   static const displayName = "displayName";
-  static const Set<String> values = {contactType, contactKey, givenName, familyName, email, phone, timeZone, photoUrl, address};
+  static const Set<String> values = {
+    contactType,
+    contactKey,
+    givenName,
+    familyName,
+    email,
+    phone,
+    timeZone,
+    photoUrl,
+    address
+  };
 }
 
 class ContactInfoPaths {
-  static const JsonPath<MSchemaRef> contactType = JsonPath.internal(["contactType"], "/contactType");
-  static const JsonPath<RecordKey> contactKey = JsonPath.internal(["contactKey"], "/contactKey");
-  static const JsonPath<String> givenName = JsonPath.internal(["givenName"], "/givenName");
-  static const JsonPath<String> displayName = JsonPath.internal(["displayName"], "/displayName");
-  static const JsonPath<String> familyName = JsonPath.internal(["familyName"], "/familyName");
+  static const JsonPath<MSchemaRef> contactType =
+      JsonPath.internal(["contactType"], "/contactType");
+  static const JsonPath<RecordKey> contactKey =
+      JsonPath.internal(["contactKey"], "/contactKey");
+  static const JsonPath<String> givenName =
+      JsonPath.internal(["givenName"], "/givenName");
+  static const JsonPath<String> displayName =
+      JsonPath.internal(["displayName"], "/displayName");
+  static const JsonPath<String> familyName =
+      JsonPath.internal(["familyName"], "/familyName");
   static const JsonPath<String> email = JsonPath.internal(["email"], "/email");
   static const JsonPath<String> phone = JsonPath.internal(["phone"], "/phone");
-  static const JsonPath<Location> timeZone = JsonPath.internal(["timeZone"], "/timeZone");
-  static const JsonPath<Uri> photoUrl = JsonPath.internal(["photoUrl"], "/photoUrl");
-  static const JsonPath<IPhysicalLocation> address = JsonPath.internal(["address"], "/address");
-  static final Set<JsonPath> values = {contactType, contactKey, givenName, familyName, email, phone, timeZone, photoUrl, address};
+  static const JsonPath<Location> timeZone =
+      JsonPath.internal(["timeZone"], "/timeZone");
+  static const JsonPath<Uri> photoUrl =
+      JsonPath.internal(["photoUrl"], "/photoUrl");
+  static const JsonPath<IPhysicalLocation> address =
+      JsonPath.internal(["address"], "/address");
+  static final Set<JsonPath> values = {
+    contactType,
+    contactKey,
+    givenName,
+    familyName,
+    email,
+    phone,
+    timeZone,
+    photoUrl,
+    address
+  };
 }
 
-const ContactInfoRef = MSchemaRef("mverse", "contact", "contactInfo", "0.0.1", "ephemeral");
+const ContactInfoRef =
+    MSchemaRef("mverse", "contact", "contactInfo", "0.0.1", "ephemeral");
 
 typedef _ContactInfoConstructor = IContactInfo Function(
     {MSchemaRef? contactType,

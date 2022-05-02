@@ -1,10 +1,6 @@
 import 'dart:async';
 
-import 'package:dartxx/dartxx.dart';
-import 'package:sunny_dart/helpers.dart';
-import 'package:sunny_dart/streams.dart';
 import 'package:sunny_dart/sunny_dart.dart';
-import 'package:sunny_dart/typedefs.dart';
 import 'package:sunny_data/record.dart';
 import 'package:sunny_data/sunny_store.dart';
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
@@ -15,7 +11,8 @@ import 'contactable.dart';
 IContactService get contactService => sunny.get();
 
 abstract class IContactService extends SunnyStore<ISunnyContact> {
-  IContactService(Repository<ISunnyContact> repository, MSchemaRef type, IAuthState loginState)
+  IContactService(Repository<ISunnyContact> repository, MSchemaRef type,
+      IAuthState loginState)
       : super(repository, type, loginState);
 
   Future<ISunnyContact> createFromIdentity(IContactIdentity identity);
@@ -71,8 +68,10 @@ class Contacts {
       return <String>[];
     }
 
-    final statePostal = Lists.compactEmpty([address.region, address.postalCode]).join(", ");
-    final regionLine = Lists.compactEmpty([address.locality, statePostal]).join(" ");
+    final statePostal =
+        Lists.compactEmpty([address.region, address.postalCode]).join(", ");
+    final regionLine =
+        Lists.compactEmpty([address.locality, statePostal]).join(" ");
     return Lists.compactEmpty([
       address.streetLineOne,
       address.streetLineTwo,
@@ -110,14 +109,17 @@ class Contacts {
   static updateFromIdentity(ISunnyContact contact, IContactIdentity identity) {}
 
   static IContactIdentity? sunnyIdentity(ISunnyContact contact) =>
-      contact.identities.orWhere((identity) => identity.sourceType == sunnySource).firstOr();
+      contact.identities
+          .orWhere((identity) => identity.sourceType == sunnySource)
+          .firstOr();
 
   static String? contactString(ISunnyContact? contact) {
     return firstNonEmpty([fullName(contact), contact?.companyName]);
   }
 
   static String? firstName(ISunnyContact contact) {
-    return firstNonEmpty([contact.firstName, contact.companyName, contact.fullName]);
+    return firstNonEmpty(
+        [contact.firstName, contact.companyName, contact.fullName]);
   }
 
   static String contactable(Contactable contactable) {
@@ -140,13 +142,15 @@ class Contacts {
           ),
         );
 
-  static IContactIdentity? identityWhere(ISunnyContact? contact, bool Function(IContactIdentity identity) predicate,
+  static IContactIdentity? identityWhere(ISunnyContact? contact,
+          bool Function(IContactIdentity identity) predicate,
           {Factory<IContactIdentity>? orElse}) =>
       contact?.identities?.firstOrNull(predicate) ?? create(orElse);
 }
 
 // ignore: non_constant_identifier_names
-Comparator<ISunnyContact> ContactComparator = (ISunnyContact a, ISunnyContact b) {
+Comparator<ISunnyContact> ContactComparator =
+    (ISunnyContact a, ISunnyContact b) {
   if (a.isFavorite != b.isFavorite) {
     return b.isFavorite == true ? 1 : -1;
   }

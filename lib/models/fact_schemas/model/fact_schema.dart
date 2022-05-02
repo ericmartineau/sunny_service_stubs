@@ -10,85 +10,67 @@ import '../model/fact_link.dart';
 import '../model/fact_meta_date.dart';
 import '../model/fact_schema_template.dart';
 import '../model/fact_tense.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/m_entity/model/m_schema_definition.dart';
 
-
-abstract class IFactSchema
-  implements MModel {
-
+abstract class IFactSchema implements MModel {
   static late _FactSchemaConstructor of;
   static late _FactSchemaFromJson fromJson;
 
-  /// Property getter and setter for ref: 
+  /// Property getter and setter for ref:
   MSchemaRef? get ref;
   set ref(MSchemaRef? ref);
 
-
-  /// Property getter and setter for mschema: 
+  /// Property getter and setter for mschema:
   IMSchemaDefinition? get mschema;
   set mschema(IMSchemaDefinition? mschema);
 
-
-  /// Property getter and setter for recordType: 
+  /// Property getter and setter for recordType:
   MSchemaRef? get recordType;
   set recordType(MSchemaRef? recordType);
 
-
-  /// Property getter and setter for category: 
+  /// Property getter and setter for category:
   String? get category;
   set category(String? category);
 
-
-  /// Property getter and setter for templates: 
+  /// Property getter and setter for templates:
   Map<String, IFactSchemaTemplate>? get templates;
   set templates(Map<String, IFactSchemaTemplate>? templates);
 
-
-  /// Property getter and setter for icon: 
+  /// Property getter and setter for icon:
   String? get icon;
   set icon(String? icon);
 
-
-  /// Property getter and setter for tenses: 
+  /// Property getter and setter for tenses:
   List<IFactTense>? get tenses;
   set tenses(List<IFactTense>? tenses);
 
-
-  /// Property getter and setter for factTokens: 
+  /// Property getter and setter for factTokens:
   List<String>? get factTokens;
   set factTokens(List<String>? factTokens);
 
-
-  /// Property getter and setter for bundle: 
+  /// Property getter and setter for bundle:
   String? get bundle;
   set bundle(String? bundle);
 
-
-  /// Property getter and setter for dates: 
+  /// Property getter and setter for dates:
   List<IFactMetaDate>? get dates;
   set dates(List<IFactMetaDate>? dates);
 
-
-  /// Property getter and setter for links: 
+  /// Property getter and setter for links:
   List<IFactLink>? get links;
   set links(List<IFactLink>? links);
 
-
-  /// Property getter and setter for duration: 
+  /// Property getter and setter for duration:
   IFactDuration? get duration;
   set duration(IFactDuration? duration);
 
-
-  /// Property getter and setter for isSingleton: 
+  /// Property getter and setter for isSingleton:
   bool? get isSingleton;
   set isSingleton(bool? isSingleton);
 
-
-  /// Property getter and setter for isAttribute: 
+  /// Property getter and setter for isAttribute:
   bool? get isAttribute;
   set isAttribute(bool? isAttribute);
-
 
   @override
   String toString();
@@ -111,7 +93,6 @@ abstract class IFactSchema
 
   @override
   Set<String> get mfields => FactSchemaFields.values;
-
 }
 
 class FactSchemaFields {
@@ -130,46 +111,84 @@ class FactSchemaFields {
   static const isSingleton = "isSingleton";
   static const isAttribute = "isAttribute";
   static const Set<String> values = {
-    ref, mschema, recordType, category, templates, icon, tenses, factTokens, bundle, dates, links, duration, isSingleton, isAttribute
+    ref,
+    mschema,
+    recordType,
+    category,
+    templates,
+    icon,
+    tenses,
+    factTokens,
+    bundle,
+    dates,
+    links,
+    duration,
+    isSingleton,
+    isAttribute
   };
 }
 
 class FactSchemaPaths {
   static const JsonPath<MSchemaRef> ref = JsonPath.internal(["ref"], "/ref");
-  static const JsonPath<IMSchemaDefinition> mschema = JsonPath.internal(["mschema"], "/mschema");
-  static const JsonPath<MSchemaRef> recordType = JsonPath.internal(["recordType"], "/recordType");
-  static const JsonPath<String> category = JsonPath.internal(["category"], "/category");
-  static const JsonPath<Map<String, IFactSchemaTemplate>> templates = JsonPath.internal(["templates"], "/templates");
+  static const JsonPath<IMSchemaDefinition> mschema =
+      JsonPath.internal(["mschema"], "/mschema");
+  static const JsonPath<MSchemaRef> recordType =
+      JsonPath.internal(["recordType"], "/recordType");
+  static const JsonPath<String> category =
+      JsonPath.internal(["category"], "/category");
+  static const JsonPath<Map<String, IFactSchemaTemplate>> templates =
+      JsonPath.internal(["templates"], "/templates");
   static const JsonPath<String> icon = JsonPath.internal(["icon"], "/icon");
-  static const JsonPath<List<IFactTense>> tenses = JsonPath.internal(["tenses"], "/tenses");
-  static const JsonPath<List<String>> factTokens = JsonPath.internal(["factTokens"], "/factTokens");
-  static const JsonPath<String> bundle = JsonPath.internal(["bundle"], "/bundle");
-  static const JsonPath<List<IFactMetaDate>> dates = JsonPath.internal(["dates"], "/dates");
-  static const JsonPath<List<IFactLink>> links = JsonPath.internal(["links"], "/links");
-  static const JsonPath<IFactDuration> duration = JsonPath.internal(["duration"], "/duration");
-  static const JsonPath<bool> isSingleton = JsonPath.internal(["isSingleton"], "/isSingleton");
-  static const JsonPath<bool> isAttribute = JsonPath.internal(["isAttribute"], "/isAttribute");
+  static const JsonPath<List<IFactTense>> tenses =
+      JsonPath.internal(["tenses"], "/tenses");
+  static const JsonPath<List<String>> factTokens =
+      JsonPath.internal(["factTokens"], "/factTokens");
+  static const JsonPath<String> bundle =
+      JsonPath.internal(["bundle"], "/bundle");
+  static const JsonPath<List<IFactMetaDate>> dates =
+      JsonPath.internal(["dates"], "/dates");
+  static const JsonPath<List<IFactLink>> links =
+      JsonPath.internal(["links"], "/links");
+  static const JsonPath<IFactDuration> duration =
+      JsonPath.internal(["duration"], "/duration");
+  static const JsonPath<bool> isSingleton =
+      JsonPath.internal(["isSingleton"], "/isSingleton");
+  static const JsonPath<bool> isAttribute =
+      JsonPath.internal(["isAttribute"], "/isAttribute");
   static final Set<JsonPath> values = {
-    ref, mschema, recordType, category, templates, icon, tenses, factTokens, bundle, dates, links, duration, isSingleton, isAttribute
+    ref,
+    mschema,
+    recordType,
+    category,
+    templates,
+    icon,
+    tenses,
+    factTokens,
+    bundle,
+    dates,
+    links,
+    duration,
+    isSingleton,
+    isAttribute
   };
 }
 
+const FactSchemaRef =
+    MSchemaRef("sunny", "factSchema", "factSchema", "0.0.1", "ephemeral");
 
-const FactSchemaRef = MSchemaRef("sunny", "factSchema", "factSchema", "0.0.1", "ephemeral");
-
-typedef _FactSchemaConstructor = IFactSchema Function({   required MSchemaRef? ref, 
-  required IMSchemaDefinition? mschema, 
-  MSchemaRef? recordType, 
-  required String? category, 
-  required Map<String, IFactSchemaTemplate>? templates, 
-  String? icon, 
-  required List<IFactTense>? tenses, 
-  required List<String>? factTokens, 
-  String? bundle, 
-  required List<IFactMetaDate>? dates, 
-  required List<IFactLink>? links, 
-  IFactDuration? duration, 
-  required bool? isSingleton, 
-  required bool? isAttribute
- });
+typedef _FactSchemaConstructor = IFactSchema Function(
+    {required MSchemaRef? ref,
+    required IMSchemaDefinition? mschema,
+    MSchemaRef? recordType,
+    required String? category,
+    required Map<String, IFactSchemaTemplate>? templates,
+    String? icon,
+    required List<IFactTense>? tenses,
+    required List<String>? factTokens,
+    String? bundle,
+    required List<IFactMetaDate>? dates,
+    required List<IFactLink>? links,
+    IFactDuration? duration,
+    required bool? isSingleton,
+    required bool? isAttribute});
 typedef _FactSchemaFromJson = IFactSchema Function(dynamic any);

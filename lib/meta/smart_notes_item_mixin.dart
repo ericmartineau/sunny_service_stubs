@@ -2,11 +2,11 @@ import 'dart:async';
 
 import 'package:collection_diff/collection_diff.dart';
 import 'package:flutter/widgets.dart';
-import 'package:sunny_sdk_core/api_exports.dart';
 import 'package:sunny_sdk_core/model_exports.dart';
 import 'package:sunny_service_stubs/models.dart';
 
-typedef RenderSmartNotesItem<S extends SmartNotesItem> = FutureOr<Widget> Function(
+typedef RenderSmartNotesItem<S extends SmartNotesItem> = FutureOr<Widget>
+    Function(
   BuildContext context,
   S subject, {
   required ISunnyContact contact,
@@ -42,7 +42,10 @@ class SmartNotesRenderService {
 
   void register<T extends SmartNotesItem>(RenderSmartNotesItem<T> renderer) {
     _renderers[T] = (BuildContext context, SmartNotesItem subject,
-        {required ISunnyContact contact, VoidCallback? onTap, VoidCallback? changed, Widget? trailing}) {
+        {required ISunnyContact contact,
+        VoidCallback? onTap,
+        VoidCallback? changed,
+        Widget? trailing}) {
       return renderer(
         context,
         subject as T,

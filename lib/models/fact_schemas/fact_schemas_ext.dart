@@ -1,10 +1,7 @@
-import 'package:dartxx/dartxx.dart';
 import 'package:sunny_dart/sunny_dart.dart';
 import 'package:sunny_sdk_core/mverse.dart';
 import 'package:sunny_service_stubs/models.dart';
-import 'package:sunny_service_stubs/models/fact_schemas/fact_schemas.dart';
 
-//
 extension FactMetaDateExtension on IFactMetaDate {
   Set<String> tokenize() => [...?dateTokens, remindLabel, label].notNullSet();
 
@@ -39,8 +36,7 @@ extension FactSchemaExtension on IFactSchema {
 
   bool get isNotSingleton => isSingleton != true;
 
-  Set<String> tokenize() =>
-      [
+  Set<String> tokenize() => [
         ...?factTokens,
         label,
         template,
@@ -72,11 +68,10 @@ extension FactSchemaExtension on IFactSchema {
   bool get isTimeSensitive =>
       dates?.any((date) => date.isTimeSensitive) == true;
 
-  JsonPath? get timelineField =>
-      dates
-          .orEmptyList()
-          .firstOrNull((date) => date.isHistorical == true)
-          ?.path;
+  JsonPath? get timelineField => dates
+      .orEmptyList()
+      .firstOrNull((date) => date.isHistorical == true)
+      ?.path;
 
   IFactMetaDate? get firstHistoricalDate =>
       dates.orEmptyList().firstOrNull((date) => date.isHistorical == true);

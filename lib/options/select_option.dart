@@ -132,7 +132,6 @@ class KeyedAdhocOption<K, V> extends _KeyedOption<K, V> {
   }
 
   /// When the user selects the ad-hoc option, if this value is non-null, it will help the user create a "real"
-
   final KeyedAdhocOptionCreator<K, V>? adhocCreator;
 
   bool get hasAdhocCreator => adhocCreator != null;

@@ -10,7 +10,7 @@ TZDateTime tzDateTime(DateTime dateTime) => dateTime is TZDateTime
     : TZDateTime.from(dateTime, sunnyLocalization.userLocation!);
 
 String? smartDateFormat(DateTime? dateTime,
-    {bool? formatTime, bool useToday = true}) {
+    {bool? formatTime, bool useToday = true, bool useDayOfWeek = true,}) {
   if (dateTime == null) return null;
 
   formatTime ??= hasTime(dateTime);
@@ -22,7 +22,7 @@ String? smartDateFormat(DateTime? dateTime,
       // Same day
       return "today";
     } else if (now.year == date.year) {
-      return dateFormatNoYear.format(date);
+      return useDayOfWeek ? dateFormatNoYear.format(date) : dateFormatMonthDay.format(date);
     } else {
       return dateFormatWithYear.format(date);
     }

@@ -6,30 +6,35 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/contact.dart';
-import '../model/contact_list.dart';
 
 import '../contact_v2.dart';
-
 
 ///
 /// DO NOT MODIFY
 ///
 /// GENERATED API OPERATIONS
 ///
-abstract class IContactApi extends Repository<IContact> /* mverse:contact:schema:contact:0.0.1@abstract*/{
-
+abstract class IContactApi extends Repository<
+    IContact> /* mverse:contact:schema:contact:0.0.1@abstract*/ {
   @override
   MSchemaRef get mtype => ContactRef;
 
-  Future<IContact> create(IContact contact,);
-    
-  Future<DeleteResponse> delete(String id,);
-    
-  Future<IContactList> list({ double? limit,  double? offset });
-    
-  Future<IContact> load(String id,);
-    
-  Future<ChangeResult> update(String id, IContact contact,);
-    
+  Future<IContact> create(
+    IContact contact,
+  );
+
+  Future<DeleteResponse> delete(
+    String id,
+  );
+
+  Future<IContactList> list({double? limit, double? offset});
+
+  Future<IContact> load(
+    String id,
+  );
+
+  Future<ChangeResult> update(
+    String id,
+    IContact contact,
+  );
 }

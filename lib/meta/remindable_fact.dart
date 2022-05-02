@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sunny_sdk_core/api_exports.dart';
-import 'package:sunny_sdk_core/mverse/m_model.dart';
 import 'package:sunny_service_stubs/models.dart';
 import 'package:sunny_service_stubs/contact.dart';
 
