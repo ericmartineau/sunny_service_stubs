@@ -91,7 +91,7 @@ packages:
       name: dartxx
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.5.4"
+    version: "0.5.5"
   dio:
     dependency: transitive
     description:
@@ -133,21 +133,21 @@ packages:
       name: firebase_auth
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.3.13"
+    version: "3.3.16"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
       name: firebase_auth_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.2.2"
+    version: "6.2.4"
   firebase_auth_web:
     dependency: transitive
     description:
       name: firebase_auth_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.3.11"
+    version: "3.3.13"
   firebase_core:
     dependency: transitive
     description:
@@ -168,7 +168,7 @@ packages:
       name: firebase_core_web
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.6.1"
+    version: "1.6.2"
   flexidate:
     dependency: "direct main"
     description:
@@ -365,7 +365,7 @@ packages:
       name: pfile
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.0+4"
+    version: "2.2.0"
   platform:
     dependency: transitive
     description:
@@ -461,7 +461,7 @@ packages:
       name: sunny_dart
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.11.0+8"
+    version: "0.11.1"
   sunny_data:
     dependency: "direct main"
     description:
@@ -472,10 +472,10 @@ packages:
   sunny_sdk_core:
     dependency: "direct main"
     description:
-      path: "../sunny_sdk_core"
-      relative: true
-    source: path
-    version: "2.4.0+16"
+      name: sunny_sdk_core
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.5.0"
   synchronized:
     dependency: transitive
     description:
@@ -563,5 +563,3 @@ packages:
 sdks:
   dart: ">=2.16.0 <3.0.0"
   flutter: ">=2.8.0"
-
-

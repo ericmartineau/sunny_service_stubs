@@ -1,28 +1,26 @@
 name: sunny_service_stubs
-version: 0.5.0+10
+version: 0.5.1
 description: Stubs for working with sunny services
+repository: https://github.com/ericmartineau/sunny_services.git
 environment: 
   sdk: '>=2.14.0 <3.0.0'
   flutter: '>=1.17.0'
 dependencies: 
   collection_diff: ^2.0.3+6
-  dartxx: ^0.5.3+2
   equatable: ^2.0.3
   flexidate: ^0.8.0+3
   info_x: ^0.8.0+3
   logging: ^1.0.2
   meta: ^1.7.0
-  pfile: ^2.1.0+4
+  pfile: ^2.2.0
   sunny_data: ^1.0.0+3
   intl: ^0.17.0
   timezone: ^0.8.0
-  sunny_dart: ^0.11.0+7
-  sunny_sdk_core: ^2.4.0+16
+  sunny_sdk_core: ^2.5.0
+  dartxx: ^0.5.5
+  sunny_dart: ^0.11.1
   flutter: 
     sdk: flutter
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
-dependency_overrides:
-  sunny_sdk_core:
-    path: ../sunny_sdk_core
