@@ -6,7 +6,6 @@ import 'package:sunny_sdk_core/model_exports.dart';
 import '../scheduling_ext.dart';
 
 import '../model/meeting.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/flow_frame.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/flow_thread.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/thread_status.dart';

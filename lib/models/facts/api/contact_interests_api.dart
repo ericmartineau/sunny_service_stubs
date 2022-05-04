@@ -6,8 +6,6 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/contact_interests.dart';
-import '../model/contact_interests_list.dart';
 
 import '../facts.dart';
 

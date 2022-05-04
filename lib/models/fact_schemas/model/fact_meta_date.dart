@@ -10,7 +10,6 @@ import '../model/fact_recurrence.dart';
 import '../model/remindable_info.dart';
 import '../model/time_sensitivity.dart';
 import 'package:sunny_dart/json.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IFactMetaDate

@@ -8,7 +8,6 @@ import '../waypoints_events_ext.dart';
 import '../model/account_event.dart';
 import '../model/entity_event.dart';
 import '../model/entity_updated_event.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IUserTaskUpdatedEvent

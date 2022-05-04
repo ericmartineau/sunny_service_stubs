@@ -7,7 +7,6 @@ import '../waypoints_ext.dart';
 
 import '../model/start_flow_set.dart';
 import 'package:sunny_dart/json.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IBasicTaskInfo

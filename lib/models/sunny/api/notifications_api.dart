@@ -5,8 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/notification.dart';
-import '../model/notification_list.dart';
 
 import '../sunny.dart';
 

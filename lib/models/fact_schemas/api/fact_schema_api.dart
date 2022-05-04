@@ -5,7 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/fact_schema_list.dart';
 
 import '../fact_schemas.dart';
 

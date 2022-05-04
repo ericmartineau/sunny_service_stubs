@@ -9,7 +9,6 @@ import '../model/content.dart';
 import '../model/expression.dart';
 import '../model/flow_action_type.dart';
 import '../model/icon_info.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IFlowNode

@@ -6,8 +6,6 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/group_thread_state.dart';
-import '../model/group_thread_state_list.dart';
 
 import '../waypoints.dart';
 

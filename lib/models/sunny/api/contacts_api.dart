@@ -5,9 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/sunny_contact.dart';
-import '../model/contact_identity.dart';
-import '../model/contact_list.dart';
 
 import '../sunny.dart';
 

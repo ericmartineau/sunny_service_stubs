@@ -6,8 +6,6 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/my_doterra_story.dart';
-import '../model/my_doterra_story_list.dart';
 
 import '../truman.dart';
 

@@ -5,9 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/group.dart';
-import '../model/group_invitation.dart';
-import '../model/group_invitation_preview.dart';
 
 import '../sunny.dart';
 

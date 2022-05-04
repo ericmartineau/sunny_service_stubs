@@ -6,8 +6,6 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/attendee_flow_thread.dart';
-import '../model/attendee_flow_thread_list.dart';
 
 import '../scheduling.dart';
 

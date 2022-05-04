@@ -8,7 +8,6 @@ import '../waypoints_ext.dart';
 import '../model/expression.dart';
 import '../model/flow_query.dart';
 import 'package:sunny_dart/json.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IFactFlowQuery

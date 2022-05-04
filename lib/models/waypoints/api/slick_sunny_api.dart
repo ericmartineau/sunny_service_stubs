@@ -7,7 +7,6 @@ import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_service_stubs/models/facts/model/gift.dart';
 import 'package:sunny_service_stubs/models/facts/model/payment.dart';
-import '../model/sunny_interaction.dart';
 
 import '../waypoints.dart';
 

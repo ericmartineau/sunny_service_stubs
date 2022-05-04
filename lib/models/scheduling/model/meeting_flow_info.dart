@@ -5,7 +5,6 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../scheduling_ext.dart';
 
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IMeetingFlowInfo

@@ -6,8 +6,6 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/relive_it_contact.dart';
-import '../model/relive_it_contact_list.dart';
 
 import '../reliveit.dart';
 

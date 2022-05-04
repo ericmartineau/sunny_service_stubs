@@ -5,7 +5,6 @@
 import 'package:sunny_sdk_core/model_exports.dart';
 import '../facts_ext.dart';
 
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/image_content.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/video_content.dart';

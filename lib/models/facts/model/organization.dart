@@ -6,7 +6,6 @@ import 'package:sunny_sdk_core/model_exports.dart';
 import '../facts_ext.dart';
 
 import '../model/phase.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/image_content.dart';
 
 abstract class IOrganization implements MEntity {

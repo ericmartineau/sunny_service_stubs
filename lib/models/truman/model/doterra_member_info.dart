@@ -6,7 +6,6 @@ import 'package:sunny_sdk_core/model_exports.dart';
 import '../truman_ext.dart';
 
 import '../model/member_level.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/facts/model/fact.dart';
 import 'package:sunny_service_stubs/models/facts/model/task_fact_for_m_model.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';

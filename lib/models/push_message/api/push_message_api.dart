@@ -5,7 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/send_response.dart';
 
 import '../push_message.dart';
 

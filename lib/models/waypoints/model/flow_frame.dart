@@ -8,7 +8,6 @@ import '../waypoints_ext.dart';
 
 import '../model/flow_thread_for_flow_frame.dart';
 import '../model/frame_status.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/facts/model/assisted_task.dart';
 
 abstract class IFlowFrame implements MEntity, IFlowFrameExt {

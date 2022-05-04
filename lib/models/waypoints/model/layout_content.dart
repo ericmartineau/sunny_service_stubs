@@ -8,7 +8,6 @@ import '../waypoints_ext.dart';
 import '../model/content.dart';
 import '../model/content_axis.dart';
 import '../model/content_delivery.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class ILayoutContent

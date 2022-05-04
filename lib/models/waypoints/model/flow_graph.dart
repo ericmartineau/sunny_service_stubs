@@ -16,7 +16,6 @@ import '../model/flow_repeat_mode.dart';
 import '../model/flow_vertex.dart';
 import '../model/icon_info.dart';
 import '../model/start.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 abstract class IFlowGraph with IFlowGraphExt implements MEntity {
   static late _FlowGraphConstructor of;

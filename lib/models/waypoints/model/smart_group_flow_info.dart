@@ -6,7 +6,6 @@ import 'package:sunny_sdk_core/model_exports.dart';
 import '../waypoints_ext.dart';
 
 import '../model/smart_group_filter.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class ISmartGroupFlowInfo

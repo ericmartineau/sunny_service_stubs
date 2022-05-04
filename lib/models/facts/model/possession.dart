@@ -7,7 +7,6 @@ import '../facts_ext.dart';
 
 import '../model/fact.dart';
 import '../model/task_fact_for_m_model.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/reliveit/model/relive_it_contact.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/image_content.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/video_content.dart';

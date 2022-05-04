@@ -7,7 +7,6 @@ import '../facts_ext.dart';
 
 import '../model/task_due_config.dart';
 import 'package:sunny_dart/json.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IMetaDateDueConfig

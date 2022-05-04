@@ -6,9 +6,6 @@ import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
 import 'package:sunny_sdk_core/sunny_sdk_core.dart';
-import '../model/fact.dart';
-import '../model/fact_list.dart';
-import '../model/facts.dart';
 
 import '../facts.dart';
 

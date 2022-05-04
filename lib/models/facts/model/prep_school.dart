@@ -7,7 +7,6 @@ import '../facts_ext.dart';
 
 import '../model/organization.dart';
 import '../model/phase.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/contact_v2/model/physical_location.dart';
 import 'package:sunny_service_stubs/models/waypoints/model/image_content.dart';
 

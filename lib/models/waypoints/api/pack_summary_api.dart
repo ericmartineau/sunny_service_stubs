@@ -5,8 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/pack_summary.dart';
-import '../model/pack_summary_list.dart';
 
 import '../waypoints.dart';
 

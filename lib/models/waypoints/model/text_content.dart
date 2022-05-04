@@ -9,7 +9,6 @@ import '../model/content.dart';
 import '../model/content_delivery.dart';
 import '../model/content_type.dart';
 import '../model/text_mode.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class ITextContent

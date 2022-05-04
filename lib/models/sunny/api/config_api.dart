@@ -5,9 +5,6 @@
 import 'dart:convert';
 import 'package:sunny_sdk_core/api_exports.dart';
 
-import '../model/app_info.dart';
-import '../model/automation.dart';
-import '../model/source.dart';
 
 import '../sunny.dart';
 

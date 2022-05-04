@@ -1,7 +1,6 @@
 import 'package:sunny_dart/extensions/lang_extensions.dart';
 import 'package:sunny_dart/helpers/logging_mixin.dart';
 import 'package:sunny_sdk_core/model/media_service.dart';
-import 'package:sunny_sdk_core/model/progress_tracker.dart';
 
 import '../models/waypoints/model/content_delivery.dart';
 import '../models/waypoints/model/image_content.dart';

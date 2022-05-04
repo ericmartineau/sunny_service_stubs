@@ -9,7 +9,6 @@ import '../model/content.dart';
 import '../model/content_delivery.dart';
 import '../../facts/model/dimensions.dart';
 import '../../facts/model/orientation.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 import 'package:sunny_service_stubs/models/contact_v2/model/physical_location.dart';
 
 abstract class IImageContent implements IContent, ImageContentExt {

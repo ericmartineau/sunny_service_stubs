@@ -9,7 +9,6 @@ import '../model/attendee.dart';
 import '../model/in_person_info.dart';
 import '../model/phone_info.dart';
 import '../model/web_info.dart';
-import 'package:sunny_sdk_core/sunny_sdk_core.dart';
 
 
 abstract class IMeeting
