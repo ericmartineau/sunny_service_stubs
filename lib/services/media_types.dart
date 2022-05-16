@@ -22,6 +22,7 @@ class VideoContentType extends BaseMediaContentType<IVideoContent> {
 
   @override
   String get name => "videoExt";
+  String get fileType => "video";
 
   @override
   IVideoContent uriToMedia(Uri uri) {
@@ -178,6 +179,8 @@ class ImageContentType extends BaseMediaContentType<IImageContent> {
 
   @override
   String get name => "imageExt";
+
+  String get fileType => "image";
 
   @override
   JsonPath get fieldPath => ImageContentPaths.imageUrl;
