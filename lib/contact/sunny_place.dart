@@ -21,7 +21,7 @@ Iterable<String>? addressToString(SunnyPlace? address) {
 
 /// Represents a physical location.  Represented by a few different generated models.  See [Location]
 /// and [ContactAddress]
-abstract class SunnyPlace implements MModel {
+abstract class SunnyPlace {
   String? get name;
 
   String? get googlePlaceId;
