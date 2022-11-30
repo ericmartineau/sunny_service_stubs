@@ -12,21 +12,37 @@ dependencies:
   intl: ^0.17.0
   timezone: ^0.9.0
   collection_diff: 
-    path: /Users/ericm/sunny/trippi_plugins/collection_diff
+    git: 
+      url: git@github.com:SunnyApp/collection_diff
+      ref: trippi_app
   info_x: 
-    path: /Users/ericm/sunny/trippi_plugins/info_x
+    git: 
+      url: git@github.com:ericmartineau/info_x
+      ref: trippi_app
   sunny_data: 
-    path: /Users/ericm/sunny/trippi_plugins/sunny_data
+    git: 
+      url: git@github.com:TrippiApp/sunny_data.git
+      ref: trippi_app
   flexidate: 
-    path: /Users/ericm/sunny/trippi_plugins/flexidate
+    git: 
+      url: git@github.com:TrippiApp/flexidate
+      ref: trippi_app
   pfile: 
-    path: /Users/ericm/sunny/trippi_plugins/pfile
+    git: 
+      url: git@github.com:SunnyApp/pfile
+      ref: trippi_app
   sunny_sdk_core: 
-    path: /Users/ericm/sunny/trippi_plugins/sunny_sdk_core
+    git: 
+      url: git@github.com:SunnyApp/sunny_sdk_core.git
+      ref: trippi_app
   dartxx: 
-    path: /Users/ericm/sunny/trippi_plugins/dartxx
+    git: 
+      url: git@github.com:ericmartineau/dartxx.git
+      ref: trippi_app
   sunny_dart: 
-    path: /Users/ericm/sunny/trippi_plugins/sunny_dart
+    git: 
+      url: git@github.com:SunnyApp/sunny_dart
+      ref: trippi_app
   flutter: 
     sdk: flutter
 dev_dependencies: 
