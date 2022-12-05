@@ -6,27 +6,27 @@ environment:
   sdk: '>=2.14.0 <3.0.0'
   flutter: '>=1.17.0'
 dependencies: 
-  equatable: ^2.0.3
+  equatable: ^2.0.5
   logging: ^1.0.2
-  meta: ^1.7.0
+  meta: ^1.8.0
   intl: ^0.17.0
   timezone: ^0.8.0
   collection_diff: 
-    path: /Users/ericm/sunny/player_rank/packages/collection_diff
+    path: /Users/ericm/sunny/local_plugins/collection_diff
   info_x: 
-    path: /Users/ericm/sunny/player_rank/packages/info_x
+    path: /Users/ericm/sunny/local_plugins/info_x
   sunny_data: 
-    path: /Users/ericm/sunny/player_rank/packages/sunny_data
+    path: /Users/ericm/sunny/local_plugins/sunny_data
   flexidate: 
-    path: /Users/ericm/sunny/player_rank/packages/flexidate
+    path: /Users/ericm/sunny/local_plugins/flexidate
   pfile: 
-    path: /Users/ericm/sunny/player_rank/packages/pfile
+    path: /Users/ericm/sunny/local_plugins/pfile
   sunny_sdk_core: 
-    path: /Users/ericm/sunny/player_rank/packages/sunny_sdk_core
+    path: /Users/ericm/sunny/local_plugins/sunny_sdk_core
   dartxx: 
-    path: /Users/ericm/sunny/player_rank/packages/dartxx
+    path: /Users/ericm/sunny/local_plugins/dartxx
   sunny_dart: 
-    path: /Users/ericm/sunny/player_rank/packages/sunny_dart
+    path: /Users/ericm/sunny/local_plugins/sunny_dart
   flutter: 
     sdk: flutter
 dev_dependencies: 

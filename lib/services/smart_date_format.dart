@@ -9,6 +9,8 @@ TZDateTime tzDateTime(DateTime dateTime) => dateTime is TZDateTime
     ? dateTime
     : TZDateTime.from(dateTime, sunnyLocalization.userLocation!);
 
+
+
 String? smartDateFormat(DateTime? dateTime,
     {bool? formatTime, bool useToday = true, bool useDayOfWeek = true,}) {
   if (dateTime == null) return null;
@@ -61,10 +63,8 @@ String formatDateTimeSameDay(TZDateTime dateTime) =>
 
 String _withLocation(DateFormat format, TZDateTime toFormat) {
   // To format it properly, we need to convert it to a local time
-  toFormat.toLocal();
-  return format.format(toFormat) +
-      " " +
-      toFormat.location.currentTimeZone.abbreviation;
+  var toUsersLocal = toFormat.toLocal();
+  return format.format(toUsersLocal);
 }
 
 final _dateTimeFormatWithYear = DateFormat("MMM d, yyyy 'at' h:mma");

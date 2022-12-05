@@ -34,6 +34,7 @@ abstract class TypeaheadOptionsAndHandler<K, T>
 }
 
 enum OptionValueType { key, value }
+
 enum TypeaheadFocusMode { showAll, showAllAndClear, showFiltered, none }
 
 abstract class TypeaheadOptions {
@@ -157,6 +158,7 @@ mixin KeyedAdhocOptionMixin<K, V> {
 
 typedef AdhocOptionCreator<T> = Future<T> Function(
     dynamic context, AdhocOption<T> option);
+
 typedef KeyedAdhocOptionCreator<K, T> = Future<T> Function(
     dynamic context, KeyedAdhocOption<K, T> option);
 
@@ -231,24 +233,15 @@ abstract class Option<V> extends KeyedOption<V, V> {
 
 /// The backing model for a drop down option.  Allows us to easily render it as a tile, or in other contexts
 abstract class KeyedOption<K, V> implements DiffDelegate {
-  factory KeyedOption(
-    K key,
-    V value, {
+  const factory KeyedOption(
+    K? key,
+    V? value, {
     required String label,
     icon,
-    List? subtitle,
+    List<Object?>? subtitle,
     String? selection,
-    List<String> extraTokens = const [],
-  }) =>
-      _KeyedOption(
-        key,
-        value,
-        label: label,
-        icon: icon,
-        subtitle: subtitle,
-        selection: selection,
-        extraTokens: extraTokens,
-      );
+    List<String> extraTokens,
+  }) = _KeyedOption<K, V>;
 
   factory KeyedOption.ofToString(
     K key,
@@ -279,9 +272,11 @@ abstract class KeyedOption<K, V> implements DiffDelegate {
 
   dynamic get icon;
 
-  List? get subtitle;
+  List<Object?>? get subtitle;
 
   List<String>? get extraTokens;
+
+  const KeyedOption.subclass();
 }
 
 class StringOption extends _Option<String> {
@@ -297,24 +292,25 @@ class StringOption extends _Option<String> {
 }
 
 /// Default impl of [KeyedOption] - an option that has a key and value
-class _KeyedOption<K, V> with DiffDelegateMixin implements KeyedOption<K, V> {
+class _KeyedOption<K, V> extends KeyedOption<K, V> with DiffDelegateMixin {
   final K? key;
   final V? value;
   final String label;
   final String selection;
   final icon;
-  final List? subtitle;
+  final List<Object?>? subtitle;
   final List<String>? extraTokens;
 
-  _KeyedOption(
+  const _KeyedOption(
     this.key,
     this.value, {
     required this.label,
     this.icon,
     this.subtitle,
-    required String? selection,
+    String? selection,
     this.extraTokens = const [],
-  }) : selection = selection ?? label;
+  })  : selection = selection ?? label,
+        super.subclass();
 
   @override
   bool operator ==(Object other) =>
@@ -333,7 +329,14 @@ class _KeyedOption<K, V> with DiffDelegateMixin implements KeyedOption<K, V> {
   }
 
   @override
-  get diffKey => key;
+  get diffKey {
+    if (value is DiffDelegate) {
+      return (value as DiffDelegate).diffKey;
+    } else {
+      return key;
+    }
+    ;
+  }
 }
 
 /// Default impl of [Option] - an unkeyed selection
@@ -364,5 +367,16 @@ class _Option<V> extends _KeyedOption<V, V>
       );
 
   @override
-  get diffKey => key;
+  get diffKey {
+    if (value is DiffDelegate) {
+      return (value as DiffDelegate).diffKey;
+    } else {
+      return key;
+    }
+  }
+}
+
+extension KeyedOptionListExt<K, V> on Iterable<KeyedOption<K, V>> {
+  Iterable<V> get values => map((e) => e.value).whereType();
+  Iterable<K> get keys => map((e) => e.key).whereType();
 }
