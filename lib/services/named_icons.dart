@@ -21,15 +21,12 @@ extension NamedIconContainerExt on NamedIconContainer {
 /// Allows for simple lookup of icons by name.  Implement this container and add
 /// fields for a more performant solution
 class NamedIconContainer {
-  Color? defaultColor;
-  Color? defaultTextColor;
-  Color? disabledColor;
   double defaultIconSize;
 
   final Getter<IconResolver> _iconResolver;
 
   NamedIconContainer(this._iconResolver,
-      {this.defaultColor, this.defaultIconSize = 40});
+      {this.defaultIconSize = 40});
 
   IconResolver get iconResolver => _iconResolver();
 
@@ -335,11 +332,9 @@ class NamedIcon extends IconData {
           name,
           iconData: infoX.isIOS ? iosIcon : androidIcon,
           solidData: infoX.isIOS ? iosIcon : (solidAndroidIcon ?? androidIcon),
-// We're not using solid icons
-//          solidData: Platform.isIOS ? solidIosIcon ?? iosIcon : solidAndroidIcon ?? androidIcon,
           circular: false,
           isSolid: false,
-          color: NamedIcons.defaultColor,
+          color: null,
           foregroundColor: Colors.white,
           size: NamedIcons.defaultIconSize,
         );
@@ -357,17 +352,14 @@ class NamedIcon extends IconData {
         _color = color,
         _foregroundColor = foregroundColor,
         icon =
-            Icon(iconData, size: size, color: color ?? NamedIcons.defaultColor),
+            Icon(iconData, size: size, color: color),
         solidIcon = Icon(solidData,
-            size: size, color: color ?? NamedIcons.defaultColor),
+            size: size, color: color),
         super(iconData.codePoint,
             fontFamily: iconData.fontFamily,
             fontPackage: iconData.fontPackage,
             matchTextDirection: iconData.matchTextDirection);
 
-  // Widget tappable(VoidCallback onTap) {
-  //   return this.widget.tappable(onTap);
-  // }
 
   /// Builds as a widget
   Widget build({
@@ -424,8 +416,8 @@ class NamedIcon extends IconData {
   NamedIcon grayCircular() {
     return copyWith(
       circular: true,
-      color: NamedIcons.defaultColor,
-      foregroundColor: NamedIcons.defaultTextColor,
+      color: null,
+      foregroundColor: null,
     );
   }
 
@@ -463,7 +455,7 @@ extension NamedIconTypedExtensions on NamedIcon {
 //          constraints: BoxConstraints(maxWidth: size, maxHeight: size),
           alignment: AlignmentDirectional.center,
           padding: EdgeInsets.all(size / 8),
-          color: _color ?? NamedIcons.defaultColor,
+          color: _color,
           child: Center(
             child: Icon(
               _isSolid ? solidData : iconData,
