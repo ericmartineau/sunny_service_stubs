@@ -7,10 +7,10 @@ environment:
   flutter: '>=1.17.0'
 dependencies: 
   equatable: ^2.0.5
-  logging: ^1.1.0
-  meta: ^1.8.0
-  intl: ^0.17.0
-  timezone: ^0.9.0
+  logging: ^1.1.1
+  meta: ^1.9.0
+  intl: ^0.18.0
+  timezone: ^0.9.1
   collection_diff: 
     path: /Users/ericm/reliveit/checkout/SunnyApp/collection_diff
   flexidate: 
