@@ -7,26 +7,26 @@ environment:
   flutter: '>=1.17.0'
 dependencies: 
   equatable: ^2.0.5
-  logging: ^1.1.1
-  meta: ^1.9.0
-  intl: ^0.18.0
+  logging: 1.2.0
+  meta: ^1.9.1
+  intl: ^0.18.1
   timezone: ^0.9.1
   collection_diff: 
-    path: /Users/ericm/reliveit/checkout/SunnyApp/collection_diff
+    path: /Users/ericm/aesthetika/checkout/SunnyApp/collection_diff
   flexidate: 
-    path: /Users/ericm/reliveit/checkout/ericmartineau/flexidate
+    path: /Users/ericm/aesthetika/checkout/ericmartineau/flexidate
   info_x: 
-    path: /Users/ericm/reliveit/checkout/ericmartineau/info_x
+    path: /Users/ericm/aesthetika/checkout/ericmartineau/info_x
   pfile: 
-    path: /Users/ericm/reliveit/checkout/SunnyApp/pfile
+    path: /Users/ericm/aesthetika/checkout/SunnyApp/pfile
   sunny_data: 
-    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_data
+    path: /Users/ericm/aesthetika/checkout/SunnyApp/sunny_data
   sunny_sdk_core: 
-    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_sdk_core
+    path: /Users/ericm/aesthetika/checkout/SunnyApp/sunny_sdk_core
   dartxx: 
-    path: /Users/ericm/reliveit/checkout/ericmartineau/dartxx
+    path: /Users/ericm/aesthetika/checkout/ericmartineau/dartxx
   sunny_dart: 
-    path: /Users/ericm/reliveit/checkout/SunnyApp/sunny_dart
+    path: /Users/ericm/aesthetika/checkout/SunnyApp/sunny_dart
   flutter: 
     sdk: flutter
 dev_dependencies: 
